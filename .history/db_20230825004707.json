@@ -104,9 +104,7 @@
       "ciall": "sanity",
       "cill": "churchyard"
     },
-    {
-      "cinn": "determine"
-    },
+    { "cinn": "determine" },
     {
       "cluain": "meadow",
       "ciúin": "quiet",
@@ -605,37 +603,6 @@
         "úll": "apple",
         "iúl": "knowledge"
       }
-    },
-    {
-      "cluster": {
-        "comhalta": "fellow",
-        "comhlacht": ""
-      },
-      "id": 49
-    },
-    {
-      "cluster": {
-        "láigh": "dawn"
-      },
-      "id": 50
-    },
-    {
-      "cluster": {
-        "foras": "base"
-      },
-      "id": 51
-    },
-    {
-      "cluster": {
-        "meamhlach": "miaowing"
-      },
-      "id": 52
-    },
-    {
-      "cluster": {
-        "coinníoll": "condition"
-      },
-      "id": 53
     }
   ],
   "potafocal": [
