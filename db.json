@@ -1,0 +1,224 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "interferes": [
+    {
+      "abair": "say",
+      "abar": "morass"
+    },
+    {
+      "ae": "liver",
+      "aodh": "inflammation",
+      "aoi": "lodger"
+    },
+    {
+      "arracht": "monster",
+      "earrach": "spring",
+      "eachtra": "adventure",
+      "eallach": "cattle"
+    },
+    {
+      "achar": "distance",
+      "achan": "everything"
+    },
+    {
+      "acmhainn": "endurance",
+      "ach amháin": "except"
+    },
+    {
+      "adamhach": "atomic",
+      "admhaigh": "admit"
+    },
+    {
+      "álainn": "beautiful",
+      "ealaín": "arts"
+    },
+    {
+      "aird": "attention",
+      "ard": "height, high"
+    },
+    {
+      "aistritheoir": "translator",
+      "aisteoir": "actor"
+    },
+    {
+      "aitheantas": "recognition",
+      "aithris": "recite"
+    },
+    {
+      "airigh": "perceive",
+      "athraigh": "change",
+      "aistrigh": "move",
+      "áirigh": "count",
+      "aimsigh": "aim"
+    },
+    {
+      "aimsir": "weather, time",
+      "aistrigh": "move"
+    },
+    {
+      "análú": "respiration",
+      "annamh": "rare"
+    },
+    {
+      "at": "swell",
+      "ait": "pleasant",
+      "áit": "place"
+    },
+    {
+      "bac": "hinder",
+      "baic": "brim"
+    },
+    {
+      "bainistíocht": "thriftiness"
+    },
+    {
+      "caith": "wear",
+      "cath": "battle",
+      "cá": "where"
+    },
+    {
+      "ceard": "artisan",
+      "céard": "what"
+    },
+    {
+      "catach": "curly",
+      "cladach": "shore"
+    },
+    {
+      "ciall": "sanity",
+      "cill": "churchyard"
+    },
+    {
+      "cluain": "meadow",
+      "ciúin": "quiet",
+      "cluas": "ear",
+      "cluan": "harbor"
+    },
+    {
+      "coigil": "spare",
+      "cigil": "tickle"
+    },
+    {
+      "coinne": "tryst",
+      "cúinne": "corner"
+    },
+    {
+      "cor": "turn",
+      "carr": "car",
+      "cuir": "put",
+      "coir": "tire"
+    },
+    {
+      "cróch": "crocus",
+      "crochta": "hang"
+    },
+    {
+      "dall": "blind",
+      "dála": "situation",
+      "dáil": "distribute"
+    },
+    {
+      "dísle": "die",
+      "dífe": "dismissed"
+    },
+    {
+      "fiáin": "wild",
+      "fionn": "blonde",
+      "fíon": "wine"
+    },
+    {
+      "geal": "whiten",
+      "geall": "promise"
+    },
+    {
+      "géar": "acidid",
+      "gearr": "cut"
+    },
+    {
+      "glé": "pellucid",
+      "gné": "form"
+    },
+    {
+      "ilchríoch": "continent",
+      "ilchodach": "composite"
+    },
+    {
+      "iomlán": "full, whole",
+      "iomaí": "many"
+    },
+    {
+      "ionad": "place",
+      "aonad": "unit; one(s)"
+    },
+    {
+      "loine": "piston",
+      "linne": "with-us-emphatic"
+    },
+    {
+      "luaigh": "mention",
+      "luigh": "(lie down) /li/ /lʌ/ /lɪg/",
+      "luach": "value",
+      "luath": "early"
+    },
+    {
+      "más": "if is",
+      "meas": "estimate"
+    },
+    {
+      "rialta": "regular",
+      "réalta": "star"
+    },
+    {
+      "rómhair": "dig",
+      "reoán": "icing"
+    },
+    {
+      "scair": "share",
+      "scar": "spread"
+    },
+    {
+      "solas": "light",
+      "sólás": "solace",
+      "socair": "quiet"
+    },
+    {
+      "súmhar": "juicy",
+      "suaith": "mix"
+    },
+    {
+      "stad": "stop",
+      "staid": "stadium"
+    },
+    {
+      "tairg": "offer",
+      "toil": "will",
+      "toiligh": "agree",
+      "toisc": "because",
+      "tost": "become silent",
+      "troisc": "fast",
+      "tuill": "earn, deserve",
+      "tuirling": "descend"
+    },
+    {
+      "tráchtas": "treatise",
+      "trácht": "travel",
+      "tráchtáil": "commerce"
+    }
+  ]
+}
