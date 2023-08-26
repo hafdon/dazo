@@ -1,0 +1,1816 @@
+{
+  "pronunciations": [
+    {
+      "id": 1,
+      "lexeme": "ranganna",
+      "orthograph": "-anna$",
+      "orthograph-notes": "plural ending, eg. ranganna ≤ rang",
+      "co": "",
+      "ulster": "",
+      "connacht": "/əni/ [Orla][c4as-0224]",
+      "munster": ""
+    },
+    {
+      "id": 2,
+      "lexeme": "bain",
+      "orthograph": "^bain$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "",
+      "connacht": "",
+      "munster": "/bwɪn/"
+    },
+    {
+      "id": 3,
+      "lexeme": "d'Oíche",
+      "orthograph": "^d'Oíche$",
+      "orthograph-notes": "≤ d'Oíche Shamhna (Halloween)",
+      "co": "",
+      "ulster": "",
+      "connacht": "/gwi/[Orla]",
+      "munster": ""
+    },
+    {
+      "id": 4,
+      "lexeme": "shióg",
+      "orthograph": "^shióg$",
+      "orthograph-notes": "≤ [λ] sióg (fairy)",
+      "co": "",
+      "ulster": "",
+      "connacht": "/'hi,ɔɪg/[Orla]",
+      "munster": ""
+    },
+    {
+      "id": 5,
+      "lexeme": "cóirithe",
+      "orthograph": "...",
+      "orthograph-notes": "(not sure how much of the suffix this phenomenon involves) (sound analysis my own, based on fgb audio)",
+      "co": "",
+      "ulster": "/kɔɾihə/",
+      "connacht": "/kori/",
+      "munster": "/koləhɪ/"
+    },
+    {
+      "id": 6,
+      "lexeme": "tá sé",
+      "orthograph": "tá sé",
+      "orthograph-notes": "/t∫ə/",
+      "co": "",
+      "ulster": "",
+      "connacht": "",
+      "munster": ""
+    },
+    {
+      "id": 7,
+      "lexeme": "éirithe",
+      "orthograph": "^éi-",
+      "orthograph-notes": "éirithe",
+      "co": "",
+      "ulster": "/i/",
+      "connacht": "/aɪ/",
+      "munster": "/aɪ/"
+    },
+    {
+      "id": 8,
+      "lexeme": "bligh",
+      "orthograph": "-igh$",
+      "orthograph-notes": "[fgb audio] also fits: - ligh",
+      "co": "",
+      "ulster": "/i/",
+      "connacht": "/ɪ/",
+      "munster": "/ɪg/"
+    },
+    {
+      "id": 9,
+      "lexeme": "troigh",
+      "orthograph": "-oigh$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/tɾi/ - trilled r",
+      "connacht": "/trʌ/ or /trə/",
+      "munster": "/trɪg/"
+    },
+    {
+      "id": 10,
+      "lexeme": "^beidh$",
+      "orthograph": "beidh",
+      "orthograph-notes": "/baɪ/ woman on Na hInnealtóirí - not sure her location",
+      "co": "",
+      "ulster": "",
+      "connacht": "",
+      "munster": ""
+    },
+    {
+      "id": 11,
+      "lexeme": "súigh",
+      "orthograph": "-úigh$",
+      "orthograph-notes": "[fgb-audio]",
+      "co": "",
+      "ulster": "/'u,i/",
+      "connacht": "/u/",
+      "munster": "/'u,ɪg/"
+    },
+    {
+      "id": 12,
+      "lexeme": "cumhracht",
+      "orthograph": "-acht(a)$",
+      "orthograph-notes": "[todo] sneachta (snow) - similar /r/ thing with Ulster",
+      "co": "",
+      "ulster": "/ɔrt/",
+      "connacht": "/ʌxt/",
+      "munster": "/ʌxt/"
+    },
+    {
+      "id": 13,
+      "lexeme": "fogha",
+      "orthograph": "-ogha$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/o,ʌ/",
+      "connacht": "\"/aʊ/ as in English \"\"now\"\"\"",
+      "munster": "/'aʊ,ʌ/"
+    },
+    {
+      "id": 14,
+      "lexeme": "imríodh",
+      "orthograph": "-íodh$ ",
+      "orthograph-notes": "(Conditional ending)",
+      "co": "",
+      "ulster": "/ɪmri-/hu/ [Catriona from c4as]",
+      "connacht": "",
+      "munster": ""
+    },
+    {
+      "id": 15,
+      "lexeme": "cás",
+      "orthograph": "-á-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "æ",
+      "connacht": "ɔ",
+      "munster": "ɔ"
+    },
+    {
+      "id": 16,
+      "lexeme": "básaithe",
+      "orthograph": "^bá-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/bwɛ/",
+      "connacht": "/bɔ/",
+      "munster": "/bɔ/"
+    },
+    {
+      "id": 17,
+      "lexeme": "scanraithe",
+      "orthograph": "^scanraithe$",
+      "orthograph-notes": "\"it's ONLY this word that this pattern appears in. usually UM sound same (≈ /əhə/), and C is (≈/i/) adding the \"\"t\"\" sound before the \"\"r\"\" in connacht\"",
+      "co": "",
+      "ulster": "/'skəɾihə/",
+      "connacht": "/'skän,tɾi/",
+      "munster": "/'skaʊndrəhə/"
+    },
+    {
+      "id": 18,
+      "lexeme": "comhlíonadh",
+      "orthograph": "-adh$",
+      "orthograph-notes": "[√] (sometimes verbal noun endings are pronounced differently than other types of words, even if they are spelled exactly the same)",
+      "co": "",
+      "ulster": "/-u/",
+      "connacht": "/-ʌ/",
+      "munster": "/-ʌ/"
+    },
+    {
+      "id": 19,
+      "lexeme": "scoth",
+      "orthograph": "-oth$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/aɪ/",
+      "connacht": "/ʌ(h)/",
+      "munster": "/ʌ(h)/"
+    },
+    {
+      "id": 20,
+      "lexeme": "tuilleadh",
+      "orthograph": "-eadh$",
+      "orthograph-notes": "lexeme noun, not a declined ending",
+      "co": "",
+      "ulster": "/-ju/",
+      "connacht": "/ɛ/",
+      "munster": "/ɛ/"
+    },
+    {
+      "id": 21,
+      "lexeme": "coiscthe",
+      "orthograph": "-the$",
+      "orthograph-notes": "as ₳ ending",
+      "co": "",
+      "ulster": "/ə/",
+      "connacht": "/i/",
+      "munster": "/əhə/"
+    },
+    {
+      "id": 22,
+      "lexeme": "iolra",
+      "orthograph": "^iol-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/ʌl/",
+      "connacht": "/ol/",
+      "munster": "/ol/"
+    },
+    {
+      "id": 23,
+      "lexeme": "luigh ",
+      "orthograph": "-uigh$",
+      "orthograph-notes": "(lie down)  compare to  -úigh$ (súigh) -uaigh (luaigh) - which adds /u/ before the -uigh ending sounds",
+      "co": "",
+      "ulster": "/li/",
+      "connacht": "/lʌ/",
+      "munster": "/lɪg/"
+    },
+    {
+      "id": 24,
+      "lexeme": "braithe; braiteoir",
+      "orthograph": "^brai-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/brä/",
+      "connacht": "/brä/",
+      "munster": "/brä/"
+    },
+    {
+      "id": 25,
+      "lexeme": "bráca",
+      "orthograph": "^brá-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/bræ/",
+      "connacht": "/brɔ/",
+      "munster": "/brɔ/"
+    },
+    {
+      "id": 26,
+      "lexeme": "leasaigh",
+      "orthograph": "^lea-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/læ/",
+      "connacht": "/lʲæ/",
+      "munster": "/læ/"
+    },
+    {
+      "id": 27,
+      "lexeme": "brocach",
+      "orthograph": "^bro-",
+      "orthograph-notes": "all transcriptions below are just to capture the vowel, not r-rolling, etc",
+      "co": "",
+      "ulster": "/brʌ/",
+      "connacht": "/brʌ/",
+      "munster": "/brʌ/"
+    },
+    {
+      "id": 28,
+      "lexeme": "suíomh",
+      "orthograph": "-uíomh$",
+      "orthograph-notes": "for -íomh$ Munster: /i,ɛv/[ríomh] Munster /i,ʌv/[líomh]",
+      "co": "",
+      "ulster": "/i,u/",
+      "connacht": "/i,əv/",
+      "munster": "/i,əv/"
+    },
+    {
+      "id": 29,
+      "lexeme": "clogad; clog",
+      "orthograph": "-o-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/ʌ/",
+      "connacht": "/ʌ/",
+      "munster": "/ʌ/"
+    },
+    {
+      "id": 30,
+      "lexeme": "adharc; gadhar; ladhar; radharc",
+      "orthograph": "-adha-",
+      "orthograph-notes": "\"(it's a little fuzzy at points, but the basic gist is captured below) It's the difference between the vowel sounds in  \"\"higher\"\" [Connacht][Munster] \"\"hair\"\" [Ulster] /ɛ/ (hair) or /eɪ/  (tail) from apple dictionary IPA\"",
+      "co": "",
+      "ulster": "/ɛ/",
+      "connacht": "/aɪ(ə)r/",
+      "munster": "/aɪ(ə)r/"
+    },
+    {
+      "id": 31,
+      "lexeme": "cáblaí; cáblaigh cába",
+      "orthograph": "^cá-",
+      "orthograph-notes": "in cápa [Ulster], the b is devocalized to a p /käpə/ so it's possible this has effects on the following letters too  exception [Ulster] cábóg (~ /kwebäg/)",
+      "co": "",
+      "ulster": "/kä/",
+      "connacht": "/kɔ/",
+      "munster": "/kɔ/"
+    },
+    {
+      "id": 32,
+      "lexeme": "cabar",
+      "orthograph": "^ca-",
+      "orthograph-notes": "this vowel may change if the following letters are one of the dipthong-type lenited letters (mh, bh, dh) for instance,  in cabha the vowel almost becomes /æ/ for U and C",
+      "co": "",
+      "ulster": "/kä/",
+      "connacht": "/kä/",
+      "munster": "/kä/"
+    },
+    {
+      "id": 33,
+      "lexeme": "cabhracht; cabhlachan",
+      "orthograph": "-abh-(r,l)-",
+      "orthograph-notes": "see cabhailín (-abha-) for differences to this pattern ",
+      "co": "",
+      "ulster": "/aʊ/",
+      "connacht": "/aʊ/",
+      "munster": "/aʊ/"
+    },
+    {
+      "id": 34,
+      "lexeme": "oiliúnach",
+      "orthograph": "^oil-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/ɛl/",
+      "connacht": "/ɛl/",
+      "munster": "/ɔɪl/"
+    },
+    {
+      "id": 35,
+      "lexeme": "coimhlint",
+      "orthograph": "^coimh-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/kʌv/",
+      "connacht": "/kˠaɪv/",
+      "munster": "/kˠɪv/"
+    },
+    {
+      "id": 36,
+      "lexeme": "bhruith",
+      "orthograph": "-bhruith$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/vrɪ/",
+      "connacht": "/vrɪ/",
+      "munster": "/vrɪ/"
+    },
+    {
+      "id": 37,
+      "lexeme": "adhain",
+      "orthograph": "-adhain$",
+      "orthograph-notes": "for some reason, adhain[Ulster] is pronounced differently than cadhain[Ulster]",
+      "co": "",
+      "ulster": "/eɪn/",
+      "connacht": "/aɪn/",
+      "munster": "/aɪn/"
+    },
+    {
+      "id": 38,
+      "lexeme": "cadhain",
+      "orthograph": "-adhain$",
+      "orthograph-notes": "for some reason, adhain[Ulster] is pronounced differently than cadhain[Ulster]",
+      "co": "",
+      "ulster": "/aɪn/",
+      "connacht": "/aɪn/",
+      "munster": "/aɪn/"
+    },
+    {
+      "id": 39,
+      "lexeme": "aduaidh; thuaidh; uaidh",
+      "orthograph": "-uaidh$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "",
+      "connacht": "",
+      "munster": "/-u,ɪg/"
+    },
+    {
+      "id": 40,
+      "lexeme": "comhleabhar",
+      "orthograph": "-eabhar$",
+      "orthograph-notes": "\"This seems to be the predominant pattern, with [Connacht] using the really zuzh-y \"\"r\"\"\"",
+      "co": "",
+      "ulster": "/ɔr/",
+      "connacht": "/'aʊər/",
+      "munster": "/'aʊər/"
+    },
+    {
+      "id": 41,
+      "lexeme": "creabhar",
+      "orthograph": "-eabhar$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/'aʊər/",
+      "connacht": "/'ævər/",
+      "munster": "/'aʊər/"
+    },
+    {
+      "id": 42,
+      "lexeme": "cóipleabhar",
+      "orthograph": "-eabhar$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/ɔr/",
+      "connacht": "/'aʊər/",
+      "munster": "/'aʊər/"
+    },
+    {
+      "id": 43,
+      "lexeme": "eabhar",
+      "orthograph": "-eabhar$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/'evər/",
+      "connacht": "/aʊr/",
+      "munster": "/'eəvər/"
+    },
+    {
+      "id": 44,
+      "lexeme": "cruinn",
+      "orthograph": "^cruinn-",
+      "orthograph-notes": "\"[search]\"\"lexeme:*cruinn*\"\"  for the most part this is pronounced like /krɪn/, except where (in sometimes C and more often M) it's /krin/, with various injections of /j/\"",
+      "co": "/krɪn/",
+      "ulster": "",
+      "connacht": "",
+      "munster": ""
+    },
+    {
+      "id": 45,
+      "lexeme": "eis",
+      "orthograph": "^eis-",
+      "orthograph-notes": "",
+      "co": "/ɛ∫/",
+      "ulster": "",
+      "connacht": "",
+      "munster": ""
+    },
+    {
+      "id": 46,
+      "lexeme": "suncáil, suntas, suntasach",
+      "orthograph": "^sunt-",
+      "orthograph-notes": "\"Ulster seems to go either way with this ..., but C is always the short \"\"u\"\" and Munster the long \"\"u\"\" ?\"",
+      "co": "",
+      "ulster": "/sʌnt/ or /sunt/",
+      "connacht": "/sʌnt/",
+      "munster": "/sunt/"
+    },
+    {
+      "id": 47,
+      "lexeme": "croith",
+      "orthograph": "-oith$",
+      "orthograph-notes": "∫ [fgb-audio]",
+      "co": "",
+      "ulster": "/äi/",
+      "connacht": "/ä/",
+      "munster": "/ɪ/"
+    },
+    {
+      "id": 48,
+      "lexeme": "buíoch",
+      "orthograph": "-uíoch$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/wi,ə/",
+      "connacht": "/wi,ʌx/",
+      "munster": "/we,ʌx/"
+    },
+    {
+      "id": 49,
+      "lexeme": "árachas",
+      "orthograph": "^ár-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/ɛr/",
+      "connacht": "/ɔr/",
+      "munster": "/ɔr/"
+    },
+    {
+      "id": 50,
+      "lexeme": "céadrogha",
+      "orthograph": "-rogha$",
+      "orthograph-notes": "roghnach has this same unexpected (?) ulster phenomenon",
+      "co": "",
+      "ulster": "/re/",
+      "connacht": "/raʊə/",
+      "munster": "/raʊə/"
+    },
+    {
+      "id": 51,
+      "lexeme": "tairg",
+      "orthograph": "-air^",
+      "orthograph-notes": "this vowel sound is consistent amongst the three, even when it doesn't end the word (eg. airgead)",
+      "co": "",
+      "ulster": "/ær/",
+      "connacht": "/ær/",
+      "munster": "/ær/"
+    },
+    {
+      "id": 52,
+      "lexeme": "coradh",
+      "orthograph": "-adh$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/u/",
+      "connacht": "/ʌ/",
+      "munster": "/ʌ/"
+    },
+    {
+      "id": 53,
+      "lexeme": "amhrán",
+      "orthograph": "^amh-",
+      "orthograph-notes": "\"/ɔr/ = American \"\"or\"\" in sound\"",
+      "co": "",
+      "ulster": "/ɔr/",
+      "connacht": "/ɔr/",
+      "munster": "/aʊr/"
+    },
+    {
+      "id": 54,
+      "lexeme": "criothleog",
+      "orthograph": "^croith-",
+      "orthograph-notes": "\"compare to lexeme \"\"croith\"\" , where Ulster pronounces vowel as /äi/\"",
+      "co": "",
+      "ulster": "/krä/",
+      "connacht": "/krɪ/",
+      "munster": "/krɪ/"
+    },
+    {
+      "id": 55,
+      "lexeme": "reachtaigh",
+      "orthograph": "-eacht-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/ɔxt/",
+      "connacht": "/æxt/",
+      "munster": "/äxt/"
+    },
+    {
+      "id": 56,
+      "lexeme": "eaglais",
+      "orthograph": "^eag-",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/ʌg/",
+      "connacht": "/ʌg/",
+      "munster": "/äg/"
+    },
+    {
+      "id": 57,
+      "lexeme": "crith",
+      "orthograph": "-rith^",
+      "orthograph-notes": "\"compare with \"\"croith\"\"\"",
+      "co": "",
+      "ulster": "/ri/",
+      "connacht": "/rɪ/",
+      "munster": "/rɪ/"
+    },
+    {
+      "id": 58,
+      "lexeme": "toiligh",
+      "orthograph": "-oil-",
+      "orthograph-notes": "\"as long as -oi- doesn't be next to one of the diphthongers (dh, gh, etc) I think it's a short \"\"i\"\" (as in \"\"bit\"\")\"",
+      "co": "",
+      "ulster": "/ɪl/",
+      "connacht": "/ɪl/",
+      "munster": "/ɪl/"
+    },
+    {
+      "id": 59,
+      "lexeme": "ligh",
+      "orthograph": "-igh$",
+      "orthograph-notes": "",
+      "co": "",
+      "ulster": "/i/",
+      "connacht": "/ɪ/",
+      "munster": "/ɪg/"
+    }
+  ],
+  "interferesIds": [
+    {
+      "id": 0,
+      "cluster": {
+        "abair": "say",
+        "abar": "morass"
+      }
+    },
+    {
+      "id": 1,
+      "cluster": {
+        "ae": "liver",
+        "aodh": "inflammation",
+        "aoi": "lodger",
+        "é": "he"
+      }
+    },
+    {
+      "id": 2,
+      "cluster": {
+        "arracht": "monster",
+        "earrach": "spring",
+        "eachtra": "adventure",
+        "eallach": "cattle"
+      }
+    },
+    {
+      "id": 3,
+      "cluster": {
+        "achar": "distance",
+        "achan": "everything",
+        "eochair": "key"
+      }
+    },
+    {
+      "id": 4,
+      "cluster": {
+        "acmhainn": "endurance",
+        "ach amháin": "except"
+      }
+    },
+    {
+      "id": 5,
+      "cluster": {
+        "adamhach": "atomic",
+        "admhaigh": "admit"
+      }
+    },
+    {
+      "id": 6,
+      "cluster": {
+        "álainn": "beautiful",
+        "ealaín": "arts"
+      }
+    },
+    {
+      "id": 7,
+      "cluster": {
+        "aird": "attention",
+        "ard": "height, high"
+      }
+    },
+    {
+      "id": 8,
+      "cluster": {
+        "aistritheoir": "translator",
+        "aisteoir": "actor"
+      }
+    },
+    {
+      "id": 9,
+      "cluster": {
+        "aitheantas": "recognition",
+        "aithris": "recite"
+      }
+    },
+    {
+      "id": 10,
+      "cluster": {
+        "airigh": "perceive",
+        "athraigh": "change",
+        "aistrigh": "move",
+        "áirigh": "count",
+        "aimsigh": "aim"
+      }
+    },
+    {
+      "id": 11,
+      "cluster": {
+        "aimsir": "weather, time",
+        "aistrigh": "move"
+      }
+    },
+    {
+      "id": 12,
+      "cluster": {
+        "análú": "respiration",
+        "annamh": "rare"
+      }
+    },
+    {
+      "id": 13,
+      "cluster": {
+        "at": "swell",
+        "ait": "pleasant",
+        "áit": "place"
+      }
+    },
+    {
+      "id": 14,
+      "cluster": {
+        "bac": "hinder",
+        "baic": "brim"
+      }
+    },
+    {
+      "id": 15,
+      "cluster": {
+        "bainistíocht": "thriftiness"
+      }
+    },
+    {
+      "id": 16,
+      "cluster": {
+        "caith": "wear",
+        "cath": "battle",
+        "cá": "where"
+      }
+    },
+    {
+      "id": 17,
+      "cluster": {
+        "ceard": "artisan",
+        "céard": "what"
+      }
+    },
+    {
+      "id": 18,
+      "cluster": {
+        "catach": "curly",
+        "cladach": "shore"
+      }
+    },
+    {
+      "id": 19,
+      "cluster": {
+        "ciall": "sanity",
+        "cill": "churchyard"
+      }
+    },
+    {
+      "id": 20,
+      "cluster": {
+        "cinn": "determine"
+      }
+    },
+    {
+      "id": 21,
+      "cluster": {
+        "cluain": "meadow",
+        "ciúin": "quiet",
+        "cluas": "ear",
+        "cluan": "harbor"
+      }
+    },
+    {
+      "id": 22,
+      "cluster": {
+        "coigil": "spare",
+        "cigil": "tickle"
+      }
+    },
+    {
+      "id": 23,
+      "cluster": {
+        "coinne": "tryst",
+        "cúinne": "corner",
+        "ceadaigh": "permit"
+      }
+    },
+    {
+      "id": 24,
+      "cluster": {
+        "cor": "turn",
+        "carr": "car",
+        "cuir": "put",
+        "coir": "tire"
+      }
+    },
+    {
+      "id": 25,
+      "cluster": {
+        "cróch": "crocus",
+        "crochta": "hang"
+      }
+    },
+    {
+      "id": 26,
+      "cluster": {
+        "dall": "blind",
+        "dála": "situation",
+        "dáil": "distribute"
+      }
+    },
+    {
+      "id": 27,
+      "cluster": {
+        "dísle": "die",
+        "dífe": "dismissed"
+      }
+    },
+    {
+      "id": 28,
+      "cluster": {
+        "fiáin": "wild",
+        "fionn": "blonde",
+        "fíon": "wine"
+      }
+    },
+    {
+      "id": 29,
+      "cluster": {
+        "geal": "whiten",
+        "geall": "promise"
+      }
+    },
+    {
+      "id": 30,
+      "cluster": {
+        "géar": "acidid",
+        "gearr": "cut"
+      }
+    },
+    {
+      "id": 31,
+      "cluster": {
+        "glé": "pellucid",
+        "gné": "form"
+      }
+    },
+    {
+      "id": 32,
+      "cluster": {
+        "ilchríoch": "continent",
+        "ilchodach": "composite"
+      }
+    },
+    {
+      "id": 33,
+      "cluster": {
+        "iomlán": "full, whole",
+        "iomaí": "many"
+      }
+    },
+    {
+      "id": 34,
+      "cluster": {
+        "ionad": "place",
+        "aonad": "unit; one(s)"
+      }
+    },
+    {
+      "id": 35,
+      "cluster": {
+        "loine": "piston",
+        "linne": "with-us-emphatic"
+      }
+    },
+    {
+      "id": 36,
+      "cluster": {
+        "luaigh": "mention",
+        "luigh": "(lie down) /li/ /lʌ/ /lɪg/",
+        "luach": "value",
+        "luath": "early"
+      }
+    },
+    {
+      "id": 37,
+      "cluster": {
+        "más": "if is",
+        "meas": "estimate"
+      }
+    },
+    {
+      "id": 38,
+      "cluster": {
+        "rialta": "regular",
+        "réalta": "star",
+        "rialaigh": "rule"
+      }
+    },
+    {
+      "id": 39,
+      "cluster": {
+        "rómhair": "dig",
+        "reoán": "icing"
+      }
+    },
+    {
+      "id": 40,
+      "cluster": {
+        "scair": "share",
+        "scar": "spread"
+      }
+    },
+    {
+      "id": 41,
+      "cluster": {
+        "solas": "light",
+        "sólás": "solace",
+        "socair": "quiet"
+      }
+    },
+    {
+      "id": 42,
+      "cluster": {
+        "súmhar": "juicy",
+        "suaith": "mix"
+      }
+    },
+    {
+      "id": 43,
+      "cluster": {
+        "stad": "stop",
+        "staid": "stadium"
+      }
+    },
+    {
+      "id": 44,
+      "cluster": {
+        "tairg": "offer",
+        "toil": "will",
+        "toiligh": "agree",
+        "toisc": "because",
+        "tost": "become silent",
+        "troisc": "fast",
+        "tuill": "earn, deserve",
+        "tuirling": "descend"
+      }
+    },
+    {
+      "id": 45,
+      "cluster": {
+        "tráchtas": "treatise",
+        "trácht": "travel",
+        "tráchtáil": "commerce"
+      }
+    },
+    {
+      "id": 46,
+      "cluster": {
+        "treá": "pierce",
+        "tráth": "time"
+      }
+    },
+    {
+      "id": 47,
+      "cluster": {
+        "tur": "dry",
+        "tóir": "chase",
+        "tor": "tall rock",
+        "tar": "come"
+      }
+    },
+    {
+      "id": 48,
+      "cluster": {
+        "úll": "apple",
+        "iúl": "knowledge"
+      }
+    },
+    {
+      "cluster": {
+        "comhalta": "fellow",
+        "comhlacht": "company",
+        "cúram": "care",
+        "cumann": "club"
+      },
+      "id": 49
+    },
+    {
+      "cluster": {
+        "láigh": "dawn"
+      },
+      "id": 50
+    },
+    {
+      "cluster": {
+        "foras": "base"
+      },
+      "id": 51
+    },
+    {
+      "cluster": {
+        "meamhlach": "miaowing"
+      },
+      "id": 52
+    },
+    {
+      "cluster": {
+        "coinníoll": "condition"
+      },
+      "id": 53
+    },
+    {
+      "cluster": {
+        "máistirchoirpeach": "master criminal"
+      },
+      "id": 54
+    },
+    {
+      "cluster": {
+        "faichill": "be careful of"
+      },
+      "id": 55
+    },
+    {
+      "cluster": {
+        "thall": "over"
+      },
+      "id": 56
+    },
+    {
+      "cluster": {
+        "suaimhneas": "tranquility"
+      },
+      "id": 57
+    },
+    {
+      "cluster": {
+        "láithreach": "immediate"
+      },
+      "id": 58
+    },
+    {
+      "cluster": {
+        "foras": ""
+      },
+      "id": 59
+    },
+    {
+      "cluster": {
+        "amhail": "like, as"
+      },
+      "id": 60
+    },
+    {
+      "cluster": {
+        "bráthair": "brother"
+      },
+      "id": 61
+    },
+    {
+      "cluster": {
+        "faisnéis": "relate"
+      },
+      "id": 62
+    },
+    {
+      "cluster": {
+        "thart": "around; done"
+      },
+      "id": 63
+    }
+  ],
+  "potafocal": [
+    "abair",
+    "admhaigh",
+    "aimsigh",
+    "ainmnigh",
+    "airigh",
+    "áirigh",
+    "aistrigh",
+    "aithnigh",
+    "áitigh",
+    "amharc",
+    "aontaigh",
+    "ardaigh",
+    "athraigh",
+    "bac",
+    "báigh",
+    "bailigh",
+    "bain",
+    "baist",
+    "básaigh",
+    "beannaigh",
+    "bearr",
+    "beartaigh",
+    "beathaigh",
+    "beir",
+    "blais",
+    "bog",
+    "braith",
+    "breac",
+    "breathnaigh",
+    "bris",
+    "bronn",
+    "brúigh",
+    "bruith",
+    "buaigh",
+    "bunaigh",
+    "cabhraigh",
+    "caill",
+    "cáin",
+    "caint",
+    "caith",
+    "can",
+    "caoin",
+    "cart",
+    "cas",
+    "ceadaigh",
+    "ceangail",
+    "ceannaigh",
+    "ceap",
+    "céas",
+    "ceil",
+    "ceistigh",
+    "ciallaigh",
+    "cinn",
+    "cíor",
+    "cleacht",
+    "clis",
+    "cloígh",
+    "clois",
+    "clúdaigh",
+    "codail",
+    "coinnigh",
+    "cóirigh",
+    "coisc",
+    "coisric",
+    "comhair",
+    "cónaigh",
+    "corraigh",
+    "cosain",
+    "cothaigh",
+    "creid",
+    "críochnaigh",
+    "croch",
+    "croith",
+    "crom",
+    "cruaigh",
+    "cruinnigh",
+    "cruthaigh",
+    "cuardaigh",
+    "cuidigh",
+    "cuimhnigh",
+    "cuimil",
+    "cuir",
+    "cum",
+    "damhsaigh",
+    "déan",
+    "dearbhaigh",
+    "dearc",
+    "dearg",
+    "déileáil",
+    "deir",
+    "díbir",
+    "díol",
+    "dírigh",
+    "diúltaigh",
+    "dóigh",
+    "doirt",
+    "druid",
+    "dúisigh",
+    "dún",
+    "éalaigh",
+    "éiligh",
+    "éirigh",
+    "éist",
+    "fág",
+    "faigh",
+    "fair",
+    "fáisc",
+    "fan",
+    "fás",
+    "feabhsaigh",
+    "féach",
+    "féad",
+    "feic",
+    "feil",
+    "fiafraigh",
+    "fill",
+    "fiuch",
+    "fógair",
+    "foghlaim",
+    "freagair",
+    "geall",
+    "gearr",
+    "géill",
+    "glac",
+    "glan",
+    "glaoigh",
+    "gnóthaigh",
+    "goid",
+    "goill",
+    "iarr",
+    "imigh",
+    "imir",
+    "inis",
+    "íoc",
+    "iompaigh",
+    "iompair",
+    "ith",
+    "labhair",
+    "las",
+    "leag",
+    "lean",
+    "léigh",
+    "lig",
+    "luigh",
+    "mair",
+    "maraigh",
+    "meas",
+    "mill",
+    "mínigh",
+    "mol",
+    "múin",
+    "nigh",
+    "ól",
+    "ordaigh",
+    "oscail",
+    "pioc",
+    "pós",
+    "réitigh",
+    "rith",
+    "saothraigh",
+    "scaoil",
+    "scríobh",
+    "seas",
+    "seol",
+    "síl",
+    "sín",
+    "siúl",
+    "snámh",
+    "socraigh",
+    "stop",
+    "suigh",
+    "tag",
+    "taispeáin",
+    "taitnigh",
+    "tarlaigh",
+    "tarraing",
+    "teastaigh",
+    "téigh",
+    "tit",
+    "tóg",
+    "tóraigh",
+    "tosaigh",
+    "triail",
+    "troid",
+    "tug",
+    "tuig",
+    "úsáid"
+  ],
+  "dicts": [
+    {
+      "id": 1,
+      "headword": "ar fud",
+      "freq": "3100+",
+      "listings": [
+        {
+          "title": "ar fud",
+          "partOfSpeech": ["⎄ [location]", "prep"],
+          "grammar": ["[⇉Ɣ noun]"],
+          "etym": ["fud (in phrase) ar fud"],
+          "senses": {
+            "enumerated": [
+              {
+                "gloss": "throughout, among, all over",
+                "examples": [
+                  {
+                    "gaelic": "ar fud na tíre",
+                    "béarla": "all over the country"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headword": "beathach",
+      "freq": "4300+",
+      "listings": [
+        {
+          "title": "beathach",
+          "partOfSpeech": ["a"],
+          "fgbCategory": "1",
+          "senses": {
+            "general": "(In phrase)",
+            "examples": [
+              {
+                "gaelic": "Beo beathach",
+                "béarla": "alive and active",
+                "completeness": "phrase"
+              },
+              {
+                "gaelic": "D'íosfaidís beo beathach thú",
+                "béarla": "they would eat you alive",
+                "completeness": "sentence"
+              }
+            ],
+            "enumerated": []
+          }
+        },
+        {
+          "title": "beathach",
+          "equates": "beithíoch"
+        },
+        {
+          "title": "beathach",
+          "equates": "beitheach"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headword": "bochtanas",
+      "freq": "4700+",
+      "listings": [
+        {
+          "title": "bochtanas",
+          "partOfSpeech": ["m"],
+          "fgbCategory": "1",
+          "equates": "bochtaineacht"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "headword": "caid",
+      "freq": "0500+",
+      "listings": [
+        {
+          "title": "caid",
+          "partOfSpeech": ["f"],
+          "fgbCategory": "2",
+          "fgbPuralStrength": "strong",
+          "senses": {
+            "enumerated": [
+              {
+                "gloss": "Ashlar, stone."
+              },
+              {
+                "gloss": "Testicle."
+              }
+            ]
+          },
+          "forms": [
+            {
+              "caid": "cs"
+            },
+            {
+              "caide": "cp"
+            },
+            {
+              "caideanna": "gs"
+            },
+            {
+              "caideanna": "gp"
+            }
+          ]
+        },
+        {
+          "title": "caid",
+          "partOfSpeech": ["f"],
+          "fgbCategory": "2",
+          "fgbPuralStrength": "strong",
+          "senses": {
+            "enumerated": [
+              {
+                "gloss": "Stuffed ball; football.",
+                "examples": [
+                  {
+                    "gaelic": "Comh teann le caid",
+                    "béarla": "as tight as a football",
+                    "completeness": "phrase"
+                  }
+                ]
+              },
+              {
+                "gloss": "(Game of) football.",
+                "examples": [
+                  {
+                    "gaelic": "Ag bualadh, ag imirt, caide",
+                    "béarla": "playing football",
+                    "completeness": "phrase"
+                  },
+                  {
+                    "gaelic": "Rug siad an chaid leo",
+                    "béarla": "they won the (football) game",
+                    "completeness": "phrase"
+                  },
+                  {
+                    "gaelic": "Ná ligigí an chaid leo",
+                    "béarla": "don’t let them away with the game",
+                    "completeness": "sentence"
+                  }
+                ]
+              }
+            ]
+          },
+          "forms": [
+            {
+              "caid": "cs"
+            },
+            {
+              "caide": "cp"
+            },
+            {
+              "caideanna": "gs"
+            },
+            {
+              "caideanna": "gp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headword": "ceil ar",
+      "listings": [
+        {
+          "title": "ceil ar",
+          "partOfSpeech": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headword": "cuimhne",
+      "freq": "0500+",
+      "listings": [
+        {
+          "title": "cuimne",
+          "partOfSpeech": ["f"],
+          "fgbCategory": "4",
+          "fgbPuralStrength": "strong",
+          "senses": {
+            "general": "memory",
+            "examples": [],
+            "enumerated": []
+          },
+          "forms": [
+            {
+              "cuimne": "cs"
+            },
+            {
+              "cuimne": "cp"
+            },
+            {
+              "cuimní": "gs"
+            },
+            {
+              "cuimní": "gp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headword": "dualgas",
+      "freq": "0600+",
+      "listings": [
+        {
+          "title": "dualgas",
+          "partOfSpeech": ["m"],
+          "fgbCategory": "1",
+          "fgbPuralStrength": "weak",
+          "senses": {
+            "enumerated": [
+              {
+                "gloss": "duty; natural right, due, customary fee or reward",
+                "examples": []
+              }
+            ]
+          },
+          "forms": [
+            {
+              "dualgas": "cs"
+            },
+            {
+              "dualgais": "cp"
+            },
+            {
+              "dualgais": "gs"
+            },
+            {
+              "dualgas": "gp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "headword": "dá liacht",
+      "listings": [
+        {
+          "title": "dá liacht",
+          "partOfSpeech": [],
+          "senses": {
+            "general": "however many",
+            "examples": [
+              {
+                "gaelic": "dá liacht uair a déarfá é",
+                "béarla": "no matter how many times you said it"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headword": "eispéireas",
+      "listings": [
+        {
+          "title": "eispéireas",
+          "variants": ["eispéiris"],
+          "declensionCategory": {
+            "gender": "m",
+            "fgb": "1"
+          },
+          "senses": {
+            "general": "Experience",
+            "predicates": ["Philosophy"],
+            "examples": [
+              {
+                "gaelic": "bhí drocheispéireas aige leis na póilíní",
+                "béarla": "he had a bad experience with the police",
+                "source": "focloir.ie"
+              }
+            ],
+            "forms": [
+              {
+                "eispéireas": "cs",
+                "eispéiris": "gs"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headword": "lig thar",
+      "freq": null,
+      "listings": [
+        {
+          "title": "lig thar",
+          "partOfSpeech": ["vt"],
+          "senses": {
+            "general": "Let pass.",
+            "examples": [
+              {
+                "gaelic": "Duine a ligean tharat",
+                "béarla": "to let s.o. pass",
+                "style": "bold"
+              },
+              {
+                "gaelic": "Rud a ligean tharat",
+                "béarla": "to let sth. pass, to take no notice of sth",
+                "style": "bold"
+              },
+              {
+                "gaelic": "Ná lig aon lá tharat (gan)",
+                "béarla": "don’t miss a day (without)",
+                "style": "italic"
+              },
+              {
+                "gaelic": "lig thar do chluasa é",
+                "béarla": "don’t pretend to hear it",
+                "style": "bold"
+              },
+              {
+                "gaelic": "Ní ligeann an bás aon duine thairis",
+                "béarla": "death passes no one by",
+                "style": "italic"
+              },
+              {
+                "gaelic": "an fhaill a ligean thart",
+                "béarla": "to let an opportunity pass (to miss the boat)"
+              }
+            ],
+            "enumerated": []
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headword": "luach",
+      "freq": "0500+",
+      "listings": [
+        {
+          "title": "luach",
+          "partOfSpeech": ["m"],
+          "fgbCategory": 3,
+          "grammar": "an luach/na luachanna, nm3 strong plural, an luacha/na luachanna",
+          "senses": {
+            "general": "",
+            "enumerated": [
+              {
+                "gloss": "value",
+                "examples": [
+                  {
+                    "gaelic": "X a fháil ar a luach",
+                    "béarla": "to get X at its proper value",
+                    "_meta": ["¬faigh"]
+                  },
+                  {
+                    "gaelic": "luach a chur [ar-X]",
+                    "béarla": "to value X",
+                    "_meta": ["¬cuir", "±", "[ar-X]"]
+                  }
+                ]
+              },
+              {
+                "gloss": "price",
+                "examples": [
+                  {
+                    "gaelic": "ní fiú a luach é",
+                    "béarla": "it is not worth the money",
+                    "expex": "COP.NEG worth {} price it"
+                  }
+                ]
+              },
+              {
+                "gloss": "reward, recompense; requital",
+                "examples": [
+                  {
+                    "gaelic": "luach saothair",
+                    "béarla": "reward (for effort)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "headword": "luaithe",
+      "freq": null,
+      "listings": [
+        {
+          "title": "luaithe",
+          "partOfSpeech": [],
+          "senses": {
+            "general": "",
+            "examples": [],
+            "enumerated": [
+              {
+                "partOfSpeech": ["f"],
+                "gloss": "Quickness, swiftness; earliness.",
+                "examples": [
+                  {
+                    "gaelic": "ar a luaithe",
+                    "béarla": "at the earliest; first thing",
+                    "style": "bold"
+                  },
+                  {
+                    "gaelic": "Cá luaithe a thiocfaidh sé?",
+                    "béaerla": "How soon will he come?",
+                    "style": "italic"
+                  }
+                ]
+              },
+              {
+                "partOfSpeech": ["gsf. & comp. of LUATH1."]
+              }
+            ]
+          },
+          "forms": [
+            {
+              "luaithe": "cs"
+            },
+            {
+              "luaithe": "cp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headword": "luaithrigh",
+      "freq": null,
+      "listings": [
+        {
+          "title": "luaithrigh",
+          "partOfSpeech": ["vt"],
+          "senses": {
+            "enumerated": [
+              {
+                "gloss": "Sprinkle with ashes.",
+                "examples": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headword": "seamsán",
+      "freq": null,
+      "notSureWhichSense": " síomsán, síomsánacht = SEAMSÁN [2], -acht.",
+      "listings": [
+        {
+          "title": "seamsán",
+          "partOfSpeech": ["m"],
+          "senses": {
+            "general": "",
+            "enumerated": [
+              {
+                "gloss": "Rivet, bolt, peg",
+                "grammar": "(gs. & npl. -áin, gpl. seamsán)",
+                "examples": [],
+                "variants": [
+                  {
+                    "title": "seamsa",
+                    "partOfSpeech": ["m"]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "seamsán",
+          "partOfSpeech": ["m"],
+          "grammar": "(gs. -áin)",
+          "senses": {
+            "enumerated": [
+              {
+                "gloss": "Drone, hum, monotonous speech or song.",
+                "examples": [
+                  {
+                    "gaelic": "seamsán na bpíob",
+                    "béarla": "the drone of the bagpipes"
+                  },
+                  {
+                    "gaelic": "seamsán a dhéanamh de rud",
+                    "béarla": "to make a song of sth"
+                  },
+                  {
+                    "gaelic": "Tá an seamsán céanna i gcónaí aige",
+                    "béarla": "he never changes his tune."
+                  }
+                ],
+                "variants": []
+              },
+              {
+                "gloss": "Mutter, murmur, complaint.",
+                "examples": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headword": "théid",
+      "freq": "4800+",
+      "listings": [
+        {
+          "title": "théid",
+          "partOfSpeech": ["v"],
+          "senses": {
+            "general": "alternative present tense of téigh = 'to go' found in Ulster",
+            "examples": [
+              {
+                "gaelic": "má théid tú síos ansin go dtí an sruthán",
+                "béarla": "if you go down there to the stream"
+              },
+              {
+                "gaelic": "sin mar a théid sé",
+                "béarla": "that's how it goes"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "headword": "tráchtáil",
+      "listings": [
+        {
+          "title": "tráchtáil",
+          "partOfSpeech": "f",
+          "fgbDeclension": "3",
+          "declensionCategory": {
+            "gender": "f",
+            "fgb": "3",
+            "carnieSg": null,
+            "carniePl": null
+          },
+          "senses": {
+            "general": "(act of) trading; trade, commerce",
+            "forms": [
+              {
+                "tráchtáil": "cs"
+              },
+              {
+                "tráchtála": "gs"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

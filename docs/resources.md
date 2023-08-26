@@ -1,0 +1,5 @@
+- https://fonaicnagaeilge.com
+- The Séideán Sí series is an integrated programme for teaching Irish, with DVD and on line support, which was developed for Gaeltacht and all-Irish schools.
+- http://www.stmarys- belfast.ac.uk/aisaonad/Fonaic/Fonaic_na_Gaeilge.html
+- Muintearas also offer a series of workbooks. http://www.muintearas.com/leabhar.htm
+- Many other support materials, including pictures, posters, and games to accompany the phonics programme, as well as a second phonics programme that builds on Fónaic na Gaeilge are available under the Gaeloideachas link at http://www.nicurriculum.org .uk/.
