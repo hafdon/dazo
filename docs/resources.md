@@ -7,3 +7,12 @@
 - https://www.stmarys-belfast.ac.uk/academic/aisaonad/default.asp
 -  An tÁisaonad offers a range of materials free http://www.stmarys-belfast.ac.uk/aisaonad/ Túsfhuaimeanna is a set of downloadable booklets to teach sounds.
 - https://www.leighleat.com/#failte
+NSII, Stenson-II, Stenson 2008	Stenson, Nancy. Intermediate Irish. 2008 (Routledge)
+NSBI	Stenson, Nancy. Basic Irish
+NSMI	Stenson, Nancy. Modern Irish.
+fgb	https://www.teanglann.ie/en/fgb
+haz	Hata Zu Mamo
+MOSMI	Ó'Siadhail, Michael. Modern Irish - Grammatical … 
+NMIGB	MacCongail, Nollaig. Irish Grammar Book.
+nl	nualeargais
+uis	Stanson, Nancy and Hickey, Tina. Understanding Irish Spelling.
