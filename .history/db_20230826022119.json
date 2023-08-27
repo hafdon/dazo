@@ -5328,6 +5328,7 @@
       "pos": null
     }
   ],
+
   "dupes": [
     {
       "id": 0,
@@ -12624,9 +12625,7 @@
         "ae": "liver",
         "aodh": "inflammation",
         "aoi": "lodger",
-        "é": "he",
-        "í": "she",
-        "aois": "age"
+        "é": "he"
       }
     },
     {
@@ -12875,8 +12874,7 @@
       "id": 34,
       "cluster": {
         "ionad": "place",
-        "aonad": "unit; one(s)",
-        "iomad": "too many"
+        "aonad": "unit; one(s)"
       }
     },
     {
@@ -12998,8 +12996,7 @@
         "cumann": "club",
         "cuideachta": "fun",
         "cuthach": "fury",
-        "cumhacht": "power",
-        "comhaill": "fulfil"
+        "cumhacht": "power"
       },
       "id": 49
     },
@@ -13023,15 +13020,13 @@
     },
     {
       "cluster": {
-        "coinníoll": "condition",
-        "coinnigh": "coinnigh"
+        "coinníoll": "condition"
       },
       "id": 53
     },
     {
       "cluster": {
-        "máistirchoirpeach": "master criminal",
-        "mall": "slow, late"
+        "máistirchoirpeach": "master criminal"
       },
       "id": 54
     },
@@ -13155,49 +13150,6 @@
         "péac": "sprout"
       },
       "id": 73
-    },
-    {
-      "cluster": {
-        "sinsearach": "senior",
-        "sinsear": "senior"
-      },
-      "id": 74
-    },
-    {
-      "cluster": {
-        "ré": "era"
-      },
-      "id": 75
-    },
-    {
-      "cluster": {
-        "leas": ""
-      },
-      "id": 76
-    },
-    {
-      "cluster": {
-        "seisear": "six people"
-      },
-      "id": 77
-    },
-    {
-      "cluster": {
-        "folamh": "empty"
-      },
-      "id": 78
-    },
-    {
-      "cluster": {
-        "treoir": "guidance"
-      },
-      "id": 79
-    },
-    {
-      "cluster": {
-        "riachtanas": "necessity"
-      },
-      "id": 80
     }
   ],
   "potafocal": [
@@ -13397,16 +13349,9 @@
       "listings": [
         {
           "title": "ar fud",
-          "partOfSpeech": [
-            "⎄ [location]",
-            "prep"
-          ],
-          "grammar": [
-            "[⇉Ɣ noun]"
-          ],
-          "etym": [
-            "fud (in phrase) ar fud"
-          ],
+          "partOfSpeech": ["⎄ [location]", "prep"],
+          "grammar": ["[⇉Ɣ noun]"],
+          "etym": ["fud (in phrase) ar fud"],
           "senses": {
             "enumerated": [
               {
@@ -13430,9 +13375,7 @@
       "listings": [
         {
           "title": "beathach",
-          "partOfSpeech": [
-            "a"
-          ],
+          "partOfSpeech": ["a"],
           "fgbCategory": "1",
           "senses": {
             "general": "(In phrase)",
@@ -13468,9 +13411,7 @@
       "listings": [
         {
           "title": "bochtanas",
-          "partOfSpeech": [
-            "m"
-          ],
+          "partOfSpeech": ["m"],
           "fgbCategory": "1",
           "equates": "bochtaineacht"
         }
@@ -13483,9 +13424,7 @@
       "listings": [
         {
           "title": "caid",
-          "partOfSpeech": [
-            "f"
-          ],
+          "partOfSpeech": ["f"],
           "fgbCategory": "2",
           "fgbPuralStrength": "strong",
           "senses": {
@@ -13515,9 +13454,7 @@
         },
         {
           "title": "caid",
-          "partOfSpeech": [
-            "f"
-          ],
+          "partOfSpeech": ["f"],
           "fgbCategory": "2",
           "fgbPuralStrength": "strong",
           "senses": {
@@ -13588,9 +13525,7 @@
       "listings": [
         {
           "title": "cuimne",
-          "partOfSpeech": [
-            "f"
-          ],
+          "partOfSpeech": ["f"],
           "fgbCategory": "4",
           "fgbPuralStrength": "strong",
           "senses": {
@@ -13622,9 +13557,7 @@
       "listings": [
         {
           "title": "dualgas",
-          "partOfSpeech": [
-            "m"
-          ],
+          "partOfSpeech": ["m"],
           "fgbCategory": "1",
           "fgbPuralStrength": "weak",
           "senses": {
@@ -13677,18 +13610,14 @@
       "listings": [
         {
           "title": "eispéireas",
-          "variants": [
-            "eispéiris"
-          ],
+          "variants": ["eispéiris"],
           "declensionCategory": {
             "gender": "m",
             "fgb": "1"
           },
           "senses": {
             "general": "Experience",
-            "predicates": [
-              "Philosophy"
-            ],
+            "predicates": ["Philosophy"],
             "examples": [
               {
                 "gaelic": "bhí drocheispéireas aige leis na póilíní",
@@ -13713,9 +13642,7 @@
       "listings": [
         {
           "title": "lig thar",
-          "partOfSpeech": [
-            "vt"
-          ],
+          "partOfSpeech": ["vt"],
           "senses": {
             "general": "Let pass.",
             "examples": [
@@ -13761,9 +13688,7 @@
       "listings": [
         {
           "title": "luach",
-          "partOfSpeech": [
-            "m"
-          ],
+          "partOfSpeech": ["m"],
           "fgbCategory": 3,
           "grammar": "an luach/na luachanna, nm3 strong plural, an luacha/na luachanna",
           "senses": {
@@ -13775,18 +13700,12 @@
                   {
                     "gaelic": "X a fháil ar a luach",
                     "béarla": "to get X at its proper value",
-                    "_meta": [
-                      "¬faigh"
-                    ]
+                    "_meta": ["¬faigh"]
                   },
                   {
                     "gaelic": "luach a chur [ar-X]",
                     "béarla": "to value X",
-                    "_meta": [
-                      "¬cuir",
-                      "±",
-                      "[ar-X]"
-                    ]
+                    "_meta": ["¬cuir", "±", "[ar-X]"]
                   }
                 ]
               },
@@ -13827,9 +13746,7 @@
             "examples": [],
             "enumerated": [
               {
-                "partOfSpeech": [
-                  "f"
-                ],
+                "partOfSpeech": ["f"],
                 "gloss": "Quickness, swiftness; earliness.",
                 "examples": [
                   {
@@ -13845,9 +13762,7 @@
                 ]
               },
               {
-                "partOfSpeech": [
-                  "gsf. & comp. of LUATH1."
-                ]
+                "partOfSpeech": ["gsf. & comp. of LUATH1."]
               }
             ]
           },
@@ -13869,9 +13784,7 @@
       "listings": [
         {
           "title": "luaithrigh",
-          "partOfSpeech": [
-            "vt"
-          ],
+          "partOfSpeech": ["vt"],
           "senses": {
             "enumerated": [
               {
@@ -13891,9 +13804,7 @@
       "listings": [
         {
           "title": "seamsán",
-          "partOfSpeech": [
-            "m"
-          ],
+          "partOfSpeech": ["m"],
           "senses": {
             "general": "",
             "enumerated": [
@@ -13904,9 +13815,7 @@
                 "variants": [
                   {
                     "title": "seamsa",
-                    "partOfSpeech": [
-                      "m"
-                    ]
+                    "partOfSpeech": ["m"]
                   }
                 ]
               }
@@ -13915,9 +13824,7 @@
         },
         {
           "title": "seamsán",
-          "partOfSpeech": [
-            "m"
-          ],
+          "partOfSpeech": ["m"],
           "grammar": "(gs. -áin)",
           "senses": {
             "enumerated": [
@@ -13955,9 +13862,7 @@
       "listings": [
         {
           "title": "théid",
-          "partOfSpeech": [
-            "v"
-          ],
+          "partOfSpeech": ["v"],
           "senses": {
             "general": "alternative present tense of téigh = 'to go' found in Ulster",
             "examples": [

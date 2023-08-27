@@ -3,3 +3,7 @@
 - http://www.stmarys- belfast.ac.uk/aisaonad/Fonaic/Fonaic_na_Gaeilge.html
 - Muintearas also offer a series of workbooks. http://www.muintearas.com/leabhar.htm
 - Many other support materials, including pictures, posters, and games to accompany the phonics programme, as well as a second phonics programme that builds on Fónaic na Gaeilge are available under the Gaeloideachas link at http://www.nicurriculum.org .uk/.
+- https://www.youtube.com/watch?v=mBoX_JCKZTE
+- https://www.stmarys-belfast.ac.uk/academic/aisaonad/default.asp
+-  An tÁisaonad offers a range of materials free http://www.stmarys-belfast.ac.uk/aisaonad/ Túsfhuaimeanna is a set of downloadable booklets to teach sounds.
+- https://www.leighleat.com/#failte
