@@ -13198,6 +13198,35 @@
         "riachtanas": "necessity"
       },
       "id": 80
+    },
+    {
+      "cluster": {
+        "anam": "soul"
+      },
+      "id": 81
+    },
+    {
+      "cluster": {
+        "úr": "fresh"
+      },
+      "id": 82
+    },
+    {
+      "cluster": {
+        "mearaigh": "derange",
+        "maraigh": "kill",
+        "marcaigh": "ride",
+        "machnaigh": "think",
+        "meabhrú": "reminder"
+      },
+      "id": 83
+    },
+    {
+      "cluster": {
+        "samhail": "semblance",
+        "samhlaigh": "imagine"
+      },
+      "id": 84
     }
   ],
   "potafocal": [
