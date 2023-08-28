@@ -1,5 +1,46 @@
 # resources
 
+- [resources](#resources)
+  - [???](#)
+    - [dictionaries and grammar](#dictionaries-and-grammar)
+    - [??](#-1)
+    - [New Corpus for Ireland](#new-corpus-for-ireland)
+    - [CELT: Corpus of Electronic Texts](#celt-corpus-of-electronic-texts)
+    - [Tobar na Gaedhilge](#tobar-na-gaedhilge)
+    - [National Corpus of Ireland](#national-corpus-of-ireland)
+    - [Foras na Gaeilge](#foras-na-gaeilge)
+      - [An Gúm ("The Scheme"?) angum.ie (Foras na Gaeilge subsidiary?)](#an-gúm-the-scheme-angumie-foras-na-gaeilge-subsidiary)
+      - [Foras na Gaeilge soundcloud](#foras-na-gaeilge-soundcloud)
+      - [Foclóir Póca Irish Dictionary Pronunciation Guide](#foclóir-póca-irish-dictionary-pronunciation-guide)
+      - [The great lexicographical work done by Seán Óg Ó Caomhánháin, Seán a'Cóta, in the thirties and forties of the last century, a work he entitled Croidhe Cainnte Ciarraighe](#the-great-lexicographical-work-done-by-seán-óg-ó-caomhánháin-seán-acóta-in-the-thirties-and-forties-of-the-last-century-a-work-he-entitled-croidhe-cainnte-ciarraighe)
+    - [Gaschaint](#gaschaint)
+    - [The Dúchas Project](#the-dúchas-project)
+    - [COGG](#cogg)
+    - [tuairisc.ie](#tuairiscie)
+    - [Trinity College Dublin (TCD)](#trinity-college-dublin-tcd)
+      - [School of Computer Science and Statistics (SCSS)](#school-of-computer-science-and-statistics-scss)
+      - [School of Linguistic, Speech and Communication Sciences (SLSCS)](#school-of-linguistic-speech-and-communication-sciences-slscs)
+      - [abair.ie - TCD's Phonetics and Speech Laboratory website](#abairie---tcds-phonetics-and-speech-laboratory-website)
+    - [games](#games)
+    - [fiction](#fiction)
+      - [O'Brien, Flann](#obrien-flann)
+      - [Ó Raghallaigh, Colmán](#ó-raghallaigh-colmán)
+    - [radio](#radio)
+      - [Irish Radio Live](#irish-radio-live)
+      - [RTE](#rte)
+      - [Raidió na Life](#raidió-na-life)
+    - [Leabhair Ghaeilge ó Chló Mhaigh Eo](#leabhair-ghaeilge-ó-chló-mhaigh-eo)
+    - [Literature Ireland](#literature-ireland)
+    - [Leighleat](#leighleat)
+    - [Séideán Sí](#séideán-sí)
+      - [about ??](#about-)
+  - [fonts](#fonts)
+  - [computer assisted language learning (CALL)](#computer-assisted-language-learning-call)
+    - [freemium apps; online programs](#freemium-apps-online-programs)
+  - [abbreviations](#abbreviations)
+  - [broke-ass links to resources](#broke-ass-links-to-resources)
+  - [un](#un)
+
 ## ???
 
 - <https://fonaicnagaeilge.com>
@@ -11,6 +52,9 @@
 - <https://www.stmarys-belfast.ac.uk/academic/aisaonad/default.asp>
 - An tÁisaonad offers a range of materials free <http://www.stmarys-belfast.ac.uk/aisaonad/> Túsfhuaimeanna is a set of downloadable booklets to teach sounds.
 - <https://www.leighleat.com/#failte>
+- list of resources: <https://libguides.tcd.ie/c.php?g=668577&p=4743906>
+- soundcloud audiobooks (closleabhar)
+  - <https://soundcloud.com/search?q=closleabhar>
 
 ### dictionaries and grammar
 
@@ -54,6 +98,29 @@
 - Gaeilge.ie: "The network for our language" (?)
   - <https://www.gaeilge.ie/>
 
+### New Corpus for Ireland
+
+- user's guide
+  - <https://www.sketchengine.eu/the-new-corpus-for-ireland/>
+- "The New Corpus for Ireland is a large collection of texts in Irish with approximately 30 million words. It contains a wide range of texts including works of fiction, factual texts, news reports, official documents and much more. The corpus is designed to be used for linguistic research"
+- "Introducing the National Corpus of Ireland Project"
+  - <https://aclanthology.org/2022.cltw-1.14.pdf>
+
+### CELT: Corpus of Electronic Texts
+
+- <https://celt.ucc.ie/>
+- "The Free Digital Humanities Resource for Irish history, literature and politics."
+- "ELT is a searchable online corpus of multilingual texts of Irish literature and history with over 19 million words available, and growing." (Last website copyright is 2021)
+- original texts and (some) translations (some translations are modern)
+  - originals: <https://celt.ucc.ie/irlpage.html>
+  - translations: <https://celt.ucc.ie/transpage.html>
+
+### Tobar na Gaedhilge
+
+- <https://www3.smo.uhi.ac.uk/oduibhin/tobar/>
+- (You need to download an old-ass Windows program to search the database, which is ostensibly to prevent users from extracting copyrighted texts)
+- "a searchable textbase of high-quality 20th-century Gaelic texts (mostly Irish, with some Scottish)"
+
 ### National Corpus of Ireland
 
 - <https://www.corpas.ie/en/>
@@ -62,12 +129,61 @@
 - (this corpus is linked to from other sites listed here, but they use antiquated links)
 - [ ] How does one actually use it?
 
+### Foras na Gaeilge
+
+- Scríobh Leabhar program: books written by students
+  - <https://www.forasnagaeilge.ie/scriobhleabhar/the-books/?lang=en>
+
+#### An Gúm ("The Scheme"?) angum.ie (Foras na Gaeilge subsidiary?)
+
+- "provides publications and resources which support education through Irish and the use of Irish in general."
+
+1. [An Gúm House Style Guide (in Irish)](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/8170781c7c681564e2d94e29da3681ce.pdf)
+2. [Translator Guidelines (in Irish)](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/Treoracha-dAistritheoiri.pdf)
+3. [Christian Brothers' Irish Language Grammar (in Irish)](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/GGBC_19990-2.pdf)
+
+#### Foras na Gaeilge soundcloud
+
+- <https://soundcloud.com/forasnagaeilge>
+  - Soundcloud playlist of children's books read aloud
+    - <https://soundcloud.com/forasnagaeilge/sets/an-gum-1>
+  - Ceacht (lessons) of some kind?
+    - <https://soundcloud.com/forasnagaeilge/ceacht-193>
+
+#### Foclóir Póca Irish Dictionary Pronunciation Guide
+
+- <https://www.forasnagaeilge.ie/angum/pronunciation-guide/?lang=en>
+  - All these on soundcloud: <https://soundcloud.com/forasnagaeilge/sets/focloir-poca-treoir-foghraiochta>
+
+1. [Pronunciation Guide Booklet](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/Pronunciation-Guide-Booklet.pdf)
+2. [Introduction](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/28487346609b1292d6164c18ac68e019-1.mp3)
+3. [Vowels](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/fed346f002e98d7857bdb8e7c0b51540.mp3)
+4. [Consonants](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/247319804a5891ef4d4d6b6317739d43.mp3)
+5. [Séimhiú and Urú](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/69f5672ab6fdfb284e544c01c95539a7.mp3)
+6. [Stress](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/daaa38e2f2923ace57395c5a6ef823a4.mp3)
+
+#### The great lexicographical work done by Seán Óg Ó Caomhánháin, Seán a'Cóta, in the thirties and forties of the last century, a work he entitled Croidhe Cainnte Ciarraighe
+
+- <https://www.forasnagaeilge.ie/angum/croidhe-cainnte-ciarraighe/?lang=en>
+- [Téacs an tSaothair](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/8fddae92ae307b022d964ebe73d45df6.pdf)
+  - 4,000 page dictionary, in Irish. Public Domain pdf.
+- [Nóta Mínithe](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/a28dc8b7c74010adaa77704a0351ea33-1.docx)
+
+### Gaschaint
+
+- <https://www.gaschaint.ie/>
+- "A website of 2000 phrases, together with recordings, for parents who wish their children to grow up able to speak Irish. The three main Irish dialects are represented on the website, which is colour-coded for ease of use. All recordings are by native Irish speakers."
+- Completely free. You can buy the book (?) to support them.
+
 ### The Dúchas Project
 
 - dúchas.ie
 - digitization of the National Folklore Collection (NFC)
   - audio collection: <https://www.duchas.ie/en/cbef/recordings>
     - (no transcriptions)
+- Bailiúchán na Scol (The Schools Collection)
+  - "This is a collection of folklore compiled by schoolchildren in Ireland in the 1930s."
+  - Irish-language texts: <https://www.duchas.ie/en/cbes/stories?Page=1&LanguageID=ga&PerPage=20>
 
 ### COGG
 
@@ -80,6 +196,8 @@
 ### Trinity College Dublin (TCD)
 
 - <https://www.tcd.ie/slscs/clcs/psl/>
+- Irish & Celtic studies resources page:
+  - <https://libguides.tcd.ie/c.php?g=668577&p=4743906>
 
 #### School of Computer Science and Statistics (SCSS)
 
@@ -130,6 +248,9 @@
 
 - Fochlach (Irish-language Wordle)
   - <https://www.foclach.com/>
+- Wordbricks Online (Irish)
+  - (Windows) <https://apkcombo.com/wordbricks-online-irish/mprain.wordbricks/>
+  - (This was the subject of a few academic articles)
 
 ### fiction
 
@@ -214,6 +335,31 @@
 
 ---
 
+## fonts
+
+- (TrueType | Freeware) [*Warning: may be corrupted*]
+- <https://fonts2u.com/clo-gaelach-twomey.font>
+- Kells Sd
+  - <https://www.dafont.com/kells-sd.font>
+
+## computer assisted language learning (CALL)
+
+also
+
+- digital educational games (DEG)
+- digital game-based language learning (DGBLL)
+- game-based language learning (GBLL)
+
+### freemium apps; online programs
+
+- duolingo
+- buso
+- memrise
+- rosetta stone (library access)
+- WordBricks (see above?)
+
+---
+
 ## abbreviations
 
 - (NSII) Stenson, Nancy. Intermediate Irish. 2008 (Routledge)
@@ -232,3 +378,17 @@
   - Ostensibly containing "videos, computer games, flashcards and other teaching and learning resources", it appears to be a blog with 5 entries last updated in 2020.
 - An tÁisaonad. Túsfhuaimeanna– downloadable booklets to teach sounds in Irish. Range of materials available for download. <http://www.stmarys-belfast.ac.uk/aisaonad/>
 - BELB (Belfast Education and Library Board)/An tÁisaonad. (2011). Fónaic na Gaeilge, Eolas Fóineolaíoch Comprehensive Phonics materials for teachers and pupils, can be downloaded free/Ar fáil ar líne ag: <http://www.stmarys-> belfast.ac.uk/aisaonad/Fonaic/Fonaic_na_Gaeilge.html
+- <http://www.arts.ulst.ac.uk/lanlit/irish/research/projects/edil.html>
+
+---
+
+## un
+
+Finite State Morphological Analyser
+Uí Dhonnchadha (2002)
+A great, accurate, high quality resource
+Parser and Treebank
+Lynn (2016)
+A great, accurate, high quality resource
+No need to reinvent the wheel
+![Alt text](image.png)
