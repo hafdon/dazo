@@ -10,28 +10,29 @@
 
 <https://en.wikibooks.org/wiki/Irish>
 
-### Nualéargais
+### Nualéargais (abbrevs: NL, NLG)
 
-- (NL), (NLG) nualéargais
-  - <http://www.nualeargais.ie/> (Copyright 2008)
-  - (Probably the most inexhaustible resource I've found so far.)
-  - Java (!!) Irish-language flashcard learning program?
-  - Grammar: <http://nualeargais.ie/gnag/gram.htm>
-    - An extremely thorough German book on Irish grammar, many parts of which have been translated into English. Only the translated sections are on the website.
+- <http://www.nualeargais.ie/> (Copyright 2008)
+- Grammar: <http://nualeargais.ie/gnag/gram.htm>
+  - An extremely thorough German book on Irish grammar, many parts of which have been translated into English. Only the translated sections are on the website.
+- Java (!!) Irish-language flashcard learning program?
 
-### Foclóir Geailge-Béarla (Irish-English Lexicon)
+### Foclóir Geailge-Béarla (Irish-English Lexicon) (abbrevs: FGB)
 
-- (FGB) <https://www.teanglann.ie/en/fgb>
+- <https://www.teanglann.ie/en/fgb>
 
 ### Réimnigh
 
 - <https://www.reimnigh.com/>
-- full verbal paradigms (each verb is on a single page, unlike FGB) for:
+- full verbal paradigms
+  - (each verb is on a single page, unlike FGB. includes preverbal particles and initial mutations therefrom)
+  - includes common Ulster/Connacht/Munster alternatives/variants, if they exist
+- verbs (limited set):
   - abair, bain, beir, bí, ceannaigh, clois, cuir, déan, deighil, fág, faigh, fan, feic, foghlaim, freagair, imir, inis, ith, léigh, maraigh, ól, oscail, rith, sábháil, tabhair, tar, téigh, tóg, tosaigh
 
 ### Wordsense
 
-- (does not have a dedicated Irish section, but Irish words show up on there, with more information than you might find on FGB, etc.)
+- (does not have a dedicated Irish section, but some Irish words show up on there, with more information (etymology in particular) than you might find on FGB, etc.)
 - eg. <https://www.wordsense.eu/airg/>
 
 ### Dictionary of technical terms
@@ -41,7 +42,7 @@
 ### Forvo
 
 - pronunciation dictionary comprised of user-submitted sound recordings
-- [ ] They have ben making mass downloads, scraping, and searching much harder lately, so if you know of a workaround, please let me know
+- [ ] They have been making mass downloads, scraping, and searching much harder lately, so if you know of a workaround, please let me know
 - <https://forvo.com/languages/ga/>
 
 - <https://archive.org/search?query=%28language%3Agle+OR+language%3A%22Irish%22%29>
@@ -85,7 +86,7 @@
 ### Tobar na Gaedhilge
 
 - <https://www3.smo.uhi.ac.uk/oduibhin/tobar/>
-- (You need to download an old-ass Windows program to search the database, which is ostensibly to prevent users from extracting copyrighted texts)
+- (You need to download an old-ass Windows program to search the database, which is ostensibly to prevent users from extracting copyrighted texts.)
 - "a searchable textbase of high-quality 20th-century Gaelic texts (mostly Irish, with some Scottish)"
 
 ### National Corpus of Ireland
@@ -254,27 +255,63 @@
 - A game hosted by a cartoon robot which presents sentences with blanks which are to be filled with conjugated irregular verbs.
 - <https://bat-mirialta.detail-design-develop.com/applications/bat-mirialta/>
 
-### games
-
-- Fochlach (Irish-language Wordle)
-  - <https://www.foclach.com/>
-- Wordbricks Online (Irish)
-  - (Windows) <https://apkcombo.com/wordbricks-online-irish/mprain.wordbricks/>
-  - (This was the subject of a few academic articles)
-
 ### non-fiction books
 
 #### Leabhar mór bhriathra na Gaeilge = The great Irish verb book. Author: Art J. Hughes
 
 - (Worldcat entry) <https://www.worldcat.org/title/318545786?oclcNum=318545786>
 
-### fiction in Irish
+#### more
+
+- (NSII) Stenson, Nancy. Intermediate Irish. 2008 (Routledge)
+  - may also appear as  (Stenson-II), (Stenson 2008)
+- (NSBI) Stenson, Nancy. Basic Irish
+- (NSMI) Stenson, Nancy. Modern Irish.
+- (MOSMI) Ó'Siadhail, Michael. Modern Irish: Grammatical structure and dialectical variation
+- (NMIGB) MacCongail, Nollaig. Irish Grammar Book.
+- (uis) Stanson, Nancy and Hickey, Tina. Understanding Irish Spelling.
+
+## media
+
+### computer assisted language learning (CALL)
+
+also called:
+
+- digital educational games (DEG)
+- digital game-based language learning (DGBLL)
+- game-based language learning (GBLL)
+
+#### games
+
+*Some games are listed under their parent company ("**máthairchuideachta**" ?) or website in other sections.*
+
+- Fochlach (Irish-language Wordle)
+  - <https://www.foclach.com/>
+- Wordbricks Online (Irish)
+  - (Windows) <https://apkcombo.com/wordbricks-online-irish/mprain.wordbricks/>
+  - (This was the subject of a few academic articles)
+- cipher: faoi gheasa
+  - <https://www.youtube.com/watch?v=rsGXZz8CJ9g&ab_channel=GamesandNLP>
+
+#### freemium apps; online programs
+
+- duolingo
+- buso
+- memrise
+- babble
+- rosetta stone (library access)
+- WordBricks (see above?)
+- [Transparent Language](https://education.transparent.com/mylearning/game/)
+
+### fiction
+
+*Grouped by author when applicable.*
 
 #### Ní Ghlinn, Áine
 
 ##### Hata zú Mhamó (hzm)
 
-- (text: see google drive)
+- (google drive) <https://drive.google.com/file/d/1LmBOkOBXs6LIKvzua8OMD9cYS8Wtafd3/view?usp=drive_link>
 - (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/hata-zu-mhamo>
   - 3 tracks, ~ 1 hour
 
@@ -400,43 +437,6 @@
 - Kells Sd
   - <https://www.dafont.com/kells-sd.font>
 
-## computer assisted language learning (CALL)
-
-also
-
-- digital educational games (DEG)
-- digital game-based language learning (DGBLL)
-- game-based language learning (GBLL)
-
-### games
-
-- cipher: faoi gheasa
-  - <https://www.youtube.com/watch?v=rsGXZz8CJ9g&ab_channel=GamesandNLP>
-
-### freemium apps; online programs
-
-- duolingo
-- buso
-- memrise
-- babble
-- rosetta stone (library access)
-- WordBricks (see above?)
-- [Transparent Language](https://education.transparent.com/mylearning/game/)
-
----
-
-## abbreviations
-
-- (NSII) Stenson, Nancy. Intermediate Irish. 2008 (Routledge)
-  - may also appear as  (Stenson-II), (Stenson 2008)
-- (NSBI) Stenson, Nancy. Basic Irish
-- (NSMI) Stenson, Nancy. Modern Irish.
-- (MOSMI) Ó'Siadhail, Michael. Modern Irish: Grammatical structure and dialectical variation
-- (NMIGB) MacCongail, Nollaig. Irish Grammar Book.
-- (uis) Stanson, Nancy and Hickey, Tina. Understanding Irish Spelling.
-
----
-
 ## broke-ass links to resources
 
 - Subh.ie <http://subh.ie>
@@ -445,20 +445,22 @@ also
 - BELB (Belfast Education and Library Board)/An tÁisaonad. (2011). Fónaic na Gaeilge, Eolas Fóineolaíoch Comprehensive Phonics materials for teachers and pupils, can be downloaded free/Ar fáil ar líne ag: <http://www.stmarys-> belfast.ac.uk/aisaonad/Fonaic/Fonaic_na_Gaeilge.html
 - <http://www.arts.ulst.ac.uk/lanlit/irish/research/projects/edil.html>
 
----
+## ??
 
-## un
+### Finite State Morphological Analyser
 
-Finite State Morphological Analyser
-Uí Dhonnchadha (2002)
-A great, accurate, high quality resource
-Parser and Treebank
-Lynn (2016)
-A great, accurate, high quality resource
-No need to reinvent the wheel
-![Alt text](image.png)
+- Uí Dhonnchadha (2002)
+- A great, accurate, high quality resource
 
----
+### Parser and Treebank
+
+- Lynn (2016)
+- A great, accurate, high quality resource
+- No need to reinvent the wheel
+
+### some ppt presentation
+
+![Morphology: Sample information for "to have" construction.](image.png)
 
 ## other people's resource lists
 
