@@ -360,6 +360,14 @@ also called:
 - Bunoscionn le Ruairí!
   - <https://archive.org/details/bunoscionnleruai0000orag> (free to borrow)
 
+### TV / streaming
+
+Irish-language shows with Irish-language subtitles (some also have English subtitles)
+
+#### Na hInnealtóirí ("The engineers")
+
+- <https://www.tg4.ie/en/player/categories/childrens-tv-shows/?series=Na%20hInnealt%C3%B3ir%C3%AD&genre=Cula4>
+
 ### radio
 
 #### Irish Radio Live
@@ -383,10 +391,11 @@ also called:
   - These sound files are all still here (50 tracks totally just under 3 hours)
   - [ ] Links to text of books.
 
-##### What the Focal!? <https://soundcloud.com/rnl/sets/what-the-focal-le-ciara-ni-e>
+##### What the Focal!?
 
-- In Irish
-- Youtube playlist: <https://www.youtube.com/watch?v=l7UxLu5opoY&list=PLY7rlV7E68LgLo4Vrzm-B5VWPk3MKB5VH&ab_channel=CiaraN%C3%AD%C3%89>
+- (In Irish) <https://soundcloud.com/rnl/sets/what-the-focal-le-ciara-ni-e>
+- Youtube playlist
+  - <https://www.youtube.com/watch?v=l7UxLu5opoY&list=PLY7rlV7E68LgLo4Vrzm-B5VWPk3MKB5VH&ab_channel=CiaraN%C3%AD%C3%89>
 
 ### Leabhair Ghaeilge ó Chló Mhaigh Eo
 
@@ -427,8 +436,6 @@ also called:
 #### about ??
 
 - <https://www.tandfonline.com/doi/full/10.1080/01434632.2021.1955893>
-
----
 
 ## fonts
 
@@ -489,11 +496,11 @@ also called:
 
 - <https://www.lexiconista.com/>
 
-### online forums, newsgroups (?), etc
+## online forums, newsgroups (?), etc
 
 ### Urscealta ("novels")
 
 - <https://groups.io/g/urscealta>
-- <urscealta at groups dot io>
+- urscealta at groups dot io
 - A group for intermediate students of Irish who would like a forum to translate and discuss novels that were specifically written for adult learners.and also other Irish literature.
   - eg. Questions about *Gaothán*: <https://groups.io/g/urscealta/topic/14725809#1703>

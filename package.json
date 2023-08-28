@@ -1,5 +1,4 @@
 {
-  "run": "json-server --watch db.json --port 3001",
   "dependencies": {
     "json-server": "^0.17.3"
   },
@@ -9,5 +8,33 @@
     "grunt-contrib-concat": "^2.1.0",
     "grunt-contrib-uglify": "^5.2.2",
     "grunt-contrib-watch": "^1.1.0"
-  }
+  },
+  "name": "dazo",
+  "description": "Javascript/HTML/CSS integration with Anki spaced repetition program for Irish language (Gaelic) learning",
+  "version": "1.0.0",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hafdon/dazo.git"
+  },
+  "keywords": [
+    "javascript",
+    "L2",
+    "Irish",
+    "Gaelic",
+    "Anki"
+  ],
+  "author": "Zach Weisser",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/hafdon/dazo/issues"
+  },
+  "homepage": "https://github.com/hafdon/dazo#readme"
 }
