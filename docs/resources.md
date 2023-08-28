@@ -504,3 +504,9 @@ Irish-language shows with Irish-language subtitles (some also have English subti
 - urscealta at groups dot io
 - A group for intermediate students of Irish who would like a forum to translate and discuss novels that were specifically written for adult learners.and also other Irish literature.
   - eg. Questions about *Gaothán*: <https://groups.io/g/urscealta/topic/14725809#1703>
+
+## online classes?
+
+### Oideas Gael
+
+- <http://www.oideas-gael.com/ga/>
