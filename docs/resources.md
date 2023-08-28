@@ -1,66 +1,16 @@
 # resources
 
-- [resources](#resources)
-  - [???](#)
-    - [dictionaries and grammar](#dictionaries-and-grammar)
-    - [??](#-1)
-    - [New Corpus for Ireland](#new-corpus-for-ireland)
-    - [CELT: Corpus of Electronic Texts](#celt-corpus-of-electronic-texts)
-    - [Tobar na Gaedhilge](#tobar-na-gaedhilge)
-    - [National Corpus of Ireland](#national-corpus-of-ireland)
-    - [Foras na Gaeilge](#foras-na-gaeilge)
-      - [An Gúm ("The Scheme"?) angum.ie (Foras na Gaeilge subsidiary?)](#an-gúm-the-scheme-angumie-foras-na-gaeilge-subsidiary)
-      - [Foras na Gaeilge soundcloud](#foras-na-gaeilge-soundcloud)
-      - [Foclóir Póca Irish Dictionary Pronunciation Guide](#foclóir-póca-irish-dictionary-pronunciation-guide)
-      - [The great lexicographical work done by Seán Óg Ó Caomhánháin, Seán a'Cóta, in the thirties and forties of the last century, a work he entitled Croidhe Cainnte Ciarraighe](#the-great-lexicographical-work-done-by-seán-óg-ó-caomhánháin-seán-acóta-in-the-thirties-and-forties-of-the-last-century-a-work-he-entitled-croidhe-cainnte-ciarraighe)
-    - [Gaschaint](#gaschaint)
-    - [The Dúchas Project](#the-dúchas-project)
-    - [COGG](#cogg)
-    - [tuairisc.ie](#tuairiscie)
-    - [Trinity College Dublin (TCD)](#trinity-college-dublin-tcd)
-      - [School of Computer Science and Statistics (SCSS)](#school-of-computer-science-and-statistics-scss)
-      - [School of Linguistic, Speech and Communication Sciences (SLSCS)](#school-of-linguistic-speech-and-communication-sciences-slscs)
-      - [abair.ie - TCD's Phonetics and Speech Laboratory website](#abairie---tcds-phonetics-and-speech-laboratory-website)
-        - [CabairE](#cabaire)
-        - [An Scéalaí\*\*](#an-scéalaí)
-        - [Bat Mírialta\*\* \[*Does not work - there's some bug with the program.*\]](#bat-mírialta-does-not-work---theres-some-bug-with-the-program)
-    - [games](#games)
-    - [fiction in Irish](#fiction-in-irish)
-      - [O'Brien, Flann](#obrien-flann)
-      - [Ó Raghallaigh, Colmán](#ó-raghallaigh-colmán)
-    - [radio](#radio)
-      - [Irish Radio Live](#irish-radio-live)
-      - [RTE](#rte)
-      - [Raidió na Life](#raidió-na-life)
-    - [Leabhair Ghaeilge ó Chló Mhaigh Eo](#leabhair-ghaeilge-ó-chló-mhaigh-eo)
-    - [Literature Ireland](#literature-ireland)
-    - [Leighleat](#leighleat)
-    - [Séideán Sí](#séideán-sí)
-      - [about ??](#about-)
-  - [fonts](#fonts)
-  - [computer assisted language learning (CALL)](#computer-assisted-language-learning-call)
-    - [games](#games-1)
-    - [freemium apps; online programs](#freemium-apps-online-programs)
-  - [abbreviations](#abbreviations)
-  - [broke-ass links to resources](#broke-ass-links-to-resources)
-  - [un](#un)
+## google drive
 
-## ???
+- [Resources on shared google drive folder](https://drive.google.com/drive/folders/1xsuRNNTBvwrcTaFEMoK-QbDr-mONYupl?usp=sharing)
 
-- <https://fonaicnagaeilge.com>
-- The Séideán Sí series is an integrated programme for teaching Irish, with DVD and on line support, which was developed for Gaeltacht and all-Irish schools.
-- <http://www.stmarys-> belfast.ac.uk/aisaonad/Fonaic/Fonaic_na_Gaeilge.html
-- Muintearas also offer a series of workbooks. <http://www.muintearas.com/leabhar.htm>
-- Many other support materials, including pictures, posters, and games to accompany the phonics programme, as well as a second phonics programme that builds on Fónaic na Gaeilge are available under the Gaeloideachas link at <http://www.nicurriculum.org> .uk/.
-- <https://www.youtube.com/watch?v=mBoX_JCKZTE>
-- <https://www.stmarys-belfast.ac.uk/academic/aisaonad/default.asp>
-- An tÁisaonad offers a range of materials free <http://www.stmarys-belfast.ac.uk/aisaonad/> Túsfhuaimeanna is a set of downloadable booklets to teach sounds.
-- <https://www.leighleat.com/#failte>
-- list of resources: <https://libguides.tcd.ie/c.php?g=668577&p=4743906>
-- soundcloud audiobooks (closleabhar)
-  - <https://soundcloud.com/search?q=closleabhar>
+## dictionaries, grammar, databases
 
-### dictionaries and grammar
+### wikibooks: irish
+
+<https://en.wikibooks.org/wiki/Irish>
+
+### Nualéargais
 
 - (NL), (NLG) nualéargais
   - <http://www.nualeargais.ie/> (Copyright 2008)
@@ -68,47 +18,60 @@
   - Java (!!) Irish-language flashcard learning program?
   - Grammar: <http://nualeargais.ie/gnag/gram.htm>
     - An extremely thorough German book on Irish grammar, many parts of which have been translated into English. Only the translated sections are on the website.
-- (FGB) <https://www.teanglann.ie/en/fgb>
-- Réimnigh
-  - <https://www.reimnigh.com/>
-  - full verbal paradigms (each verb is on a single page, unlike FGB) for:
-    - abair, bain, beir, bí, ceannaigh, clois, cuir, déan, deighil, fág, faigh, fan, feic, foghlaim, freagair, imir, inis, ith, léigh, maraigh, ól, oscail, rith, sábháil, tabhair, tar, téigh, tóg, tosaigh
-- *Leabhar mór bhriathra na Gaeilge = The great Irish verb book*. Author: Art J. Hughes
-  - (Worldcat entry) <https://www.worldcat.org/title/318545786?oclcNum=318545786>
-- Wordsense
-  - (does not have a dedicated Irish section, but Irish words show up on there, with more information than you might find on FGB, etc.)
-  - eg. <https://www.wordsense.eu/airg/>
 
-### ??
+### Foclóir Geailge-Béarla (Irish-English Lexicon)
+
+- (FGB) <https://www.teanglann.ie/en/fgb>
+
+### Réimnigh
+
+- <https://www.reimnigh.com/>
+- full verbal paradigms (each verb is on a single page, unlike FGB) for:
+  - abair, bain, beir, bí, ceannaigh, clois, cuir, déan, deighil, fág, faigh, fan, feic, foghlaim, freagair, imir, inis, ith, léigh, maraigh, ól, oscail, rith, sábháil, tabhair, tar, téigh, tóg, tosaigh
+
+### Wordsense
+
+- (does not have a dedicated Irish section, but Irish words show up on there, with more information than you might find on FGB, etc.)
+- eg. <https://www.wordsense.eu/airg/>
+
+### Dictionary of technical terms
+
+- <https://www.tearma.ie/>
+
+### Forvo
+
+- pronunciation dictionary comprised of user-submitted sound recordings
+- [ ] They have ben making mass downloads, scraping, and searching much harder lately, so if you know of a workaround, please let me know
+- <https://forvo.com/languages/ga/>
 
 - <https://archive.org/search?query=%28language%3Agle+OR+language%3A%22Irish%22%29>
   - audio: <https://archive.org/search?query=%28language%3Agle+OR+language%3A%22Irish%22%29&and%5B%5D=mediatype%3A%22audio%22>
   - irish children's stories: <https://archive.org/search?query=%28language%3Agle+OR+language%3A%22Irish%22%29+subject%3A%22Children%27s+stories%22>
   - irish fiction: <https://archive.org/search?query=%28language%3Agle+OR+language%3A%22Irish%22%29+subject%3A%22fiction%22&and%5B%5D=language%3A%22Irish%22>
-- Dictionary of technical terms
-  - <https://www.tearma.ie/>
-- Placenames Database of Ireland
-  - <https://www.logainm.ie/en/>
-  - Sound Archive of the Placenames Branch
-    - (must register to play sound files)
-    - <https://www.logainm.ie/phono/>
-- National Database of Irish-language Biographies
-  - <https://www.ainm.ie/>
-  - (I don't believe these have audio recordings.)
-- Gaois research group
-  - <https://www.gaois.ie/en/>
-  - "develops innovative resources to support the Irish language and its heritage"
-  - (are themselves a hub for links to many of the other resources in this section)
-- Gaeilge.ie: "The network for our language" (?)
-  - <https://www.gaeilge.ie/>
 
-### New Corpus for Ireland
+### Placenames Database of Ireland
 
-- user's guide
-  - <https://www.sketchengine.eu/the-new-corpus-for-ireland/>
-- "The New Corpus for Ireland is a large collection of texts in Irish with approximately 30 million words. It contains a wide range of texts including works of fiction, factual texts, news reports, official documents and much more. The corpus is designed to be used for linguistic research"
-- "Introducing the National Corpus of Ireland Project"
-  - <https://aclanthology.org/2022.cltw-1.14.pdf>
+- <https://www.logainm.ie/en/>
+
+#### Sound Archive of the Placenames Branch
+
+- (must register to play sound files)
+- <https://www.logainm.ie/phono/>
+
+### National Database of Irish-language Biographies
+
+- <https://www.ainm.ie/>
+- (I don't believe these have audio recordings.)
+
+### Gaois research group
+
+- <https://www.gaois.ie/en/>
+- "develops innovative resources to support the Irish language and its heritage"
+- (are themselves a hub for links to many of the other resources in this section)
+
+### Gaeilge.ie: "The network for our language" (?)
+
+- <https://www.gaeilge.ie/>
 
 ### CELT: Corpus of Electronic Texts
 
@@ -132,11 +95,20 @@
 - "The corpus contents will be accessible on this website, and users will be able to search the corpora and download data generated during the project."
 - (this corpus is linked to from other sites listed here, but they use antiquated links)
 - [ ] How does one actually use it?
+- "Introducing the National Corpus of Ireland Project"
+  - <https://aclanthology.org/2022.cltw-1.14.pdf>
+
+### New Corpus for Ireland
+
+- user's guide
+  - <https://www.sketchengine.eu/the-new-corpus-for-ireland/>
+- "The New Corpus for Ireland is a large collection of texts in Irish with approximately 30 million words. It contains a wide range of texts including works of fiction, factual texts, news reports, official documents and much more. The corpus is designed to be used for linguistic research"
 
 ### Foras na Gaeilge
 
-- Scríobh Leabhar program: books written by students
-  - <https://www.forasnagaeilge.ie/scriobhleabhar/the-books/?lang=en>
+#### Scríobh Leabhar program: books written by students
+
+- <https://www.forasnagaeilge.ie/scriobhleabhar/the-books/?lang=en>
 
 #### An Gúm ("The Scheme"?) angum.ie (Foras na Gaeilge subsidiary?)
 
@@ -166,8 +138,9 @@
 5. [Séimhiú and Urú](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/69f5672ab6fdfb284e544c01c95539a7.mp3)
 6. [Stress](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/daaa38e2f2923ace57395c5a6ef823a4.mp3)
 
-#### The great lexicographical work done by Seán Óg Ó Caomhánháin, Seán a'Cóta, in the thirties and forties of the last century, a work he entitled Croidhe Cainnte Ciarraighe
+#### Croidhe Cainnte Ciarraighe
 
+- "The great lexicographical work done by Seán Óg Ó Caomhánháin, Seán a'Cóta, in the thirties and forties of the last century, a work he entitled Croidhe Cainnte Ciarraighe"
 - <https://www.forasnagaeilge.ie/angum/croidhe-cainnte-ciarraighe/?lang=en>
 - [Téacs an tSaothair](https://www.forasnagaeilge.ie/angum/wp-content/uploads/sites/5/2020/09/8fddae92ae307b022d964ebe73d45df6.pdf)
   - 4,000 page dictionary, in Irish. Public Domain pdf.
@@ -177,25 +150,50 @@
 
 - <https://www.gaschaint.ie/>
 - "A website of 2000 phrases, together with recordings, for parents who wish their children to grow up able to speak Irish. The three main Irish dialects are represented on the website, which is colour-coded for ease of use. All recordings are by native Irish speakers."
-- Completely free. You can buy the book (?) to support them.
+- Completely free. (You can buy the book to support them?)
 
 ### The Dúchas Project
 
 - dúchas.ie
+
+#### National Folklore Collection (NFC)
+
 - digitization of the National Folklore Collection (NFC)
   - audio collection: <https://www.duchas.ie/en/cbef/recordings>
     - (no transcriptions)
-- Bailiúchán na Scol (The Schools Collection)
-  - "This is a collection of folklore compiled by schoolchildren in Ireland in the 1930s."
-  - Irish-language texts: <https://www.duchas.ie/en/cbes/stories?Page=1&LanguageID=ga&PerPage=20>
 
-### COGG
+#### Bailiúchán na Scol (The Schools Collection)
+
+- "This is a collection of folklore compiled by schoolchildren in Ireland in the 1930s."
+- Irish-language texts: <https://www.duchas.ie/en/cbes/stories?Page=1&LanguageID=ga&PerPage=20>
+
+### An Chomhairle um Oideachas Gaeltachta & Gaelscolaíochta (COGG)
 
 - <https://www.cogg.ie/en/>
+- "The Council for Gaeltacht Education & Gaelscholaíochta"
+- [Resource database](https://www.cogg.ie/en/resource-database/#?keywords=&subject=&types=&levels=&page=1&language=en)
+- classroom posters clarifying common Irish-language mistakes:
+  - <https://www.tairseachcogg.ie/Home/ResourceDetails?_HYtIf125x=xgJpgGdAkt8YHRhpSatKS1vupeJczgO4APCgYA9lX3HVVb91eiNznansojzdha7B&XdfuUilwqFJdhFHgfJg_JhhghayWeRp=lwqFJdh>
+
+#### Gaelchultúr Teoranta
+
+##### Fís agus Foghlaim
+
+- short (3-4 minute) Irish grammar (etc) lessons (in Irish)
+- youtube playlist: <https://www.youtube.com/playlist?list=PL7wLVDMegS1RwEu_jnVOPwtl1UVSLdKpH>
+
+### Meoneile.ie
+
+<https://www.meoneile.ie/>
 
 ### tuairisc.ie
 
 - <https://tuairisc.ie/category/foghlaimeoiri/>
+- (Their Irish videos have Irish-languae subtitles sometimes):
+  - eg. <https://tuairisc.ie/fisean-ar-fhaitios-gur-chaill-tu-e-cuid-de-scealta-tuairisc-an-tseachtain-seo/>
+  - <https://tuairisc.ie/fisean-snamh-an-tsunda-aistear-farraige-o-oilean-go-hoilean-eile-deanta-ag-altra-gaeltachta/>
+  - <https://tuairisc.ie/ceard-is-bri-le-no-cap-agus-cen-ghaeilge-ata-air-gaelingo-sraith-nua-le-tuairisc/>
+  - [ ] Do all their youtube channel videos have Irish CC? <https://www.youtube.com/@TuairiscIenuacht/videos>
 
 ### Trinity College Dublin (TCD)
 
@@ -241,6 +239,8 @@
 ##### CabairE
 
 - "CabairE is a literacy aid for Irish that helps you to master Irish spelling"
+- "CabairE reads out text in Irish - either Donegal, Connemara or Kerry Irish - and highlights each sentence and word as it goes along."
+- (Reading is done by a Text To Speech program.)
 - <http://www.abair.tcd.ie/cabaire/eolas.php?lang=eng>
 
 ##### An Scéalaí**
@@ -262,28 +262,59 @@
   - (Windows) <https://apkcombo.com/wordbricks-online-irish/mprain.wordbricks/>
   - (This was the subject of a few academic articles)
 
+### non-fiction books
+
+#### Leabhar mór bhriathra na Gaeilge = The great Irish verb book. Author: Art J. Hughes
+
+- (Worldcat entry) <https://www.worldcat.org/title/318545786?oclcNum=318545786>
+
 ### fiction in Irish
 
-- Ní Ghlinn, Áine - (hzm) Hata zú Mhamó
-  - (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/hata-zu-mhamo>
-    - 3 tracks, ~ 1 hour
-- Ní Ghlinn, Áine - Thar an Trasnan
-  - (free to borrow) <https://archive.org/details/thartrasnan0000nigh>
-  - (no audiobook)
-- Ní Ghlinn, Áine - Glantachan Earraigh
-  - (Free to borrow) <https://archive.org/details/glantachanearrai0000nigh/page/n3/mode/2up>
-  - (no audiobook)
-- An tIriseoir ("The journalist")
-  - (free to borrow) <https://archive.org/details/tiriseoir0000nicp>
-  - (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/an-tiriseoir>
-- Oilithreach Pinn by Liam Ó Muirthile
-  - (free to borrow) <https://archive.org/details/oilithreachpinn0000omui>
-  - (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/liam-o-muirthile-oilithreach-pinn>
-    - 13 tracks, ~6 hours
+#### Ní Ghlinn, Áine
+
+##### Hata zú Mhamó (hzm)
+
+- (text: see google drive)
+- (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/hata-zu-mhamo>
+  - 3 tracks, ~ 1 hour
+
+##### Thar an Trasnan
+
+- (free to borrow) <https://archive.org/details/thartrasnan0000nigh>
+- (no audiobook)
+
+##### Glantachan Earraigh
+
+- (free to borrow) <https://archive.org/details/glantachanearrai0000nigh/page/n3/mode/2up>
+- (no audiobook)
+
+#### Nic Phaidin, Michelle
+
+##### An tIriseoir ("The journalist")
+
+- (free to borrow) <https://archive.org/details/tiriseoir0000nicp>
+- (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/an-tiriseoir>
+
+#### Ó Muirthile, Liam
+
+##### Aois Fir
+
+##### Oilithreach Pinn
+
+- (free to borrow) <https://archive.org/details/oilithreachpinn0000omui>
+- (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/liam-o-muirthile-oilithreach-pinn>
+  - 13 tracks, ~6 hours
+
+##### Gaothán
+
+- (text: free to borrow) archive.org
+- (audiobook: see google drive)
 
 #### O'Brien, Flann
 
-- An beal bocht (his Irish language novel written under pen name "Myles na gCopaleen")
+##### An beal bocht
+
+- his Irish language novel written under pen name "Myles na gCopaleen"
   - <https://archive.org/details/balbochtnmillena0000obri>
   - a viscerally depressing cartoon adaptation, I believe?: <https://archive.org/details/AnBealBocht2018>
 
@@ -314,8 +345,11 @@
   - "A collection of over 50 children’s books recorded by Raidió na Life and made available free as podcasts to help young readers and their parents."
   - These sound files are all still here (50 tracks totally just under 3 hours)
   - [ ] Links to text of books.
-- What the Focal!? <https://soundcloud.com/rnl/sets/what-the-focal-le-ciara-ni-e>
-  - In Irish
+
+##### What the Focal!? <https://soundcloud.com/rnl/sets/what-the-focal-le-ciara-ni-e>
+
+- In Irish
+- Youtube playlist: <https://www.youtube.com/watch?v=l7UxLu5opoY&list=PLY7rlV7E68LgLo4Vrzm-B5VWPk3MKB5VH&ab_channel=CiaraN%C3%AD%C3%89>
 
 ### Leabhair Ghaeilge ó Chló Mhaigh Eo
 
@@ -387,6 +421,7 @@ also
 - babble
 - rosetta stone (library access)
 - WordBricks (see above?)
+- [Transparent Language](https://education.transparent.com/mylearning/game/)
 
 ---
 
@@ -425,7 +460,38 @@ No need to reinvent the wheel
 
 ---
 
+## other people's resource lists
+
+- <https://gratisglobal.com/learn-irish-free/#apps>
+- <https://toingaeilge.com/acmhainni>
+
 - corkirish.wordpress.com
   - <https://corkirish.wordpress.com/audio-files-on-this-site/>
   - <https://archive.org/details/MoSgealFein>
     - "A recording of all 32 chapters of Mo Sgeal Fein by Peadar Ua Laoghaire. The recording was done by Maighread Bean Ui Lionaird in the Cork Gaeltacht"
+
+- <https://fonaicnagaeilge.com>
+- The Séideán Sí series is an integrated programme for teaching Irish, with DVD and on line support, which was developed for Gaeltacht and all-Irish schools.
+- <http://www.stmarys-> belfast.ac.uk/aisaonad/Fonaic/Fonaic_na_Gaeilge.html
+- Muintearas also offer a series of workbooks. <http://www.muintearas.com/leabhar.htm>
+- Many other support materials, including pictures, posters, and games to accompany the phonics programme, as well as a second phonics programme that builds on Fónaic na Gaeilge are available under the Gaeloideachas link at <http://www.nicurriculum.org> .uk/.
+- <https://www.youtube.com/watch?v=mBoX_JCKZTE>
+- <https://www.stmarys-belfast.ac.uk/academic/aisaonad/default.asp>
+- An tÁisaonad offers a range of materials free <http://www.stmarys-belfast.ac.uk/aisaonad/> Túsfhuaimeanna is a set of downloadable booklets to teach sounds.
+- <https://www.leighleat.com/#failte>
+- list of resources: <https://libguides.tcd.ie/c.php?g=668577&p=4743906>
+- soundcloud audiobooks (closleabhar)
+  - <https://soundcloud.com/search?q=closleabhar>
+
+## Lexiconista
+
+- <https://www.lexiconista.com/>
+
+### online forums, newsgroups (?), etc
+
+### Urscealta ("novels")
+
+- <https://groups.io/g/urscealta>
+- <urscealta at groups dot io>
+- A group for intermediate students of Irish who would like a forum to translate and discuss novels that were specifically written for adult learners.and also other Irish literature.
+  - eg. Questions about *Gaothán*: <https://groups.io/g/urscealta/topic/14725809#1703>
