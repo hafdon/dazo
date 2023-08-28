@@ -21,8 +21,11 @@
       - [School of Computer Science and Statistics (SCSS)](#school-of-computer-science-and-statistics-scss)
       - [School of Linguistic, Speech and Communication Sciences (SLSCS)](#school-of-linguistic-speech-and-communication-sciences-slscs)
       - [abair.ie - TCD's Phonetics and Speech Laboratory website](#abairie---tcds-phonetics-and-speech-laboratory-website)
+        - [CabairE](#cabaire)
+        - [An Scéalaí\*\*](#an-scéalaí)
+        - [Bat Mírialta\*\* \[*Does not work - there's some bug with the program.*\]](#bat-mírialta-does-not-work---theres-some-bug-with-the-program)
     - [games](#games)
-    - [fiction](#fiction)
+    - [fiction in Irish](#fiction-in-irish)
       - [O'Brien, Flann](#obrien-flann)
       - [Ó Raghallaigh, Colmán](#ó-raghallaigh-colmán)
     - [radio](#radio)
@@ -36,6 +39,7 @@
       - [about ??](#about-)
   - [fonts](#fonts)
   - [computer assisted language learning (CALL)](#computer-assisted-language-learning-call)
+    - [games](#games-1)
     - [freemium apps; online programs](#freemium-apps-online-programs)
   - [abbreviations](#abbreviations)
   - [broke-ass links to resources](#broke-ass-links-to-resources)
@@ -222,15 +226,6 @@
 
 #### abair.ie - TCD's Phonetics and Speech Laboratory website
 
-- **An Scéalaí**
-  - Language-learning application (The Storyteller). Essentially a word processor that provides grammar and spelling checks, computer-generated Text to Speech (TTS), and dictionary word searches.
-  - <https://scealai.abair.ie/#/landing>
-  - <https://scealai.abair.ie/#/prompts/pos>
-- **Bat Mírialta**
-  - *Does not work - there's some bug with the program.*
-  - A game hosted by a cartoon robot which presents sentences with blanks which are to be filled with conjugated irregular verbs.
-  - <https://bat-mirialta.detail-design-develop.com/applications/bat-mirialta/>
-  - it is so buggy that it does notn appear to work
 - (not sure why there's a "dev" version of the site:) <https://dev.abair.ie/en>
 - the newer version, I guess: <https://www.abair.ie/>
   - <https://www.abair.ie/speech-recognition>
@@ -242,7 +237,22 @@
     - <https://www.scss.tcd.ie/~uidhonne/pos_gle.utf8.html>
 - generated audio of proverbs: <https://www.abair.tcd.ie/index.php?page=proverbs&lang=eng>
 - generated audio of short stories, news, numbers, and greetings: <http://www.abair.tcd.ie/index.php?page=learners&lang=eng>
-- CabairE ("CabairE is a literacy aid for Irish that helps you to master Irish spelling") <http://www.abair.tcd.ie/cabaire/eolas.php?lang=eng>
+
+##### CabairE
+
+- "CabairE is a literacy aid for Irish that helps you to master Irish spelling"
+- <http://www.abair.tcd.ie/cabaire/eolas.php?lang=eng>
+
+##### An Scéalaí**
+
+- Language-learning application (The Storyteller). Essentially a word processor that provides grammar and spelling checks, computer-generated Text to Speech (TTS), and dictionary word searches.
+- <https://scealai.abair.ie/#/landing>
+- <https://scealai.abair.ie/#/prompts/pos>
+
+##### Bat Mírialta** [*Does not work - there's some bug with the program.*]
+
+- A game hosted by a cartoon robot which presents sentences with blanks which are to be filled with conjugated irregular verbs.
+- <https://bat-mirialta.detail-design-develop.com/applications/bat-mirialta/>
 
 ### games
 
@@ -252,10 +262,24 @@
   - (Windows) <https://apkcombo.com/wordbricks-online-irish/mprain.wordbricks/>
   - (This was the subject of a few academic articles)
 
-### fiction
+### fiction in Irish
 
-- (hzm) Hata Zu Mamo
-  - YA book
+- Ní Ghlinn, Áine - (hzm) Hata zú Mhamó
+  - (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/hata-zu-mhamo>
+    - 3 tracks, ~ 1 hour
+- Ní Ghlinn, Áine - Thar an Trasnan
+  - (free to borrow) <https://archive.org/details/thartrasnan0000nigh>
+  - (no audiobook)
+- Ní Ghlinn, Áine - Glantachan Earraigh
+  - (Free to borrow) <https://archive.org/details/glantachanearrai0000nigh/page/n3/mode/2up>
+  - (no audiobook)
+- An tIriseoir ("The journalist")
+  - (free to borrow) <https://archive.org/details/tiriseoir0000nicp>
+  - (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/an-tiriseoir>
+- Oilithreach Pinn by Liam Ó Muirthile
+  - (free to borrow) <https://archive.org/details/oilithreachpinn0000omui>
+  - (free audiobook) <https://soundcloud.com/cois-life-teoranta/sets/liam-o-muirthile-oilithreach-pinn>
+    - 13 tracks, ~6 hours
 
 #### O'Brien, Flann
 
@@ -338,7 +362,7 @@
 ## fonts
 
 - (TrueType | Freeware) [*Warning: may be corrupted*]
-- <https://fonts2u.com/clo-gaelach-twomey.font>
+  - <https://fonts2u.com/clo-gaelach-twomey.font>
 - Kells Sd
   - <https://www.dafont.com/kells-sd.font>
 
@@ -350,11 +374,17 @@ also
 - digital game-based language learning (DGBLL)
 - game-based language learning (GBLL)
 
+### games
+
+- cipher: faoi gheasa
+  - <https://www.youtube.com/watch?v=rsGXZz8CJ9g&ab_channel=GamesandNLP>
+
 ### freemium apps; online programs
 
 - duolingo
 - buso
 - memrise
+- babble
 - rosetta stone (library access)
 - WordBricks (see above?)
 
@@ -392,3 +422,10 @@ Lynn (2016)
 A great, accurate, high quality resource
 No need to reinvent the wheel
 ![Alt text](image.png)
+
+---
+
+- corkirish.wordpress.com
+  - <https://corkirish.wordpress.com/audio-files-on-this-site/>
+  - <https://archive.org/details/MoSgealFein>
+    - "A recording of all 32 chapters of Mo Sgeal Fein by Peadar Ua Laoghaire. The recording was done by Maighread Bean Ui Lionaird in the Cork Gaeltacht"
