@@ -301,6 +301,7 @@ also called:
 - babble
 - rosetta stone (library access)
 - WordBricks (see above?)
+- Clozemaster
 - [Transparent Language](https://education.transparent.com/mylearning/game/)
 
 ### fiction
@@ -336,6 +337,9 @@ also called:
 
 ##### Aois Fir
 
+- (free to download) <https://www.kobo.com/us/en/ebook/aois-fir-1>
+- (free audiobook)  <https://cic.ie/shop/books/audiobooks/aois-fir-closleabhar/?lang=en>
+
 ##### Oilithreach Pinn
 
 - (free to borrow) <https://archive.org/details/oilithreachpinn0000omui>
@@ -344,8 +348,15 @@ also called:
 
 ##### Gaothán
 
-- (text: free to borrow) archive.org
+- (text: free to borrow) <https://archive.org/details/gaothan0000omui/page/2/mode/2up>
 - (audiobook: see google drive)
+
+#### Mhic Gearailt, Sobhán
+
+##### An Pota Leite Draíochta
+
+- (text: free to download) <https://www.forasnagaeilge.ie/wp-content/uploads/2021/01/b80051f4ec9ea140faebecd8ceb77c16.pdf>
+- (audiobook: on soundcloud?)
 
 #### O'Brien, Flann
 
@@ -397,14 +408,18 @@ Irish-language shows with Irish-language subtitles (some also have English subti
 - Youtube playlist
   - <https://www.youtube.com/watch?v=l7UxLu5opoY&list=PLY7rlV7E68LgLo4Vrzm-B5VWPk3MKB5VH&ab_channel=CiaraN%C3%AD%C3%89>
 
-### Leabhair Ghaeilge ó Chló Mhaigh Eo
+### Leabhair Ghaeilge ó Chló Mhaigh Eo (online retailer)
 
 - Irish Language Books from Cló Mhaigh Eo
 - <https://www.leabhar.com/>
 - comics: <https://www.leabhar.com/comics.html>
 - purchasable audio cds: <https://www.leabhar.com/cdrom.html>
 
-### Literature Ireland
+### CLÓ IAR-CHONNACHT (online retailer)
+
+- <https://cic.ie/product-category/books/fiction/novels-short-stories/?lang=en>
+
+### Literature Ireland (online retailer)
 
 - <https://www.literatureireland.com/>
 - <https://www.literatureireland.com/books/>
@@ -492,11 +507,13 @@ Irish-language shows with Irish-language subtitles (some also have English subti
 - soundcloud audiobooks (closleabhar)
   - <https://soundcloud.com/search?q=closleabhar>
 
-## Lexiconista
-
-- <https://www.lexiconista.com/>
-
 ## online forums, newsgroups (?), etc
+
+### random
+
+- <https://www.irishlanguageforum.com/viewtopic.php?f=28&t=7025>
+- <https://www.irishlanguageforum.com/viewtopic.php?f=36&t=2960&p=27095&hilit=Tigh+Dhegheibh#p27095>
+  - <https://www.amazon.com/Teach-Yourself-Irish-Myles-Dillon/dp/0679101837/ref=cm_cr_arp_d_product_top?ie=UTF8>
 
 ### Urscealta ("novels")
 
@@ -510,3 +527,28 @@ Irish-language shows with Irish-language subtitles (some also have English subti
 ### Oideas Gael
 
 - <http://www.oideas-gael.com/ga/>
+
+## language studying models, etc
+
+### Irish gaBERT
+
+- <https://github.com/jbrry/Irish-BERT>
+
+### CoNNL 2017
+
+- <https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989>
+
+### PARSEME
+
+- <https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989>
+
+## academics
+
+### Carnie, Andrew
+
+- <https://www.andrewcarnie.org/>
+
+### Michal Měchura
+
+- <https://www.lexiconista.com/>
+- <https://www.namevaluehierarchy.org>

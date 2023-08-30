@@ -12760,7 +12760,9 @@
       "id": 19,
       "cluster": {
         "ciall": "sanity",
-        "cill": "churchyard"
+        "cill": "churchyard",
+        "ciallaigh": "signify",
+        "caill": "lose"
       }
     },
     {
@@ -12876,7 +12878,8 @@
       "cluster": {
         "ionad": "place",
         "aonad": "unit; one(s)",
-        "iomad": "too many"
+        "iomad": "too many",
+        "ionann": "same"
       }
     },
     {
@@ -13240,6 +13243,19 @@
         "modh": "mode"
       },
       "id": 86
+    },
+    {
+      "cluster": {
+        "breis": "extra"
+      },
+      "id": 87
+    },
+    {
+      "cluster": {
+        "comhair": "count",
+        "comhar": "mutual work"
+      },
+      "id": 88
     }
   ],
   "potafocal": [

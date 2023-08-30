@@ -1,0 +1,568 @@
+/* <link href='_style.css' rel='stylesheet' type='text/css'> */
+
+:root {
+  --card-front-top-start: 0px;
+  --card-back-top-start: 40px;
+  --gaelic-font-size: 140%;
+  --headword-index-font-size: 45%;
+
+  --table-title-font-size: 110%;
+  --table-title-font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.force {
+  /* background-color: lightgrey; */
+}
+
+/* custom tags */
+
+sc {
+  font-variant: small-caps;
+}
+
+h3.gaelic {
+  font-size: 135%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.start-hidden {
+  display: none;
+}
+
+.card {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  line-height: 1.8rem;
+}
+
+.card-back {
+  text-align: left;
+  line-height: 2rem;
+  /* top: var(--card-back-top-start); */
+  padding-top: var(--card-back-top-start);
+}
+
+.container.front {
+  top: var(--card-front-top-start);
+}
+
+div.audio-controls {
+  position: fixed;
+  top: var(--card-front-top-start);
+}
+
+/* 
+  wrapping class for divs containing logging, debugging, etc.
+*/
+.dev {
+  font-size: 1rem;
+  color: grey;
+}
+
+/* noun gender */
+
+div.noun-gender-m::before {
+  content: "";
+}
+
+div.noun-gender-f::before {
+  content: "";
+}
+
+/* Carnie declension class */
+
+/* div.[class^="cdc-"]::before {
+  font-size: 1rem;
+  font-style: italic;
+  margin-left: 2rem;
+} */
+
+[class^="cdc-"]::before {
+  font-size: 1rem;
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+div.cdc-B1::before {
+  content: "[gs], [vs]: attenuation with orthographic -i- before final group of consonants";
+}
+
+div.cdc-H1::before {
+  content: "[gs], [vs]: attenuation of final -Vch";
+}
+
+div.interference-menu {
+  position: fixed;
+  top: var(--card-front-top-start);
+  right: 0;
+  font-size: 1rem;
+}
+
+div.interference-menu::before {
+  content: "[j] interference";
+}
+
+div.interference {
+  /* position: fixed;
+  top: var(--card-front-top-start);
+  right: 0; */
+  display: none;
+}
+
+button.audio-control-play {
+  width: 100px;
+  border-color: red;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+/* 
+Cupla's declensions, etc
+
+div and hr's
+*/
+.genitive-vn {
+  top: calc(var(--card-front-top-start) + 20px);
+  right: 0;
+  display: none;
+}
+
+.phrasal-verb {
+}
+
+span.error {
+  color: red;
+}
+
+span.headword-index {
+  vertical-align: sub;
+  font-size: var(--headword-index-font-size);
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+div.log-message {
+  padding-left: -20px;
+  margin: 0;
+  vertical-align: bottom;
+  text-align: left;
+  line-height: 1rem;
+}
+
+#debugger,
+#logger,
+.dictionaries {
+  position: fixed;
+}
+
+#debugger,
+.dictionaries {
+  bottom: 0;
+}
+
+.dictionaries {
+  right: 0;
+}
+
+#logger {
+  position: fixed;
+  bottom: 1.3rem;
+  font-size: 50%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.long-question {
+  margin-bottom: 10px;
+}
+
+.answer-cell {
+  padding-left: 4rem;
+}
+
+.answer-row {
+  background-color: #f5f5dc;
+  /*   background-color: papayawhip; */
+}
+
+.grammar-exception {
+  background-color: pink;
+}
+
+.hide {
+  display: none;
+}
+
+.inflection {
+  background-color: aquamarine;
+  width: max-content; /* restrict width to content's width */
+}
+
+div.speech-container {
+  position: fixed;
+  top: var(--card-back-top-start);
+  right: 0px;
+}
+
+div.inflection-table {
+  padding-top: 20px;
+}
+
+div.phonetics {
+  scale: 75%;
+}
+
+.inflection-table tr {
+  font-family: "Bunchlo GC", "uncial antiqua";
+  font-feature-settings: "ss01";
+  font-size: var(--gaelic-font-size);
+}
+/* set table header to normal font */
+.inflection-table thead tr th {
+  font-family: arial;
+  font-size: 20px;
+  font-feature-settings: "";
+}
+
+div.inflection-table-title {
+  font-size: var(--table-title-font-size);
+  font-weight: var(--table-title-font-weight);
+}
+
+td.sider {
+  font-family: arial;
+  font-size: 16px;
+  font-feature-settings: "";
+}
+
+.gloss {
+  background-color: beige;
+}
+
+spans.listing-sense-item-gloss {
+  margin-left: 4px;
+  padding-left: 4px;
+}
+
+div.listing {
+  margin-bottom: 20px;
+}
+span.listing-title.gaelic {
+  color: #993300;
+  font-weight: bold;
+}
+
+div.listing-senses-wrapper {
+  margin-left: 10px;
+}
+
+span.bearla.example,
+span.listing-part-of-speech,
+span.grammar {
+  padding-left: 5px;
+}
+
+span.listing-part-of-speech,
+span.grammar {
+  color: #006600;
+  font-size: 85%;
+}
+
+span.bearla.example::before,
+span.listing-part-of-speech::before,
+span.grammar::before {
+  content: "(";
+}
+
+span.bearla.example::after,
+span.listing-part-of-speech::after,
+span.grammar::after {
+  content: ")";
+}
+
+div.bearla,
+div.examples,
+div.declension-class,
+div.noun-gender,
+div.etym {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card-back div.hint-gender,
+.card-back div.hint-bearla {
+  display: none;
+}
+
+.card-back div.noun-gender,
+.card-back div.etym,
+.card-back div.sub-forms-matches-wrapper {
+  outline-width: 1px;
+  outline-style: dashed;
+  width: max-content;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-back div.noun-gender {
+  outline-color: red;
+}
+
+.card-back div.etym,
+.card-back div.sub-forms-matches-wrapper {
+  outline-color: green;
+}
+
+#hints-container {
+  position: fixed;
+  top: 300px;
+  left: 10px;
+}
+
+div.hints {
+  text-align: left;
+}
+
+.menu {
+  font-size: 1rem;
+}
+
+#noun-declension-card-back-section-header::before {
+  content: "DECLENSION OF";
+}
+
+#hints-container-menu::before {
+  content: "[w] show all";
+}
+
+#hints-bearla-menu::before {
+  content: "[9] show béarla";
+}
+
+#hints-bearla-notes-menu::before {
+  content: "[8] show béarla notes";
+}
+
+#hints-phonetic-menu::before {
+  content: "[0] show phonetic notes";
+}
+
+div.card-back .hints-bearla {
+  display: inherit;
+}
+
+div.hints-bearla,
+div.hints-bearla-notes,
+div.hints-phonetic {
+  display: none;
+}
+
+.hint-gender {
+}
+
+.hint-bearla-notes {
+}
+
+span.symbol-shorthand {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.gaelic {
+  font-family: "Bunchlo GC", "uncial antiqua";
+  font-feature-settings: "ss01";
+  font-size: var(--gaelic-font-size);
+}
+
+div.gaelic {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+div.alternate-location {
+}
+
+div.transcription {
+  width: max(450px, 70%);
+  font-family: "Bunchlo GC", "uncial antiqua";
+  font-feature-settings: "ss01";
+  font-size: var(--gaelic-font-size);
+  margin-bottom: 20px;
+  line-height: 1.75rem;
+}
+
+.bearla-notes {
+}
+
+p {
+  text-align: left;
+  margin-top: 4px;
+  margin-left: 1em;
+}
+
+b,
+strong {
+  font-family: "Bunchlo GC", "uncial antiqua";
+  font-feature-settings: "ss01";
+  font-weight: 400;
+  font-size: var(--gaelic-font-size);
+}
+
+i {
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
+
+i > b {
+  font-size: 1.2rem;
+}
+
+table {
+  border: solid 1px #ddeeee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 18px Arial, sans-serif;
+}
+
+table thead th {
+  background-color: #ddefef;
+  border: solid 1px #ddeeee;
+  color: #336b6b;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+table tbody td {
+  border: solid 1px #ddeeee;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+/*  List  */
+
+ul {
+  /* margin-left: -20px; */
+  margin-top: 5px;
+  margin-bottom: 15px;
+  /*  list-style-position: inside; */
+}
+
+li {
+  font-size: 1.1rem;
+  /*  line-height is between wrap lines for the same <li> tag I think  */
+  line-height: 1.3rem;
+}
+
+/* All but last list item */
+ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.outline-blue {
+  /* outline-color: blue;
+  outline-width: 1px;
+  outline-style: solid; */
+}
+
+.outline-red {
+  /* outline-color: red;
+  outline-width: 1px;
+  outline-style: dashed; */
+}
+.outline-green {
+  /* outline-color: green;
+  outline-width: 2px;
+  outline-style: solid; */
+}
+
+a.small {
+  font-size: 0.85rem;
+}
+
+sup {
+  display: none;
+  /* vertical-align: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  color: blue; */
+}
+
+/* Currently used for information about mutations and some grammar */
+sub {
+  vertical-align: inherit;
+  line-height: inherit;
+  font-size: 90%;
+  color: red;
+}
+
+div.type-in {
+  position: fixed;
+  top: 40px;
+}
+
+.type-in {
+  /* outline-color: lightblue;
+  outline-width: 1px;
+  outline-style: dashed; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+.type-in-revealed {
+}
+
+/* Built-in "id" to hook styles onto   */
+#typeans {
+  font-size: 1.5rem !important;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  background-color: #192733;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  font-family: Arial;
+  text-align: center;
+}
