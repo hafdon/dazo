@@ -7,6 +7,10 @@
  *         pronounced like this. Do they match?
  */
 
+function getElementById(id) {
+  return document.getElementById(id);
+}
+
 const INTERVAL_INIT_DICT = 250;
 
 const BASE_URL = {
@@ -577,7 +581,7 @@ const mutableS = ["n", "l", "r", "N", "L", "R"];
 
 const slenderVowelRegex = /[eéiíEÉIÍ]/g;
 const broadVowelRegex = /[aáoóuúAÁOÓUÚ]/g;
-const consonantRegex = /[bcdefghlmnprStBCDEFGHLMNPRST]/;
+const consonantRegex = /[bcdefghlmnprst]/i;
 
 function htmlPronunciationMatches() {
   return "";
@@ -603,102 +607,992 @@ function _htmlPronunciationMatches() {
 function initPatterns() {
   const patterns = [
     {
-      sound: "/aʊ/",
-      orthoRegexes: [/^amh/],
+      regexes: [/fh/i],
+      ulster: "/-/",
+      connacht: "/-/",
+      munster: "/-/",
+      examples: ["infheistíocht"],
+    },
+    {
+      regexes: [/ón/i],
+      ulster: "/on/",
+      connacht: "/un/",
+      munster: "/on/",
+      examples: ["conaigh"],
+    },
+    {
+      regexes: [/amh/i],
+      ulster: "/aʊ/",
+      connacht: "/aʊ/",
+      munster: "/aʊ/",
       examples: [],
     },
     {
-      sound: "/iə/",
-      orthoRegexes: [/éa/],
-      examples: ["cruthaigh"],
-      notes: "Munster",
-      exceptions: [],
+      regexes: [/cn/i],
+      examples: ["cnoc", "tionscnamh"],
+
+      ulster: ["/kr/", "/sk(ə)n"],
+      connacht: ["/kr/", "/sk(ə)n"],
+      munster: ["/kn/", "/sk(ə)n"],
     },
     {
-      sound: "/ɪg/",
-      orthoRegexes: [/aigh$/],
-      examples: ["cruthaigh"],
-      notes: "Munster",
-      exceptions: [{ lexeme: "éadan", sound: "/eə/" }],
+      regexes: [/un/i],
+      ulster: ["/un/", "ʌn"],
+      connacht: ["/ʌn/", ""],
+      munster: ["/un/", ""],
+      examples: ["suntasach", "bunúsach"],
     },
     {
-      sound: "/i/",
-      orthoRegexes: [/ithe$/],
-      examples: ["sínithe"],
-      notes: "Connacht",
+      regexes: [/ío[ns]?/i],
+      examples: [
+        ["cíos", "aníos"],
+        ["díon", "comhlíon"],
+        "faitíos",
+        "díospóireacht",
+      ],
+      ulster: ["/i/", "/i/", "", "ɪ"],
+      connacht: ["/i(ə)/", "/i(ə)/", "/i/", "/i/"],
+      munster: ["/i/", "/i(ə)/", "", "/i/"],
     },
     {
-      sound: "/əhɛ/",
-      orthoRegexes: [/ithe$/],
-      examples: ["sínithe"],
-      notes: "Munster",
+      regexes: [/tl/i],
+      examples: ["eitleán"],
+      ulster: ["/t(ə)l/ [epenthesis]"],
+      connacht: ["/tl/"],
+      munster: ["/t(ə)l/ [epenthesis]"],
+    },
+
+    {
+      regexes: [/in/i],
+      examples: ["sinsear", "inis"],
+      ulster: ["/ɪn/", "/ɛn/ ('hen')"],
+      connacht: ["/in/ ('mean')", "/ɪn/ ('in')"],
+      munster: ["/in/ ('mean')", "/ɪn/ ('in')"],
     },
     {
-      sound: "/ihɛ/",
-      orthoRegexes: [/ithe$/],
-      examples: ["sínithe"],
-      notes: "Ulster",
+      regexes: [/e?ach\b/i],
+      examples: [
+        ["bunúsach", "ribeach"],
+        "suntasach",
+        "bainteach",
+        "criosach",
+        "gach",
+      ],
+      ulster: ["/ä(x)/", "", "", "ʌ", "/ä(x)/"],
+      connacht: ["/ʌx/", "", "", "", "/äx/"],
+      munster: ["/ʌx/", "", "", "", "/äx/"],
+    },
+    //
+    {
+      regexes: [/omhai/i],
+      examples: ["comhairleoir"],
+      ulster: "/o/",
+      connacht: "/o/",
+      munster: "/o/",
     },
     {
-      sound: "/ɛ/",
-      orthoRegexes: [/^ai[bcdefghlmnprst]/i],
+      regexes: [/ath\b/i],
+      examples: ["brath"],
+      ulster: "/e/",
+      connacht: "/ä/",
+      munster: "/ä(h)/",
+    },
+
+    {
+      regexes: [/omhal/i],
+      examples: ["comhaltas"],
+      ulster: "/ol/",
+      connacht: "/ol/",
+      munster: "/ol/",
+    },
+    {
+      regexes: [/nb/i],
+      examples: ["leanbaí"],
+      ulster: ["/n(ə)b [epenthesis]/"],
+      connacht: ["/n(ə)b [epenthesis]/"],
+      munster: ["/n(ə)b [epenthesis]/"],
+    },
+    {
+      regexes: [/an/i],
+      examples: [["montach", "planda"]],
+      ulster: ["/än/"],
+      connacht: ["/än/"],
+      munster: ["/aʊn/"],
+    },
+    {
+      regexes: [/urr/i],
+      examples: ["urraim"],
+      ulster: ["/ɛr/ ('erin')"],
+      connacht: ["/ʊr/"],
+      munster: ["/or/"],
+    },
+    {
+      regexes: [/áith/i],
+      examples: ["cáith"],
+      ulster: ["/aɪ/"],
+      connacht: ["/ɔ/"],
+      munster: ["/ɔ/"],
+    },
+    {
+      regexes: [/gn/i],
+      examples: ["gnúsacht", "gné"],
+      ulster: ["/gr/"],
+      connacht: ["/gn/"],
+      munster: ["/gn/"],
+    },
+    {
+      regexes: [/eir/i],
+      examples: ["ceird"],
+      ulster: ["/ɛr/ ('cared')"],
+      connacht: ["/æɛr/"],
+      munster: ["/ɛr/ ('cared')"],
+    },
+    {
+      regexes: [/o/i],
+      examples: ["cothaigh", ["confadh", "dochar", "trom"], "moltach"],
+      ulster: ["/ɔ/", "/ʌ/", "/o/"],
+      connacht: ["/ʌ/", "/ʌ/", "/o/"],
+      munster: ["/ʌ/", "/ʌ/ or /(aʊ)/ with trom", "/o/"],
+    },
+
+    {
+      regexes: [/a?íocht?/i],
+      examples: [
+        ["uathoibríoch", "cíoch", "críochnaigh"],
+        ["drámaíocht", "aíocht"],
+        "infheistíocht",
+      ],
+      ulster: ["/iə(h)/", "/iəkt/", "/iät/"],
+      connacht: ["/iəx/", "/iəxt/", "/iəxt/"],
+      munster: ["/iəx/", "/iəxt/", "/iəxt/"],
+    },
+    {
+      regexes: [/i?om/i],
+      examples: ["compánach", "iompaigh"],
+      ulster: "/ʌ/",
+      connacht: "/ʌ/",
+      munster: "/u/",
+    },
+    {
+      regexes: [/uath/i],
+      examples: ["uathoibríoch"],
+      ulster: "/u/",
+      connacht: "/u/",
+      munster: "/u/",
+    },
+    {
+      regexes: [/eamh/i],
+      examples: ["gaineamh", "neamhspleách"],
+      ulster: ["/ɪv/", "/æv/"],
+      connacht: ["/ə/", "/æv/"],
+      munster: ["/ɪv/", "/æv/"],
+    },
+
+    {
+      regexes: [/nf[^h]/i],
+      examples: ["confadh"],
+      ulster: ["/nəf/ [epenthesis]"],
+      connacht: ["/nf/"],
+      munster: ["/nf/"],
+    },
+
+    {
+      regexes: [/abha/i],
+      examples: ["fabhalscéal", "abhainn"],
+      ulster: ["/aʊə/ ('now')", "/o/"],
+      connacht: ["/aʊə/ ('now')"],
+      munster: ["/aʊə/ ('now')"],
+    },
+    {
+      regexes: [/eoir\b/i],
+      examples: ["comhairleoir"],
+      ulster: "/är/ ('are')",
+      connacht: "/or/",
+      munster: "/or/",
+    },
+    {
+      regexes: [/eách/i],
+      examples: ["neamhspleách"],
+      ulster: "/ɛə/",
+      connacht: "/ɔx/",
+      munster: "/ɔx/",
+    },
+    {
+      regexes: [/agha\b/i],
+      examples: ["saghas"],
+      ulster: "/aɪ/ ('nice')",
+      connacht: "/aɪ/ ('nice')",
+      munster: "/aɪ/ ('eye')",
+    },
+    {
+      regexes: [/umh\b/i],
+      examples: ["cumhachtaigh"],
+      ulster: "/u/",
+      connacht: "/u/",
+      munster: "/u/ or /ɔ/",
+    },
+    {
+      regexes: [/éa/i],
+      examples: ["méadaigh", "téacs", "déanach"],
+      ulster: ["/e/", "/ɛ/", "/e/"],
+      connacht: ["/eə/", "/e/", "/e(ə)/"],
+      munster: ["/eə/", "/eɪə/", "/i(ə)/"],
+    },
+    {
+      regexes: [/a?ithe$/i],
+      examples: ["sínithe", "ardaithe"],
+      ulster: "/ihɛ",
+      connacht: "/i/",
+      munster: "/əhɛ/",
+    },
+    {
+      regexes: [/^ai[bcdefghlmnprst]/i],
       examples: ["Aibreán"],
       notes: "Ulster",
+      ulster: "/ɛ/",
+      connacht: "/aɪ/",
+      munster: "/ə/ (?)",
     },
     {
-      sound: "/aɪ/",
-      orthoRegexes: [/^ai[bcdefghlmnprst]/i],
-      examples: ["Aibreán"],
-      notes: "Connacht",
+      regexes: [/e?acht/i],
+      examples: [
+        "sneachta",
+        "gluaiseacht",
+        "ioidhreacht",
+        "éifeacht",
+        "reacht",
+        "eachtra",
+      ],
+      ulster: [
+        "~/a:rt/ ('cart')",
+        "/ät/ ('shot')",
+        "/ʌxt/ (iii)",
+        "/ät/ ('shot')",
+        "/æxt/",
+        "/ät/",
+      ],
+      connacht: ["", "/ʌxt/", "/ʌxt/", "/ʌxt/", "/æxt/", "/æxt/"],
+      munster: ["", "/ʌxt/", "/ʌxt/", "/ʌxt/", "/æxt/", "/äxt/"],
     },
     {
-      sound: "/ə/",
-      orthoRegexes: [/^ai[bcdefghlmnprst]/i],
-      examples: ["Aibreán"],
-      notes: "Munster, when un---",
+      regexes: [/thn/i],
+      examples: ["breathnaigh"],
+      ulster: [""],
+      connacht: [""],
+      munster: ["/h(ə)n/ [epenthesis]"],
     },
-    //     {
-    //       sound: "/ə/",
-    //       orthoRegexes: [/[bcdefghlmnprst]oi[bcdefghlmnprst]/i],
-    //       sounds: {
-    // Ulster: {
+    {
+      regexes: [/e?ann/i],
+      examples: ["gleann", "craiceann", "gannchuid", "srann"],
+      ulster: ["/æn/", "/ən/ [unstressed]", "/än/", "/än/"],
+      connacht: ["/ɔn/", "/ən/ [unstressed]", "/ɔn/ ('gone')", "/än/ ('naan')"],
+      munster: ["/aʊn/", "/ən/ [unstressed]", "/aʊn/ ('noun')", "/aʊn/"],
+    },
+    {
+      regexes: [/aomh/i],
+      examples: ["naomh"],
+      ulster: ["iu"],
+      connacht: ["/(e)iv/"],
+      munster: ["/aɪəv/"],
+    },
+    {
+      regexes: [/éir/i],
+      examples: ["pinsinéir"],
+      ulster: ["/ɛr/ ('air')"],
+      connacht: ["/ɛr/ ('air')"],
+      munster: ["/ɛr/ ('air')"],
+    },
+    {
+      regexes: [/mh/i],
+      examples: ["formhór"],
+      ulster: ["/w/"],
+      connacht: ["/w/"],
+      munster: ["/v/"],
+    },
+    {
+      regexes: [/aío?/i],
+      examples: [["imeachtaí", "iomaí"], "ealaíontóir"],
+      ulster: ["/i/", "/i(ə)/"],
+      connacht: ["/i/", "/i(ə)/"],
+      munster: ["/i/", "/i(ə)/"],
+    },
 
-    // },
-    // Connacht: {
+    {
+      regexes: [/aoi/i],
+      examples: ["smaointe"],
+      ulster: ["/wi/"],
+      connacht: ["/wi/"],
+      munster: ["/wi/"],
+    },
+    {
+      regexes: [/thaoi/i],
+      examples: ["cathaoirleach"],
+      ulster: ["/hi/"],
+      connacht: ["/hi/"],
+      munster: ["/hi/"],
+    },
+    {
+      regexes: [/ei/i],
+      examples: [["meitheal", "ceil"]],
+      ulster: ["/ɛ/"],
+      connacht: ["/ɛ/"],
+      munster: ["/ɛ/"],
+    },
+    {
+      regexes: [/le/i],
+      examples: ["le"],
+      ulster: ["/lɛ/"],
+      connacht: ["/lɛ/"],
+      munster: ["/lɛ/"],
+    },
+    {
+      regexes: [/iúr/i],
+      examples: ["stiúrthóir"],
+      ulster: ["/u/"],
+      connacht: ["/u(ə)/"],
+      munster: ["/u(ə)/"],
+    },
+    {
+      regexes: [/dh/i],
+      examples: ["mar dhea", "comhdháil"],
+      ulster: ["/j/", "/ɣ/"],
+      connacht: ["/j/", "/ɣ/"],
+      munster: ["/j/", "/-/"],
+    },
+    {
+      regexes: [/ao/i],
+      examples: ["daor", "aonad", "caora"],
+      ulster: ["/i/", "/e/", "/i/"],
+      connacht: ["/i/", "/e(ə)/", "/wi/"],
+      munster: ["/eə/", "/e(ə)/", "/wi/"],
+    },
+    {
+      regexes: [/ionn?/i],
+      examples: [["iontas", "tionscnamh"], "sionnach"],
+      ulster: ["/ʌn/", "/ən/ [unstressed]"],
+      connacht: ["/in/", "/ən/ [unstressed]"],
+      munster: ["/un/", "/ən/ [unstressed]"],
+    },
+    {
+      regexes: [/eoi?/i],
+      examples: ["teorainn", "ainneoin"],
+      ulster: ["/o/"],
+      connacht: ["/o/"],
+      munster: ["/o/", "/o(ə)/"],
+    },
+    {
+      regexes: [/gl/i],
+      examples: ["glúin"],
+      ulster: ["/gl/"],
+      connacht: ["/gl/"],
+      munster: ["/gəl/ [epenthesis]"],
+    },
 
-    // },
-    // Munster: {
+    {
+      regexes: [/aigh(?!\b)/i], // aigh not at the end of a word
+      // that is, one or more non-spaces between aigh- and the next word boundary
+      examples: ["taighde", "saighdiúir"],
+      ulster: "/aɪ/",
+      connacht: "/aɪ/",
+      munster: "/aɪ/",
+    },
+    {
+      regexes: [/[aeio]?ú[aeio]?/i],
+      examples: ["saighdiúir", "comhaontú"],
+      ulster: ["/ə/ [unstressed]", "/u/ [stressed]"],
+      connacht: ["/u/"],
+      munster: ["/u/"],
+    },
+    {
+      regexes: [/ia/i],
+      // coitianta doesn't quite line up
+      examples: [["fianaise", "coitianta"], "scian", ["iasacht", "iarraidh"]],
+      ulster: ["/i(ə)/", "ɪ", "/jɛ"],
+      connacht: ["/i(ə)/", "", "/i/"],
+      munster: ["/i(ə)/", "", "/i/"],
+    },
+    {
+      regexes: [/mh/i],
+      examples: ["tréimhse"],
+      ulster: "/v/",
+      connacht: "/v/",
+      munster: "/v/",
+    },
+    {
+      regexes: [/ghch/i],
+      examples: ["toghchán"],
+      ulster: "--",
+      connacht: "--",
+      munster: "gh/ə/ch [epenthesis]",
+    },
+    {
+      regexes: [/ille/i],
+      examples: ["bille"],
+      ulster: "ɪljə",
+      connacht: "ɪlə",
+      munster: "ɪlə",
+    },
+    {
+      regexes: [/rg/i],
+      examples: ["fearg"],
+      ulster: ["/rəg/ [epenthesis]"],
+      connacht: ["/rəg/ [epenthesis]"],
+      munster: ["/rəg/ [epenthesis]"],
+    },
+    {
+      regexes: [/rm/i],
+      examples: ["gairm", "formhór"],
+      ulster: ["/rəm/ [epenthesis]", "/rw/"],
+      connacht: ["/rəm/ [epenthesis]", "/rw/"],
+      munster: ["/rəm/ [epenthesis]", "/rəv/ [epenthesis]"],
+    },
+    {
+      regexes: [/uai?/i],
+      examples: [["dualgas", "gluaiseacht"], "cuan"],
+      ulster: ["/uə/", "/uæ/"],
+      connacht: ["/uə/", "/u/"],
+      munster: ["/uə/", "/uə/"],
+    },
 
-    // },
-    //       },
-    //       examples: ["Aibreán"],
-    //       notes: "Munster, when un---",
-    //     },
+    {
+      regexes: [/e?ái?/i],
+      examples: [
+        ["áis", "sáraigh", "cláraigh"],
+        ["cumarsáid", "péinteáil", "áthas", "Aibreán"],
+        "náisiúnta",
+      ],
+      ulster: ["/ɛ/", "/ä/", "/æ/"],
+      connacht: ["/ɔ/"],
+      munster: ["/ɔ/"],
+    },
+
+    {
+      regexes: [/ogh/i],
+      examples: ["toghchán"],
+      ulster: ["eɪ ('hay')"],
+      connacht: ["/aʊ/ ('now')"],
+      munster: ["/aʊ/ ('now')"],
+    },
+
+    {
+      regexes: [/il/i],
+      examples: ["milseog"],
+      ulster: ["/ɪl/"],
+      connacht: ["/il/"],
+      munster: ["/il/"],
+    },
+    {
+      regexes: [/oi/i],
+      examples: ["coitianta", "uathoibríoch", "oiliúint", "oideachas"],
+      ulster: ["/ä/", "/ɛ/", "/ɪ/", "/ɛ/"],
+      connacht: ["/ʌ/", "/aɪ/", "/ɛ/", "/ɛ/"],
+      munster: ["/ʊ/", "/ɪ/", "/ɪ/", "/ɪ/"],
+    },
+    {
+      regexes: [/[au]?inn/i],
+      examples: ["crinnte", "teorainn", "binn", "cruinn"],
+      ulster: ["/ɪn/ ('in')", "/äən/ or /ä(ɪ)n/", "/ɪn/ ('in')", "/ɪn/"],
+      connacht: ["/in/ ('mean')", "/ɪn/", "/in/ ('mean')", "/in/"],
+      munster: ["/ɪn/ ('in')", "n/a: teora", "/in/ ('mean')", "/in/"],
+    },
+    {
+      regexes: [/ar/i],
+      examples: ["ardaithe", "araon"],
+      ulster: ["/ɛr/ ('fair')", "/ər/ [unstressed]"],
+      connacht: ["/ɔr/ ('far')", "/ər/"],
+      munster: ["/ɔr/ ('far')", "/ɛr/ ('meredith')"],
+    },
+    {
+      regexes: [/áin$/i],
+      examples: ["síocháin"],
+      ulster: "/ʌn/",
+      connacht: "/ɔn/",
+      munster: "/ɔin/",
+    },
+    {
+      regexes: [/uinnigh\b/i],
+      examples: ["cruinnigh"],
+      ulster: ["/ɪni/"],
+      connacht: ["/ɪnjə/"],
+      munster: ["/ɪnɪg/"],
+    },
+    {
+      regexes: [/eidh/i],
+      examples: ["feidhmigh"],
+      ulster: ["/e/"],
+      connacht: ["/aɪ/ ('eye')"],
+      munster: ["/aɪ/ ('eye')"],
+    },
+    {
+      regexes: [/a?igh\b/i],
+      examples: [["ceadaigh", "eagraigh"], ["figh", "laistigh"], "cruaigh"],
+      ulster: ["/i/", "/i/", "/eɪ/ ('hay')"],
+      connacht: ["/ə/", "ɪ", "/ʌ/"],
+      munster: ["/ɪg/", "/ɪg/", "/ɛg/"],
+    },
+    {
+      regexes: [/earr?/i],
+      examples: [["beartas", "dearc"], "earra", "deisceart"],
+      ulster: ["/ɔr/ ('are')", "/är/", "/ɔr/ ('are')"],
+      connacht: ["/ær/", "/ær/", "/ər/ ('dirt')"],
+      munster: ["/ær/", "/ær/", "/ər/ ('dirt')"],
+    },
+
+    {
+      regexes: [/ea/i],
+      examples: [
+        "ceadaigh",
+        ["seachas", "corpoideachas"],
+        "taifead",
+        "eaglach",
+        "feasta",
+      ],
+      ulster: ["/æ/", "/ä/", "/ə/ [unstressed]", "/ʌ/", "/æ/"],
+      connacht: ["/æ/", "/ä/", "/ə/ [unstressed]", "/ɔ/", "/æ/"],
+      munster: ["/æ/", "/ä/", "/ə/ [unstressed]", "/ä/", "/ɛ/"],
+    },
+    {
+      regexes: [/or/i],
+      examples: ["ord"],
+      ulster: ["/ɔr/ ('or')"],
+      connacht: ["/aʊər/ ('tower')"],
+      munster: ["/ɔr/ ('or')"],
+    },
+    {
+      regexes: [/im/i],
+      examples: ["timpeallacht"],
+      ulster: ["/ɪm/"],
+      connacht: ["/im/"],
+      munster: ["/im/"],
+    },
+    {
+      regexes: [/uimh/i],
+      examples: ["cuimhneamh"],
+      ulster: ["/ʌv/"],
+      connacht: ["/wim/"],
+      munster: ["/wi/"],
+    },
+    {
+      regexes: [/eith/i],
+      examples: ["breith"],
+      ulster: ["/e/"],
+      connacht: ["/ɛ/"],
+      munster: ["/ɛ/"],
+    },
+    {
+      regexes: [/uí/i],
+      examples: ["buí"],
+      ulster: ["/wi/"],
+      connacht: ["/wi/"],
+      munster: ["/wi/"],
+    },
+    {
+      regexes: [/aith/i],
+      examples: ["sraith", "taithí"],
+      ulster: ["/əɪ/ ('like')", "/ä(h)/"],
+      connacht: ["/ä(h)/", "/ä(h)/"],
+      munster: ["/ä(h)/", "/ä(h)/"],
+    },
+    {
+      regexes: [/onn\b/i],
+      examples: ["anonn"],
+      ulster: "/ʌn/",
+      connacht: "/un/",
+      munster: "/un/",
+    },
+    {
+      regexes: [/rch/i],
+      examples: ["dorcha"],
+      ulster: "/r(ə)h/",
+      connacht: "/rəx/",
+      munster: "/rəx/",
+    },
+    {
+      regexes: [/ai/i],
+      examples: [
+        "taifead",
+        "malairt",
+        "craiceann",
+        ["paiste", "bailithe", "caitheachas", "faitíos"],
+      ],
+      ulster: ["/ä/", "/ə/ [unstressed]", "/æ/", "/ä/"],
+      connacht: ["/æ/", "/ə/ [unstressed]", "/æ/", "/ä/"],
+      munster: ["/ä/", "/ə/ [unstressed]", "/ɪ/", "/ä/"],
+    },
+    {
+      regexes: [/[aiou]?é[iou]?/i],
+      examples: ["béim", "déileáil"],
+      ulster: ["/e/", "/e/"],
+      connacht: ["/e/", "/e/"],
+      munster: ["/e/", "/aɪ/ ('eye')"],
+    },
+    {
+      regexes: [/oidh/i],
+      examples: ["oidhreacht"],
+      ulster: "/aɪ/ ('eye')",
+      connacht: "/aɪ/ ('eye')",
+      munster: "/aɪ/ ('eye')",
+    },
+    {
+      regexes: [/omh/i],
+      examples: ["comhrá", "comhlacht"],
+      ulster: ["/o/"],
+      connacht: ["/o/"],
+      munster: ["/ə/ [unstressed]", "/o/"],
+    },
+    {
+      regexes: [/omhao/i],
+      examples: ["comhaontú"],
+      ulster: ["/ɔɪə/ ('boy'n')"],
+      connacht: ["/oiə/"],
+      munster: ["/ɔɪə/ ('boy'n')"],
+    },
+    {
+      regexes: [/uaigh/i],
+      examples: ["luaigh"],
+      ulster: "/ueɪ/ (like 'y|ou a|te')",
+      connacht: "/uʌ/",
+      munster: "/uɪg/",
+    },
+    {
+      regexes: [/uigh/i],
+      examples: ["lasmuigh"],
+      ulster: "/wi/",
+      connacht: "/ʊ/",
+      munster: "/ʊ/",
+    },
+    {
+      regexes: [/ch/i],
+      examples: ["dúchas"],
+      ulster: "/h/",
+      connacht: "/x/",
+      munster: "/x/",
+    },
+    {
+      regexes: [/uaith/i],
+      examples: ["suaith"],
+      ulster: "/ui/",
+      connacht: "/uʌ/",
+      munster: "/uʌ/",
+    },
+    {
+      regexes: [/e?adh\b/i],
+      examples: ["cáineadh", ["comhlíonadh", "conradh"]],
+      ulster: ["/u/"],
+      connacht: ["/ə/"],
+      munster: ["/ɛ/", "/ə/"],
+    },
+    {
+      regexes: [/a/i],
+      examples: ["lasmuigh", "masc", ["dualgas", "iarthar"], "blas"],
+      ulster: ["/æ/ [stressed]", "/æ/", "/ə/ [unstressed]", "/ä/"],
+      connacht: ["/æ/ [stressed]", "/ä/", "/ə/ [unstressed]", "/ä/"],
+      munster: ["/æ/ [stressed]", "/ä/", "/ə/ [unstressed]", "/ä/"],
+    },
+    {
+      regexes: [/agh/i],
+      examples: ["iniúch"],
+      ulster: "/(j)u(h)/",
+      connacht: "/(j)ux/",
+      munster: "/ux/",
+    },
+    {
+      regexes: [/sh/i],
+      examples: ["dúshlán"],
+      ulster: "/h/",
+      connacht: "/-/",
+      munster: "/h/",
+    },
+    {
+      regexes: [/éith/i],
+      examples: ["tréith"],
+      ulster: "/e/",
+      connacht: "/e/",
+      munster: "/e/",
+    },
+    {
+      regexes: [/ca$/i],
+      examples: ["éasca"],
+      ulster: "/(w)i/",
+      connacht: "/ə/",
+      munster: "/ə/",
+    },
+    {
+      regexes: [/uth/i],
+      examples: ["sruth"],
+      ulster: "/u/",
+      connacht: "/ʌ/",
+      munster: "/ʌ/ or /ʊ/",
+    },
+    {
+      regexes: [/iúch/i],
+      examples: ["laghdaigh"],
+      ulster: "/eɪ/ ('hay')",
+      connacht: "/aɪ/ ('eye')",
+      munster: "/aɪ/ ('eye')",
+    },
+    {
+      regexes: [/eag/i],
+      examples: ["teagmháil"],
+      ulster: "/æŋg/",
+      connacht: "/æg/",
+      munster: "/æŋg/",
+    },
+
+    {
+      regexes: [/th/i],
+      examples: ["iarthar"],
+      ulster: "/h/",
+      connacht: "/h/",
+      munster: "/h/",
+    },
+    {
+      regexes: [/iabha/i],
+      examples: ["diabhal"],
+      ulster: "/æwə/",
+      connacht: "/aʊə/",
+      munster: "/iə/",
+    },
+    {
+      regexes: [/éigh/i],
+      examples: ["pléigh"],
+      ulster: "/eɪ/",
+      connacht: "/eɪ/",
+      munster: "/eg/",
+    },
+    {
+      regexes: [/aín/i],
+      examples: ["ealaín"],
+      ulster: "/i/",
+      connacht: "/i/",
+      munster: "/i(ə)/",
+    },
+    {
+      regexes: [/io/i],
+      examples: ["cion", ["criosach", "sliotar"], "iomaí"],
+      ulster: ["/(j)ʌ/", "/ɪ/", "/ʌ/"],
+      connacht: ["/jʌ/", "/ɪ/", "/ʌ/"],
+      munster: ["/jʌ/", "/ɪ/", "/ʌ/"],
+    },
+    {
+      // has to go in front of other /ó/ because
+      // i don't know how to prioritize this one
+      // since they both match on 2 characters in "cóip"
+      // maybe take the "i" out of the 2nd [] grouping?
+      regexes: [/ói/i],
+      examples: ["cóip", "tionóisc", ["tóin", "móin"]],
+      ulster: ["/o/", "/ʌ/", "/o/"],
+      connacht: ["/oə/", "/o/", "/u/"],
+      munster: ["/oɪ/", "/o/", "/oə/"],
+    },
+    {
+      regexes: [/[aeiu]?ó[aeu]?/i],
+      examples: [
+        ["cóip", "dóchas"],
+        ["cló", "easóg"],
+        ["lóchrann", "pósta"],
+      ],
+      ulster: ["/o/", "/ʌ/", "/ɔ/"],
+      connacht: ["/o/"],
+      munster: ["/o/"],
+    },
+    {
+      regexes: [/all/i],
+      examples: [["ball", "thall", "mall"], "alltacht", "geall"],
+      ulster: ["/äl/", "/äl/", "/æl/"],
+      connacht: ["/ɔl/", "/äl/", "jɔl"],
+      munster: ["/aʊ(ə)l/", "/äl/", "/jaʊ(ə)l/"],
+    },
+    {
+      regexes: [/ui/i],
+      examples: ["muiníneach", "cuideachta"],
+      ulster: ["/u/", "/ʊ/"],
+      connacht: ["/ə [unstressed]/", "ʊ"],
+      munster: ["/ə [unstressed]"],
+    },
+
+    {
+      regexes: [/amh/i],
+      examples: [["samhradh", "samhail"]],
+      ulster: ["/aʊ/ ('how')"],
+      connacht: ["/aʊ/ ('how')"],
+      munster: ["/aʊ/ ('how')"],
+    },
+    {
+      regexes: [/aidh/i],
+      examples: ["aidhm", "iarraidh"],
+      ulster: ["/e/", "/i/"],
+      connacht: ["/aɪ/", "/ə/"],
+      munster: ["/aɪ/", "/ɪg/"],
+      notes: "* iarraidh seems like its ending sounds are for a 'aigh' word.",
+    },
+
+    {
+      regexes: [/aonn/i],
+      examples: ["daonna"],
+      ulster: ["/en/"],
+      connacht: ["/ujən/"],
+      munster: ["/e(ə)n/"],
+    },
+    {
+      regexes: [/eabh/i],
+      examples: ["feabhsaigh"],
+      ulster: ["/io/"],
+      connacht: ["/(i)aʊ/"],
+      munster: ["/(i)aʊ/"],
+    },
+    {
+      regexes: [/uill/i],
+      examples: ["tuillte"],
+      ulster: ["/ɪl/"],
+      connacht: ["/ɪl/"],
+      munster: ["/ɪl/"],
+    },
+    {
+      regexes: [/ithi/i],
+      examples: ["ithir"],
+      ulster: ["/ɪhə/"],
+      connacht: ["/i/"],
+      munster: ["/ɪhə/"],
+    },
+    {
+      regexes: [/í/i],
+      examples: ["dílis"],
+      ulster: ["/i/"],
+      connacht: ["/i/"],
+      munster: ["/i/"],
+    },
   ];
+
+  /**
+   * 1. does x regex encompass y regex? then use x.
+   */
 
   const lexeme = getCardLexeme();
 
-  const matches = patterns.filter((p) =>
-    p.orthoRegexes.some((r) => r.exec(lexeme))
+  const execs = [];
+
+  // todo change this to a reduce function
+  // or whatever
+  patterns.filter((p) =>
+    p.regexes.some((r, idx) => {
+      const res = r.exec(lexeme);
+      if (res) {
+        execs.push({
+          examples: p.examples,
+          ulster: p.ulster,
+          connacht: p.connacht,
+          munster: p.munster,
+          regex: r,
+          match: res[0],
+          matchLen: res[0].length,
+          startIndex: res.index,
+          endIndex: res.index + res[0].length,
+          styles: [],
+          supercededBy: [],
+          colorStyles: [],
+        });
+      }
+
+      return res !== null;
+    })
   );
 
-  const html =
-    `<div class="phonetics"><table><thead><th>sound</th><th>regex</th><th>examples</th><th>notes</th></thead>` +
-    matches.reduce((prev, curr) => {
+  for (let i = 0; i < execs.length; i++) {
+    for (let j = 0; j < execs.length; j++) {
+      if (
+        execs[i].startIndex <= execs[j].startIndex &&
+        execs[i].endIndex >= execs[j].endIndex &&
+        execs[i].matchLen > execs[j].matchLen
+      ) {
+        execs[j].styles.push("superceded");
+        execs[j].supercededBy.push(execs[i]);
+      }
+    }
+  }
+
+  // superceded later
+  execs.sort((a, b) => {
+    const indexDiff = a.startIndex - b.startIndex;
+    return indexDiff !== 0 ? indexDiff : a.matchLen - b.matchLen;
+  });
+
+  const chars = [...lexeme];
+  let colorIndex = 1; // incrementing number for css classes
+
+  execs.forEach((e) => {
+    if (e.supercededBy.length === 0) {
+      for (let i = e.startIndex; i < e.endIndex; i++) {
+        const overlap = chars[i].length > 1 ? "phone-segment-overlap" : "";
+
+        chars[
+          i
+        ] = /*html*/ `<span class="phone-segment-${colorIndex} ${overlap}">${chars[i]}</span>`;
+      }
+      // Oh, this is the color of the row of IPA information
+      e.colorStyles.push(`phone-segment-${colorIndex}`);
+      colorIndex++;
+    }
+  });
+
+  const colorLexeme = chars.join("");
+
+  function htmlLocality(loc) {
+    // loc can be [] or ""
+    loc = Array.isArray(loc) ? loc : [loc];
+    return loc.reduce((prev, curr) => prev + /*html*/ `<li>${curr}</li>`, "");
+  }
+
+  function htmlSpanExample(example) {
+    return /*html*/ `<span ${
+      example === lexeme ? 'class="example-is-lexeme"' : ""
+    }>${example}</span>`;
+  }
+
+  function htmlExamples(examples) {
+    return examples.reduce(
+      (prev, curr) =>
+        prev +
+        /*html*/ `<li>${
+          Array.isArray(curr)
+            ? curr.map(htmlSpanExample).join(", ")
+            : htmlSpanExample(curr)
+        }</li>`,
+      ""
+    );
+  }
+
+  let html =
+    /*html*/ `<div class="big-font">${colorLexeme}</div>` +
+    /*html*/ `<div><table class="phonetics"><thead><th>regex</th><th>U</th><th>C</th><th>M</th><th>examples</th></thead>` +
+    execs.reduce((prev, curr) => {
       return (
         prev +
-        `<tr><td>${curr.sound}</td><td>${
-          curr.orthoRegexes
-        }</td><td class="gaelic">${curr.examples}</td><td>${
-          curr.notes ?? ""
-        }</td></tr>`
+        /*html*/ `<tr class="${curr.styles.join(" ")}">` +
+        /*html*/ `<td class="regex ${curr.colorStyles.join(" ")}">${
+          curr.regex
+        }</td>` +
+        /*html*/ `<td class="ipa">${htmlLocality(curr.ulster)}</td>` +
+        /*html*/ `<td class="ipa">${htmlLocality(curr.connacht)}</td>` +
+        /*html*/ `<td class="ipa">${htmlLocality(curr.munster)}</td>` +
+        /*html*/ `<td class="gaelic"><ul class="compressed">` +
+        /*html*/ `${htmlExamples(curr.examples)}` +
+        /*html*/ `</ul></td>` +
+        /*html*/ `</tr>`
       );
     }, "") +
-    `</table></div>`;
+    /*html*/ `</table></div>`;
 
-  if (isAnswerSide()) {
-    setInnerHTML("dialog-portal", html);
-  }
+  // // nested literal
+  // const list = execs.map(
+  //   (e) => `<li class="${e.styles}">${Object.entries(e)}</li>`
+  // );
+  // html += `<ul style="size:50%;">${list}</ul>`;
+
+  // if (isAnswerSide()) {
+  //   setInnerHTML("dialog-portal", html);
+  // }
+  return html;
 }
 
 function _initPatterns() {
@@ -800,7 +1694,7 @@ const pronunciationRules = (word) => {
   };
 
   const rules_masked_vowels_regex = {
-    // this rule is also forumated as "doubles are word-final or followed by consonant, which is the same as "not followed by vowel"
+    // this rule is also formulated as "doubles are word-final or followed by consonant, which is the same as "not followed by vowel"
     // negative lookahead to make sure not followed by vowel
     "double consonants ([M] - no change)": [/[12](?:ll|rr|nn)(?![12])/],
 
@@ -876,6 +1770,10 @@ const spellingRules = (word) => {
     // That is, between "i" and "e",
     // This also must mean "i" or "í"
     "Only <i> appears before a slender consonant.",
+    // e and é never appear before a slender consonant
+    //***  right, so in a word, you never have [eé][34]
+    // 4i ok; 4i + o,u,ú
+    // 4e ok; 4e + o, ó, a, á
   ];
 
   const violations_5_3_regex = [
@@ -917,6 +1815,7 @@ const spellingRules = (word) => {
 
   const patterns_5_5_regex = [
     //  place <i> before all slender C¢ (4) after a broad vowel (1)
+    // redundant to:  "Only <i> appears before a slender consonant.",
     /1i4/, // aiC', áiC', óiC', úiC'
   ];
 
@@ -928,6 +1827,9 @@ const spellingRules = (word) => {
   const patterns_5_slender_consonants_regex = [
     // After a slender C¢ and before a broad V, insert silent <i> before <u>
     // are the converses false?
+    // redundant to:  // 4i ok; 4i + o,u,ú
+    // 4e ok; 4e + o, ó, a, á
+    // what? doesn't this contradict ...
     /4iu/,
     // Before all other [broad?] vowels, insert silent <e>.
     // are the converses false?
@@ -1244,7 +2146,30 @@ const keycodeHandlers = async function (event) {
       break;
     }
 
-    case "g":
+    case "g": {
+      const html = initPatterns();
+      const dialogId = "pronunciation-dialog";
+      if (isAnswerSide()) {
+        const portalEl = setInnerHTML(
+          "dialog-portal",
+          /*html */ `<dialog id="${dialogId}">${html}</dialog>`
+        );
+        if (portalEl) {
+          const dialogEl = document.getElementById(dialogId);
+          if (dialogEl) {
+            dialogEl.showModal();
+          } else {
+            myAlert("No dialogEl");
+          }
+        } else {
+          myAlert("Could not set HTML");
+        }
+      } else {
+        myAlert("Wait for the answer!");
+      }
+
+      break;
+    }
     case "h":
     case "k":
     case "l":
@@ -1687,6 +2612,17 @@ function htmlOptions(options) {
   }
 }
 
+function htmlPronunciationDialog(html) {
+  try {
+    return /*html*/ `<dialog id="pronunciation-dialog">
+${html}
+    </dialog>`;
+  } catch (error) {
+    myAlert(error);
+    return "";
+  }
+}
+
 /**
  * Form to add current lexeme to an interference cluster
  *
@@ -1700,7 +2636,7 @@ function htmlFormInterferenceCluster(clusters) {
       text: Object.keys(cluster.cluster).join(", "),
     }));
 
-    return /*html*/ `<dialog id="favDialog">
+    return /*html*/ `<dialog id="fav-dialog">
       <form>
         <p>
           <label>
@@ -1737,7 +2673,7 @@ function setForm(formHtml) {
 }
 
 function jsForm() {
-  const favDialog = document.getElementById("favDialog");
+  const favDialog = document.getElementById("fav-dialog");
   const defInput = document.getElementById("definition");
   const selectEl = favDialog.querySelector("select");
   const confirmBtn = favDialog.querySelector("#confirmBtn");
@@ -2019,9 +2955,7 @@ function getInterferenceCluster(lexeme, cb) {
 
   function getInterferenceClusterCb(data) {
     log("getInterferenceClusterCb typeof data:" + typeof data);
-    const cluster = data.filter((d) => {
-      return Object.keys(d.cluster).includes(lexeme);
-    });
+    const cluster = data.filter((d) => Object.keys(d.cluster).includes(lexeme));
 
     cb(cluster.length ? cluster[0].cluster : null);
   }
@@ -2042,7 +2976,7 @@ function doInterferenceClusterAlert(_lexeme, excludeSelf = true) {
         if (Object.keys(cluster).length) {
           let str = "";
 
-          for (let k of Object.keys(cluster)) {
+          for (const k of Object.keys(cluster)) {
             if (k !== lexeme || !excludeSelf) {
               str += `${k} (${cluster[k]})  <br>`;
             }
@@ -2087,11 +3021,17 @@ function setInterferenceClusterDisplay(lexeme) {
   getInterferenceCluster(lexeme, setInterferenceClusterDisplayCb);
 }
 
+/**
+ * @param {string} id HTML id attribute of element
+ * @param {*} str HTML to bind to innerHTML of element
+ * @returns {HTMLElement}
+ */
 function setInnerHTML(id, str) {
   const el = document.getElementById(id);
   if (el) {
     el.innerHTML = str;
   }
+  return el ?? null;
 }
 
 // table id="carnie-adjective-declension-table"

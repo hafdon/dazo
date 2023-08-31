@@ -12768,7 +12768,9 @@
     {
       "id": 20,
       "cluster": {
-        "cinn": "determine"
+        "cinn": "determine",
+        "cion": "affection",
+        "cuan": "haven"
       }
     },
     {
@@ -13033,7 +13035,7 @@
     },
     {
       "cluster": {
-        "máistirchoirpeach": "master criminal",
+        "mol": "praise",
         "mall": "slow, late"
       },
       "id": 54
@@ -13108,7 +13110,8 @@
     },
     {
       "cluster": {
-        "fuar": "cold"
+        "fuar": "cold",
+        "fuath": "hate"
       },
       "id": 66
     },
@@ -13174,7 +13177,8 @@
     },
     {
       "cluster": {
-        "leas": ""
+        "leas": "",
+        "las": "light"
       },
       "id": 76
     },
@@ -13220,7 +13224,8 @@
         "maraigh": "kill",
         "marcaigh": "ride",
         "machnaigh": "think",
-        "meabhrú": "reminder"
+        "meabhrú": "reminder",
+        "méadaigh": "enlarge"
       },
       "id": 83
     },
@@ -13256,6 +13261,25 @@
         "comhar": "mutual work"
       },
       "id": 88
+    },
+    {
+      "cluster": {
+        "tionscal": "industry"
+      },
+      "id": 89
+    },
+    {
+      "cluster": {
+        "díol": "sell"
+      },
+      "id": 90
+    },
+    {
+      "cluster": {
+        "coip": "froth",
+        "cóip": "rabble"
+      },
+      "id": 91
     }
   ],
   "potafocal": [

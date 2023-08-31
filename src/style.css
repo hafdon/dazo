@@ -3,7 +3,7 @@
 :root {
   --card-front-top-start: 0px;
   --card-back-top-start: 40px;
-  --gaelic-font-size: 140%;
+  --gaelic-font-size: 150%;
   --headword-index-font-size: 45%;
 
   --table-title-font-size: 110%;
@@ -15,8 +15,65 @@ body {
   height: 100%;
 }
 
+.big-font {
+  font-size: 3rem;
+}
+
+.superceded {
+  background: lightgrey;
+  /* color: yellow; */
+  /* text-decoration: line-through; */
+}
+
+.example-is-lexeme {
+  text-decoration: underline;
+}
+
 .force {
   /* background-color: lightgrey; */
+}
+
+table.phonetics {
+  margin-right: 30px;
+}
+
+table.phonetics tr td {
+  /* max-width: 85%; */
+  padding: 5px;
+  margin: 5px;
+}
+
+.phone-segment-overlap {
+  text-decoration: underline;
+}
+
+.phone-segment-1 {
+  color: blue;
+}
+
+.phone-segment-2 {
+  color: red;
+}
+
+.phone-segment-3 {
+  color: green;
+}
+
+.phone-segment-4 {
+  color: purple;
+}
+
+.phone-segment-5 {
+  color: brown;
+}
+
+.phone-segment-6 {
+  color: orange;
+}
+
+.regex,
+.ipa {
+  font-family: "Times New Roman", "Georgia", "Garamond";
 }
 
 /* custom tags */
@@ -25,8 +82,8 @@ sc {
   font-variant: small-caps;
 }
 
-h3.gaelic {
-  font-size: 135%;
+h3 {
+  font-size: 175%;
 }
 
 a {
@@ -477,6 +534,12 @@ li {
   font-size: 1.1rem;
   /*  line-height is between wrap lines for the same <li> tag I think  */
   line-height: 1.3rem;
+}
+
+ul.compressed li {
+  line-height: 0.6rem;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 /* All but last list item */
