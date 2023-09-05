@@ -371,9 +371,13 @@ also called:
 - Bunoscionn le Ruairí!
   - <https://archive.org/details/bunoscionnleruai0000orag> (free to borrow)
 
-### TV / streaming
+### TV / streaming (TG4)
 
 Irish-language shows with Irish-language subtitles (some also have English subtitles)
+
+#### Foghlaim
+
+- <https://foghlaim.tg4.ie/>
 
 #### Na hInnealtóirí ("The engineers")
 

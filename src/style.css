@@ -1,144 +1,145 @@
 /* <link href='_style.css' rel='stylesheet' type='text/css'> */
 
 :root {
-  --card-front-top-start: 0px;
-  --card-back-top-start: 40px;
-  --gaelic-font-size: 150%;
-  --headword-index-font-size: 45%;
+    --card-front-top-start: 0px;
+    --card-back-top-start: 40px;
+    --gaelic-font-size: 150%;
+    --headword-index-font-size: 45%;
 
-  --table-title-font-size: 110%;
-  --table-title-font-weight: 600;
+    --table-title-font-size: 110%;
+    --table-title-font-weight: 600;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 .big-font {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .superceded {
-  background: lightgrey;
-  /* color: yellow; */
-  /* text-decoration: line-through; */
+    background: lightgrey;
+    /* color: yellow; */
+    /* text-decoration: line-through; */
 }
 
 .example-is-lexeme {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .force {
-  /* background-color: lightgrey; */
+    /* background-color: lightgrey; */
 }
 
 table.phonetics {
-  margin-right: 30px;
+    margin-right: 30px;
 }
 
 table.phonetics tr td {
-  /* max-width: 85%; */
-  padding: 5px;
-  margin: 5px;
+    /* max-width: 85%; */
+    padding: 5px;
+    margin: 5px;
 }
 
 .phone-segment-overlap {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .phone-segment-1 {
-  color: blue;
+    color: blue;
 }
 
 .phone-segment-2 {
-  color: red;
+    color: red;
 }
 
 .phone-segment-3 {
-  color: green;
+    color: green;
 }
 
 .phone-segment-4 {
-  color: purple;
+    color: purple;
 }
 
 .phone-segment-5 {
-  color: brown;
+    color: brown;
 }
 
 .phone-segment-6 {
-  color: orange;
+    color: orange;
 }
 
 .regex,
 .ipa {
-  font-family: "Times New Roman", "Georgia", "Garamond";
+    font-family: 'Times New Roman', 'Georgia', 'Garamond';
 }
 
 /* custom tags */
 
 sc {
-  font-variant: small-caps;
+    font-variant: small-caps;
 }
 
 h3 {
-  font-size: 175%;
+    font-size: 175%;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .start-hidden {
-  display: none;
+    display: none;
 }
 
 .card {
-  font-family: arial;
-  font-size: 20px;
-  text-align: center;
-  color: black;
-  background-color: white;
-  line-height: 1.8rem;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    line-height: 1.8rem;
 }
 
 .card-back {
-  text-align: left;
-  line-height: 2rem;
-  /* top: var(--card-back-top-start); */
-  padding-top: var(--card-back-top-start);
+    text-align: left;
+    line-height: 2rem;
+    /* top: var(--card-back-top-start); */
+    padding-top: var(--card-back-top-start);
 }
 
 .container.front {
-  top: var(--card-front-top-start);
+    top: var(--card-front-top-start);
 }
 
 div.audio-controls {
-  position: fixed;
-  top: var(--card-front-top-start);
+    /* position: fixed; */
+    display: inline-block;
+    top: var(--card-front-top-start);
 }
 
 /* 
   wrapping class for divs containing logging, debugging, etc.
 */
 .dev {
-  font-size: 1rem;
-  color: grey;
+    font-size: 1rem;
+    color: grey;
 }
 
 /* noun gender */
 
 div.noun-gender-m::before {
-  content: "";
+    content: '';
 }
 
 div.noun-gender-f::before {
-  content: "";
+    content: '';
 }
 
 /* Carnie declension class */
@@ -149,43 +150,43 @@ div.noun-gender-f::before {
   margin-left: 2rem;
 } */
 
-[class^="cdc-"]::before {
-  font-size: 1rem;
-  font-style: italic;
-  margin-left: 2rem;
+[class^='cdc-']::before {
+    font-size: 1rem;
+    font-style: italic;
+    margin-left: 2rem;
 }
 
 div.cdc-B1::before {
-  content: "[gs], [vs]: attenuation with orthographic -i- before final group of consonants";
+    content: '[gs], [vs]: attenuation with orthographic -i- before final group of consonants';
 }
 
 div.cdc-H1::before {
-  content: "[gs], [vs]: attenuation of final -Vch";
+    content: '[gs], [vs]: attenuation of final -Vch';
 }
 
 div.interference-menu {
-  position: fixed;
-  top: var(--card-front-top-start);
-  right: 0;
-  font-size: 1rem;
+    position: fixed;
+    top: var(--card-front-top-start);
+    right: 0;
+    font-size: 1rem;
 }
 
 div.interference-menu::before {
-  content: "[j] interference";
+    content: '[j] interference';
 }
 
 div.interference {
-  /* position: fixed;
+    /* position: fixed;
   top: var(--card-front-top-start);
   right: 0; */
-  display: none;
+    display: none;
 }
 
 button.audio-control-play {
-  width: 100px;
-  border-color: red;
-  border-width: 2px;
-  border-style: dashed;
+    width: 100px;
+    border-color: red;
+    border-width: 2px;
+    border-style: dashed;
 }
 
 /* 
@@ -194,168 +195,171 @@ Cupla's declensions, etc
 div and hr's
 */
 .genitive-vn {
-  top: calc(var(--card-front-top-start) + 20px);
-  right: 0;
-  display: none;
+    top: calc(var(--card-front-top-start) + 20px);
+    right: 0;
+    display: none;
 }
 
 .phrasal-verb {
 }
 
 span.error {
-  color: red;
+    color: red;
 }
 
 span.headword-index {
-  vertical-align: sub;
-  font-size: var(--headword-index-font-size);
-  color: dodgerblue;
-  font-weight: bold;
+    vertical-align: sub;
+    font-size: var(--headword-index-font-size);
+    color: dodgerblue;
+    font-weight: bold;
 }
 
 div.log-message {
-  padding-left: -20px;
-  margin: 0;
-  vertical-align: bottom;
-  text-align: left;
-  line-height: 1rem;
+    padding-left: -20px;
+    margin: 0;
+    vertical-align: bottom;
+    text-align: left;
+    line-height: 1rem;
 }
 
 #debugger,
 #logger,
 .dictionaries {
-  position: fixed;
+    position: fixed;
 }
 
 #debugger,
 .dictionaries {
-  bottom: 0;
+    bottom: 0;
 }
 
 .dictionaries {
-  right: 0;
+    right: 0;
 }
 
 #logger {
-  position: fixed;
-  bottom: 1.3rem;
-  font-size: 50%;
+    position: fixed;
+    bottom: 1.3rem;
+    font-size: 50%;
 }
 
 .text-left {
-  text-align: left;
+    text-align: left;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .long-question {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .answer-cell {
-  padding-left: 4rem;
+    padding-left: 4rem;
 }
 
 .answer-row {
-  background-color: #f5f5dc;
-  /*   background-color: papayawhip; */
+    background-color: #f5f5dc;
+    /*   background-color: papayawhip; */
 }
 
 .grammar-exception {
-  background-color: pink;
+    background-color: pink;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 .inflection {
-  background-color: aquamarine;
-  width: max-content; /* restrict width to content's width */
+    background-color: aquamarine;
+    width: max-content; /* restrict width to content's width */
 }
 
 div.speech-container {
-  position: fixed;
-  top: var(--card-back-top-start);
-  right: 0px;
+    position: fixed;
+    top: var(--card-back-top-start);
+    right: 0px;
 }
 
 div.inflection-table {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 div.phonetics {
-  scale: 75%;
+    scale: 75%;
 }
 
 .inflection-table tr {
-  font-family: "Bunchlo GC", "uncial antiqua";
-  font-feature-settings: "ss01";
-  font-size: var(--gaelic-font-size);
+    font-family: 'Bunchlo GC', 'uncial antiqua';
+    font-feature-settings: 'ss01';
+    font-size: var(--gaelic-font-size);
 }
 /* set table header to normal font */
 .inflection-table thead tr th {
-  font-family: arial;
-  font-size: 20px;
-  font-feature-settings: "";
+    font-family: arial;
+    font-size: 20px;
+    font-feature-settings: '';
 }
 
 div.inflection-table-title {
-  font-size: var(--table-title-font-size);
-  font-weight: var(--table-title-font-weight);
+    font-size: var(--table-title-font-size);
+    font-weight: var(--table-title-font-weight);
 }
 
 td.sider {
-  font-family: arial;
-  font-size: 16px;
-  font-feature-settings: "";
+    font-family: arial;
+    font-size: 16px;
+    font-feature-settings: '';
 }
 
 .gloss {
-  background-color: beige;
+    background-color: beige;
 }
 
-spans.listing-sense-item-gloss {
-  margin-left: 4px;
-  padding-left: 4px;
+span.listing-sense-item-gloss {
+    margin-left: 4px;
+    padding-left: 4px;
 }
 
 div.listing {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 span.listing-title.gaelic {
-  color: #993300;
-  font-weight: bold;
+    color: #993300;
+    font-weight: bold;
 }
 
 div.listing-senses-wrapper {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 span.bearla.example,
 span.listing-part-of-speech,
 span.grammar {
-  padding-left: 5px;
+    padding-left: 5px;
 }
 
 span.listing-part-of-speech,
+span.listing-sense-item-predicates,
 span.grammar {
-  color: #006600;
-  font-size: 85%;
+    color: #006600;
+    font-size: 85%;
 }
 
 span.bearla.example::before,
 span.listing-part-of-speech::before,
+span.listing-sense-item-predicates::before,
 span.grammar::before {
-  content: "(";
+    content: '(';
 }
 
 span.bearla.example::after,
 span.listing-part-of-speech::after,
+span.listing-sense-item-predicates::after,
 span.grammar::after {
-  content: ")";
+    content: ')';
 }
 
 div.bearla,
@@ -363,78 +367,85 @@ div.examples,
 div.declension-class,
 div.noun-gender,
 div.etym {
-  margin-top: 15px;
-  margin-left: 25px;
-  margin-bottom: 20px;
-  text-align: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .card-back div.hint-gender,
 .card-back div.hint-bearla {
-  display: none;
+    display: none;
+}
+
+div.sub-forms-header {
+    margin-bottom: 20px;
 }
 
 .card-back div.noun-gender,
 .card-back div.etym,
-.card-back div.sub-forms-matches-wrapper {
-  outline-width: 1px;
-  outline-style: dashed;
-  width: max-content;
-  padding-left: 15px;
-  padding-right: 15px;
+div.sub-forms-matches-wrapper {
+    outline-width: 1px;
+    outline-style: dashed;
+    width: max-content;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card-back div.noun-gender {
-  outline-color: red;
+    outline-color: red;
 }
 
 .card-back div.etym,
-.card-back div.sub-forms-matches-wrapper {
-  outline-color: green;
+div.sub-forms-matches-wrapper,
+div.sub-forms-matches-headword {
+    outline-color: green;
 }
 
 #hints-container {
-  position: fixed;
-  top: 300px;
-  left: 10px;
+    position: fixed;
+    top: 300px;
+    left: 10px;
 }
 
 div.hints {
-  text-align: left;
+    text-align: left;
 }
 
 .menu {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 #noun-declension-card-back-section-header::before {
-  content: "DECLENSION OF";
+    content: 'DECLENSION OF';
 }
 
 #hints-container-menu::before {
-  content: "[w] show all";
+    content: '[w] show all';
 }
 
 #hints-bearla-menu::before {
-  content: "[9] show béarla";
+    content: '[9] show béarla';
 }
 
 #hints-bearla-notes-menu::before {
-  content: "[8] show béarla notes";
+    content: '[8] show béarla notes';
 }
 
 #hints-phonetic-menu::before {
-  content: "[0] show phonetic notes";
+    content: '[0] show phonetic notes';
 }
 
 div.card-back .hints-bearla {
-  display: inherit;
+    display: inherit;
 }
 
 div.hints-bearla,
 div.hints-bearla-notes,
 div.hints-phonetic {
-  display: none;
+    display: none;
 }
 
 .hint-gender {
@@ -444,133 +455,133 @@ div.hints-phonetic {
 }
 
 span.symbol-shorthand {
-  font-size: 2rem;
-  font-weight: 800;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
 .gaelic {
-  font-family: "Bunchlo GC", "uncial antiqua";
-  font-feature-settings: "ss01";
-  font-size: var(--gaelic-font-size);
+    font-family: 'Bunchlo GC', 'uncial antiqua';
+    font-feature-settings: 'ss01';
+    font-size: var(--gaelic-font-size);
 }
 
 div.gaelic {
-  margin-top: 15px;
-  margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 div.alternate-location {
 }
 
 div.transcription {
-  width: max(450px, 70%);
-  font-family: "Bunchlo GC", "uncial antiqua";
-  font-feature-settings: "ss01";
-  font-size: var(--gaelic-font-size);
-  margin-bottom: 20px;
-  line-height: 1.75rem;
+    width: max(450px, 70%);
+    font-family: 'Bunchlo GC', 'uncial antiqua';
+    font-feature-settings: 'ss01';
+    font-size: var(--gaelic-font-size);
+    margin-bottom: 20px;
+    line-height: 1.75rem;
 }
 
 .bearla-notes {
 }
 
 p {
-  text-align: left;
-  margin-top: 4px;
-  margin-left: 1em;
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 1em;
 }
 
 b,
 strong {
-  font-family: "Bunchlo GC", "uncial antiqua";
-  font-feature-settings: "ss01";
-  font-weight: 400;
-  font-size: var(--gaelic-font-size);
+    font-family: 'Bunchlo GC', 'uncial antiqua';
+    font-feature-settings: 'ss01';
+    font-weight: 400;
+    font-size: var(--gaelic-font-size);
 }
 
 i {
-  font-size: 1rem;
-  line-height: 0.5rem;
+    font-size: 1rem;
+    line-height: 0.5rem;
 }
 
 i > b {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 table {
-  border: solid 1px #ddeeee;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font: normal 18px Arial, sans-serif;
+    border: solid 1px #ddeeee;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 18px Arial, sans-serif;
 }
 
 table thead th {
-  background-color: #ddefef;
-  border: solid 1px #ddeeee;
-  color: #336b6b;
-  padding: 10px;
-  text-align: left;
-  text-shadow: 1px 1px 1px #fff;
+    background-color: #ddefef;
+    border: solid 1px #ddeeee;
+    color: #336b6b;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 table tbody td {
-  border: solid 1px #ddeeee;
-  color: #333;
-  padding: 10px;
-  text-align: left;
-  text-shadow: 1px 1px 1px #fff;
+    border: solid 1px #ddeeee;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 /*  List  */
 
 ul {
-  /* margin-left: -20px; */
-  margin-top: 5px;
-  margin-bottom: 15px;
-  /*  list-style-position: inside; */
+    /* margin-left: -20px; */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /*  list-style-position: inside; */
 }
 
 li {
-  font-size: 1.1rem;
-  /*  line-height is between wrap lines for the same <li> tag I think  */
-  line-height: 1.3rem;
+    font-size: 1.1rem;
+    /*  line-height is between wrap lines for the same <li> tag I think  */
+    line-height: 1.3rem;
 }
 
 ul.compressed li {
-  line-height: 0.6rem;
-  margin-bottom: 4px;
-  margin-top: 4px;
+    line-height: 0.6rem;
+    margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 /* All but last list item */
 ul li:not(:last-child) {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .outline-blue {
-  /* outline-color: blue;
+    /* outline-color: blue;
   outline-width: 1px;
   outline-style: solid; */
 }
 
 .outline-red {
-  /* outline-color: red;
+    /* outline-color: red;
   outline-width: 1px;
   outline-style: dashed; */
 }
 .outline-green {
-  /* outline-color: green;
+    /* outline-color: green;
   outline-width: 2px;
   outline-style: solid; */
 }
 
 a.small {
-  font-size: 0.85rem;
+    font-size: 0.85rem;
 }
 
 sup {
-  display: none;
-  /* vertical-align: inherit;
+    display: none;
+    /* vertical-align: inherit;
   line-height: inherit;
   font-size: inherit;
   color: blue; */
@@ -578,24 +589,24 @@ sup {
 
 /* Currently used for information about mutations and some grammar */
 sub {
-  vertical-align: inherit;
-  line-height: inherit;
-  font-size: 90%;
-  color: red;
+    vertical-align: inherit;
+    line-height: inherit;
+    font-size: 90%;
+    color: red;
 }
 
 div.type-in {
-  position: fixed;
-  top: 40px;
+    position: fixed;
+    top: 40px;
 }
 
 .type-in {
-  /* outline-color: lightblue;
+    /* outline-color: lightblue;
   outline-width: 1px;
   outline-style: dashed; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 .type-in-revealed {
@@ -603,29 +614,29 @@ div.type-in {
 
 /* Built-in "id" to hook styles onto   */
 #typeans {
-  font-size: 1.5rem !important;
+    font-size: 1.5rem !important;
 }
 
 .tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  color: white;
-  font-size: 12px;
-  background-color: #192733;
-  border-radius: 10px;
-  padding: 10px 15px 10px 15px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
 }
 
 .hover-text:hover .tooltip-text {
-  visibility: visible;
+    visibility: visible;
 }
 
 .hover-text {
-  position: relative;
-  display: inline-block;
-  margin: 40px;
-  font-family: Arial;
-  text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 40px;
+    font-family: Arial;
+    text-align: center;
 }

@@ -1,41 +1,45 @@
 {
-  "dependencies": {
-    "json-server": "^0.17.3"
-  },
-  "devDependencies": {
-    "grunt": "^1.6.1",
-    "grunt-contrib-clean": "^2.0.1",
-    "grunt-contrib-concat": "^2.1.0",
-    "grunt-contrib-cssmin": "^5.0.0",
-    "grunt-contrib-uglify": "^5.2.2",
-    "grunt-contrib-watch": "^1.1.0"
-  },
-  "name": "dazo",
-  "description": "Javascript/HTML/CSS integration with Anki spaced repetition program for Irish language (Gaelic) learning",
-  "version": "1.0.0",
-  "main": "script.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server --watch db.json --port 3001"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hafdon/dazo.git"
-  },
-  "keywords": [
-    "javascript",
-    "L2",
-    "Irish",
-    "Gaelic",
-    "Anki"
-  ],
-  "author": "Zach Weisser",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/hafdon/dazo/issues"
-  },
-  "homepage": "https://github.com/hafdon/dazo#readme"
+    "dependencies": {
+        "json-server": "^0.17.3",
+        "ts-node": "^10.9.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.22.11",
+        "@babel/preset-env": "^7.22.14",
+        "rollup": "^3.28.1",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-terser": "^0.4.3",
+        "rollup-plugin-css-only": "^4.3.0",
+        "@rollup/plugin-node-resolve": "^15.2.1",
+        "jest": "^29.6.4"
+    },
+    "name": "dazo",
+    "description": "Javascript/HTML/CSS integration with Anki spaced repetition program for Irish language (Gaelic) learning",
+    "version": "1.0.0",
+    "main": "./src/script.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "jest",
+        "start": "json-server --watch db.json --port 3001",
+        "build": "rollup --config --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hafdon/dazo.git"
+    },
+    "keywords": [
+        "javascript",
+        "L2",
+        "Irish",
+        "Gaelic",
+        "Anki"
+    ],
+    "author": "Zach Weisser",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/hafdon/dazo/issues"
+    },
+    "homepage": "https://github.com/hafdon/dazo#readme"
 }

@@ -1,0 +1,32 @@
+<script type="text/javascript" src="_script.js"></script>
+<link href="_style.css" rel="stylesheet" type="text/css">
+
+<!-- START CONTAINER-->
+<div class="container front" id="front-container">
+
+  <!-- DATA -->
+  <div class="data-div" id="data-div" data-lexeme="{{l}}" data-card="{{l}}" data-tags="{{Tags}}"
+    data-url="{{audio-url}}" data-flag="{{CardFlag}}" data-note="{{Type}}"> </div>
+
+  <!-- MANUAL AUDIO: Media collection sound file(s) exist -->
+  {{#audio-manual}}
+  <div id="audio-manual" class="audio-manual">{{audio-manual}}</div>
+  {{/audio-manual}}
+
+  <!-- START "NO MANUAL AUDIO" -->
+  {{^audio-manual}}
+
+  <!-- AUDIO FALLBACK : There is no web-linked audio -->
+  <div id="audio-fallback" class="gaelic lexeme start-hidden">{{l}}</div>
+
+  <!-- AUDIO PORTAL : Programmatic HTML insertion -->
+  <div id="audio-portal"></div>
+
+  <!-- END "NO MANUAL AUDIO" -->
+  {{/audio-manual}}
+
+  <!-- END CONTAINER -->
+</div>
+
+<p id="logger" class="dev logger start-hidden">logger</p>
+<div id="dialog-portal" class="portal"></div>

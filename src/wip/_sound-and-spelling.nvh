@@ -1,0 +1,80 @@
+ortho: aonad
+    decode: <ao>
+        U:
+            fgb: /e:/
+        C: 
+            fgb: /e:ə/
+        M: 
+            fgb: /e:ə/
+       
+ortho: aonad
+    decode: <ao>
+        U:
+            ns: /i:/
+            fgb: /e:/
+        C: 
+            ns: /i:/
+            fgb: /e:/
+        M: 
+            ns: /e:/
+            fgb: /e:/
+ortho: ardaithe
+    decode: <ar>
+        U:
+
+            fgb: "air"
+        C:
+        M:
+        rule: Broad vowels written <a>, <á>, <o>, <ó>, <u>, <ú> are written alone when all consonants next to them are pronounced broad.
+    decode: <ai>
+        U:
+            ns: /a/
+        C: 
+            ns: /a/
+        M: 
+            ns: /a/
+
+            wide / thin
+
+#
+# graph to sounds
+#            
+graph: <ao>
+    ns:
+        U: /i:/
+        C: /i:/
+        M: /e:/
+         rule: thin sound (/i:/) in front of or between broad consonants
+graph: <ea>
+    fgb:
+        U: /æ/
+        C: /æ/
+        M: /æ/
+        examples:
+            mearaigh
+graph: <a>
+    fgb:
+        U: /e/
+        C: /a/ zw-/ä/
+        M: /a/ zw-/ä/
+        examples:
+            athraigh
+graph: <ai>
+    fgb:
+        U: /a/ zw-/ä/
+        C: /æ/
+        M: /æ/
+        examples:
+            airigh
+
+#
+# sounds to graphs
+# ("you hear ...")
+#           
+
+sound: /i:/
+    -
+        before-it: ø
+        after-it: ø
+        orthos:
+            

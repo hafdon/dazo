@@ -12612,13 +12612,6 @@
   ],
   "interferesIds": [
     {
-      "id": 0,
-      "cluster": {
-        "abair": "say",
-        "abar": "morass"
-      }
-    },
-    {
       "id": 1,
       "cluster": {
         "ae": "liver",
@@ -12670,8 +12663,8 @@
     {
       "id": 7,
       "cluster": {
-        "aird": "attention",
-        "ard": "height, high"
+        "aird": "??",
+        "ard": "??"
       }
     },
     {
@@ -12762,7 +12755,8 @@
         "ciall": "sanity",
         "cill": "churchyard",
         "ciallaigh": "signify",
-        "caill": "lose"
+        "caill": "lose",
+        "coill": "forest"
       }
     },
     {
@@ -12798,7 +12792,9 @@
         "coinníoll": "stipulation",
         "coinneal": "candle",
         "conradh": "contract",
-        "cumhdaigh": "protect"
+        "cumhdaigh": "protect",
+        "cine": "kin",
+        "cáineadh": "condemnation"
       }
     },
     {
@@ -12844,7 +12840,8 @@
       "id": 29,
       "cluster": {
         "geal": "whiten",
-        "geall": "promise"
+        "geall": "promise",
+        "géill": "yield"
       }
     },
     {
@@ -12961,7 +12958,8 @@
         "tost": "become silent",
         "troisc": "fast",
         "tuill": "earn, deserve",
-        "tuirling": "descend"
+        "tuirling": "descend",
+        "táille": "fare"
       }
     },
     {
@@ -13036,7 +13034,8 @@
     {
       "cluster": {
         "mol": "praise",
-        "mall": "slow, late"
+        "mall": "slow, late",
+        "moill": "delay"
       },
       "id": 54
     },
@@ -13086,7 +13085,8 @@
     },
     {
       "cluster": {
-        "faisnéis": "relate"
+        "faisnéis": "relate",
+        "fianaise": "witness"
       },
       "id": 62
     },
@@ -13158,7 +13158,8 @@
     },
     {
       "cluster": {
-        "péac": "sprout"
+        "péac": "sprout",
+        "pioc": "pick"
       },
       "id": 73
     },
@@ -13225,7 +13226,8 @@
         "marcaigh": "ride",
         "machnaigh": "think",
         "meabhrú": "reminder",
-        "méadaigh": "enlarge"
+        "méadaigh": "enlarge",
+        "meabhrach": "intelligent"
       },
       "id": 83
     },
@@ -13264,7 +13266,8 @@
     },
     {
       "cluster": {
-        "tionscal": "industry"
+        "tionscal": "industry",
+        "tionóisc": "accident"
       },
       "id": 89
     },
@@ -13280,6 +13283,105 @@
         "cóip": "rabble"
       },
       "id": 91
+    },
+    {
+      "cluster": {
+        "eagna": "wisdom",
+        "aigne": "disposition"
+      },
+      "id": 92
+    },
+    {
+      "cluster": {
+        "múin": "teach"
+      },
+      "id": 93
+    },
+    {
+      "cluster": {
+        "lear": "large area"
+      },
+      "id": 94
+    },
+    {
+      "cluster": {
+        "locht": "fault"
+      },
+      "id": 95
+    },
+    {
+      "cluster": {
+        "féar": "grass"
+      },
+      "id": 96
+    },
+    {
+      "cluster": {
+        "col": "distaste; mountain"
+      },
+      "id": 97
+    },
+    {
+      "cluster": {
+        "cruinn": "clear",
+        "crinn": "contend",
+        "cruinniú": "gathering",
+        "cruinne": "roundness; universe"
+      },
+      "id": 98
+    },
+    {
+      "cluster": {
+        "rinn": "apex"
+      },
+      "id": 99
+    },
+    {
+      "cluster": {
+        "tobann": "sudden",
+        "tobar": "fountain",
+        "teorainn": "boundary"
+      },
+      "id": 100
+    },
+    {
+      "cluster": {
+        "gníomhach": "active",
+        "gnóthaigh": "win",
+        "gnóthach": "busy",
+        "gníomh": "act"
+      },
+      "id": 101
+    },
+    {
+      "cluster": {
+        "tréimhse": "quarter"
+      },
+      "id": 102
+    },
+    {
+      "cluster": {
+        "formhór": "majority"
+      },
+      "id": 103
+    },
+    {
+      "cluster": {
+        "croith": "shake"
+      },
+      "id": 104
+    },
+    {
+      "cluster": {
+        "bail": "condition"
+      },
+      "id": 105
+    },
+    {
+      "cluster": {
+        "ar fud": "dddddddddddd"
+      },
+      "id": 106
     }
   ],
   "potafocal": [
@@ -13471,6 +13573,56 @@
     "tuig",
     "úsáid"
   ],
+  "irregularDegreesOfQuality": [
+    {
+      "id": 1,
+      "radical": "beag",
+      "comparative": "lú",
+      "superlative": "lú"
+    },
+    {
+      "id": 2,
+      "radical": "fada",
+      "comparative": "faide",
+      "superlative": "faide"
+    },
+    {
+      "id": 3,
+      "radical": "furasta",
+      "comparative": "fusa",
+      "superlative": "fusa"
+    },
+    {
+      "id": 4,
+      "radical": "gearr",
+      "comparative": "giorra",
+      "superlative": "giorra"
+    },
+    {
+      "id": 5,
+      "radical": "maith",
+      "comparative": "fearr",
+      "superlative": "fearr"
+    },
+    {
+      "id": 6,
+      "radical": "mór",
+      "comparative": "mó",
+      "superlative": "mó"
+    },
+    {
+      "id": 7,
+      "radical": "olc",
+      "comparative": "measa",
+      "superlative": "measa"
+    },
+    {
+      "id": 8,
+      "radical": "te",
+      "comparative": "teo",
+      "superlative": "teo"
+    }
+  ],
   "dicts": [
     {
       "id": 1,
@@ -13585,10 +13737,10 @@
               "caid": "cs"
             },
             {
-              "caide": "cp"
+              "caide": "gs"
             },
             {
-              "caideanna": "gs"
+              "caideanna": "cp"
             },
             {
               "caideanna": "gp"
@@ -13641,10 +13793,10 @@
               "caid": "cs"
             },
             {
-              "caide": "cp"
+              "caide": "gs"
             },
             {
-              "caideanna": "gs"
+              "caideanna": "cp"
             },
             {
               "caideanna": "gp"
@@ -13777,14 +13929,14 @@
                 "béarla": "he had a bad experience with the police",
                 "source": "focloir.ie"
               }
-            ],
-            "forms": [
-              {
-                "eispéireas": "cs",
-                "eispéiris": "gs"
-              }
             ]
-          }
+          },
+          "forms": [
+            {
+              "eispéireas": "cs",
+              "eispéiris": "gs"
+            }
+          ]
         }
       ]
     },
@@ -14071,13 +14223,52 @@
             "carniePl": null
           },
           "senses": {
-            "general": "(act of) trading; trade, commerce",
-            "forms": [
+            "general": "(act of) trading; trade, commerce"
+          },
+          "forms": [
+            {
+              "tráchtáil": "cs"
+            },
+            {
+              "tráchtála": "gs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "headword": "luadar",
+      "listings": [
+        {
+          "title": "luadar",
+          "partOfSpeech": [
+            "m"
+          ],
+          "senses": {
+            "general": "",
+            "enumerated": [
               {
-                "tráchtáil": "cs"
+                "gloss": "Movement, activity; vigour.",
+                "examples": [
+                  {
+                    "gaelic": "luadar cos, teanga",
+                    "béarla": "nimbleness of foot, of tongue"
+                  },
+                  {
+                    "gaelic": "Duine a bhaint dá luadar",
+                    "béarla": "to reduce s.o. to inactivity",
+                    "_meta": [
+                      "¬bain"
+                    ]
+                  }
+                ]
               },
               {
-                "tráchtála": "gs"
+                "gloss": "Taxis.",
+                "predicates": [
+                  "Biology"
+                ]
               }
             ]
           }

@@ -1,0 +1,225 @@
+/*_________________ Tags _*/
+table {
+    width: 100%;
+    height: 100%;
+}
+/*_________________ Base _*/
+
+hr {
+    margin: 10px 0;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+/*_________________ Specific _*/
+.decl {
+    font-size: 0.6em;
+}
+.attribution {
+    font-size: 10pt;
+    color: grey;
+}
+.en-container {
+    font-size: 1em;
+    list-style-type: circle;
+    padding: 50px 20px;
+}
+.en-container li {
+    hyphens: auto;
+    text-align: left;
+}
+small {
+    margin-top: 0.2em;
+    font-size: 0.85em;
+    display: inline-block;
+    text-align: left;
+}
+
+aside {
+    font-size: 0.6em;
+    background-color: #f5ffee;
+    text-align: left;
+    padding-left: 0.5em;
+    border-top: 2px solid #493;
+    margin: 1em -20px 0 -20px;
+    padding-right: 0.3em;
+    text-indent: -1.3em;
+}
+aside::before {
+    content: '\261E';
+    margin-right: 0.3em;
+}
+aside + aside {
+    margin-top: 1em;
+}
+aside ul {
+    margin-top: 0;
+    padding-top: 0;
+}
+aside li {
+    text-indent: 0;
+    margin-left: -1.85em;
+    margin-top: 0;
+}
+aside li small {
+    margin-top: 0;
+}
+.aside {
+    font-size: 0.7em;
+    background-color: #f5ffee;
+    text-align: left;
+    padding-left: 0.5em;
+    border-top: 2px solid #493;
+    margin: 1em -20px 0 -20px;
+    padding-right: 0.3em;
+    text-indent: -1.3em;
+}
+.ga-container {
+    font-weight: bold;
+    padding-top: 110px;
+}
+.genitive-vn-container {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: grey;
+    margin-bottom: 1em;
+}
+.genitive-vn-container i {
+    font-style: normal;
+}
+.inhibit-adj ~ .adj,
+.inhibit-adjective ~ .adj,
+.inhibit-noun ~ .nf,
+.inhibit-noun ~ .nm {
+    display: none;
+}
+div + .adj,
+div + .nm,
+div + .nf,
+.adj div:not(.other) + .other,
+div:not(.vn) + .vn {
+    margin-top: 0.6em;
+}
+.adj .noun {
+    opacity: 0.35;
+}
+.nf-adj i,
+.genitive-vn-container .nf i {
+    color: #f6d;
+}
+.nm-adj i,
+.genitive-vn-container .nm i:not(.weak) {
+    color: #2288ff;
+}
+.decl {
+    visibility: hidden;
+    height: 2px;
+}
+.above-back .decl {
+    visibility: visible;
+    height: auto;
+}
+.genitive-vn-container em {
+    font-style: normal;
+    color: #383838;
+}
+.genitive-vn-container .single {
+    font-weight: bold;
+}
+.genitive-vn-container u:not(.exc-strong-plural) {
+    /* something non standard */
+    text-decoration-color: red;
+}
+@supports not (text-decoration-color: red) {
+    .genitive-vn-container u:not(.exc-strong-plural) {
+        border-bottom: 1px solid red;
+        text-decoration: none;
+    }
+}
+.pronounce-container .columns {
+    padding: 10px;
+}
+.speech {
+    font-size: 16pt;
+    vertical-align: bottom;
+}
+.speech-container {
+    margin-top: 40px;
+    font-size: 0.6em;
+    color: grey;
+    padding: 0 0 20px 0;
+}
+
+/*_________________ Buttons _*/
+/* regular button */
+.button {
+    display: inline;
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    min-height: 3em;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    color: white;
+    background-color: #4caf50;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.button:hover span {
+    padding-right: 25px;
+}
+/* span */
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    line-height: 50%;
+    height: 50%;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.define-ga {
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+/*_________________ Media Queries _*/
+@media only screen and (max-width: 1023px) {
+    /* align */
+    .ga-container {
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* buttons */
+    .pronounce-container button {
+        width: calc(33% - 10px);
+        padding: 10px;
+    }
+    .no-mobile {
+        display: none;
+    }
+}
