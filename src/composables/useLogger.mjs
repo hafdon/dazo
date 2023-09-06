@@ -1,22 +1,19 @@
 import { toValue } from 'vue'
 
+/**
+ * Log to console after JSON.stringify-ing args
+ * @param  {...any} args 
+ */
 export function useLogger(...args) {
-
-   console.log('    useLogger ===> ')
 
    args.map(a => {
       const argVal = toValue(a)
-      if (typeof argVal === 'string') {
-         return argVal
-      } else {
-         return JSON.stringify(argVal, null, 4)
-      }
+      return (typeof argVal === 'string')
+         ? argVal
+         : JSON.stringify(argVal, null, 4)
    })
 
-   console.log(JSON.stringify(...args, null, 4))
-
-   console.log('    <=== useLogger ')
-
+   console.log('dazoLogger: ' + JSON.stringify(...args, null, 4))
 }
 
 /**
@@ -29,5 +26,4 @@ export function useErrorLogger(error, ...args) {
    if (toValue(error)) {
       useLogger('ERROR', error, ...args)
    }
-
 }
