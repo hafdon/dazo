@@ -1,5 +1,5 @@
 import { computed, inject, ref, toValue } from 'vue'
-import { useFetch, usePost } from "../composables/useFetch.mjs"
+import { usePost } from "../composables/useFetch.mjs"
 import { useEventListener } from "../composables/useEventListener.mjs"
 import { useLogger, useErrorLogger } from '../composables/useLogger.mjs'
 import { useInterferenceClusterApi } from '../composables/useApi.mjs'
@@ -7,16 +7,11 @@ import { useInterferenceClusterApi } from '../composables/useApi.mjs'
 export default {
     props: [],
     name: 'InterferenceClusterForm',
-    setup(props, { emit }) {
+    setup(_, { emit }) {
 
-        // Let user type into input box without 
-        // triggering keyboard shortcuts.
-        useEventListener('keydown', (e) => { e.stopPropagation() })
+        const BASE_URL = inject('BASE_URL')
 
         const cardLexeme = inject('cardLexeme')
-        // const BASE_URL = inject('BASE_URL')
-        // const url = ref(`${BASE_URL.LOCALHOST}/interferesIds`)
-        // const { data, error } = useFetch(url);
 
         const { data, error } = useInterferenceClusterApi()
 
@@ -68,24 +63,31 @@ export default {
             emit('submit')
         }
 
-
         function onCancel(event) {
             event.preventDefault();
             emit('cancel')
         }
 
+        const formRef = ref(null)
+
+        // Let user type into input box without 
+        // triggering keyboard shortcuts.
+        useEventListener('keydown', (e) => { e.stopPropagation() }, formRef)
+
+
         return {
-            clusterOptions, onSubmit, onCancel, selectRef, inputRef
+            clusterOptions, onSubmit, onCancel, selectRef, inputRef, formRef
         }
 
     },
     template:  /*html*/ `
-        <form>
+        <form ref="formRef">
             <p>
             <label>
                 Add to interference cluster:
                 <select 
-                    name="interference-clusters" id="interference-clusters-select" 
+                    name="interference-clusters" 
+                    id="interference-clusters-select" 
                     ref="selectRef">
                 <option value="new" selected>Create New Cluster</option>
                 <option v-for="opt in clusterOptions" :value="opt.value">{{opt.text}}</option>
@@ -94,7 +96,8 @@ export default {
             </p>
             <p>
             <label>
-                Concise definition: <input type="text" id="definition" ref="inputRef" />
+                Concise definition:
+                <input type="text" id="definition" ref="inputRef" />
             </label>
             </p>
             <div>

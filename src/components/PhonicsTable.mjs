@@ -39,9 +39,9 @@ export default {
           </td>
           <td class="gaelic">
             <ul class="compressed">
+            
               <li v-for="example in curr.examples">
               <!-- TODO test if example is Array of words, or just string -->
-              <!-- TODO with serialize-coma, do comma after not-final-subling  -->
 
                 <span v-for="word in example" 
                     class="serialize-comma"

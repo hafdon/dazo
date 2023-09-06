@@ -24,7 +24,7 @@ export function usePhonics(lexemeMaybeVal) {
                 const res = new RegExp(r, 'i').exec(lexeme);
                 if (res) {
                     execs.value.push({
-                        examples: p.examples,
+                        examples: p.examples.map(example => Array.isArray(example) ? example : [example]),
                         ulster: p.ulster,
                         connacht: p.connacht,
                         munster: p.munster,
@@ -43,33 +43,6 @@ export function usePhonics(lexemeMaybeVal) {
             })
         );
 
-        // execs.value = data.value?.reduce((p, c) => {
-
-        //     return [...p, ...c.regexes.reduce((prev, curr) => {
-
-        //         const res = new RegExp(curr, 'i').exec(lexeme)
-        //         if (res) {
-        //             prev.push({
-        //                 examples: p.examples,
-        //                 ulster: p.ulster,
-        //                 connacht: p.connacht,
-        //                 munster: p.munster,
-        //                 regex: curr,
-        //                 match: res[0],
-        //                 matchLen: res[0].length,
-        //                 startIndex: res.index,
-        //                 endIndex: res.index + res[0].length,
-        //                 styles: [],
-        //                 supercededBy: [],
-        //                 colorStyles: [],
-        //             })
-        //         }
-        //         return prev
-
-        //     }, [])]
-        // }, []) ?? []
-
-
         for (let i = 0; i < execs.value.length; i++) {
             for (let j = 0; j < execs.value.length; j++) {
                 if (
@@ -82,8 +55,6 @@ export function usePhonics(lexemeMaybeVal) {
                 }
             }
         }
-
-
 
         // superceded later
         execs.value.sort((a, b) => {

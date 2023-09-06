@@ -19,6 +19,13 @@ body {
     font-size: 3rem;
 }
 
+div.biggish-font {
+    font-size: 1.75rem;
+    font-weight: 750;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
 .superceded {
     background: lightgrey;
     /* color: yellow; */
@@ -140,6 +147,10 @@ div.noun-gender-m::before {
 
 div.noun-gender-f::before {
     content: '';
+}
+
+span.serialize-comma:not(:last-child)::after {
+    content: ', ';
 }
 
 /* Carnie declension class */
@@ -351,14 +362,24 @@ span.grammar {
 span.bearla.example::before,
 span.listing-part-of-speech::before,
 span.listing-sense-item-predicates::before,
-span.grammar::before {
+span.grammar::before,
+span.parens::before {
     content: '(';
+}
+
+span.space-left {
+    margin-left: 0.25rem;
+}
+
+span.space-right {
+    margin-right: 0.25rem;
 }
 
 span.bearla.example::after,
 span.listing-part-of-speech::after,
 span.listing-sense-item-predicates::after,
-span.grammar::after {
+span.grammar::after,
+span.parens::after {
     content: ')';
 }
 

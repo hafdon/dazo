@@ -1,5 +1,6 @@
 // https://vuejs.org/guide/reusability/composables.html#async-state-example
 import { ref, watchEffect, toValue } from "vue";
+import { useLogger, useErrorLogger } from './useLogger.mjs'
 
 export function usePost(url, body, id) {
   const data = ref(null);
@@ -23,10 +24,11 @@ export function usePost(url, body, id) {
       }
     }
 
-    console.log('======= useFetch ==========')
-    console.log('urlValue', fullUrl)
-    console.log('options')
-    console.log(JSON.stringify(options, null, 4))
+    useLogger('======= usePost ==========')
+    console.log({
+      fullUrl,
+      options
+    })
 
     try {
       // artificial delay / random error
@@ -35,11 +37,11 @@ export function usePost(url, body, id) {
       // unref() will return the ref value if it's a ref
       // otherwise the value will be returned as-is
       const res = await fetch(fullUrl, options);
-      console.log(res)
       data.value = await res.json();
 
     } catch (e) {
       error.value = e;
+      useErrorLogger(e)
     }
   });
 

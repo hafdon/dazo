@@ -2,7 +2,7 @@ import { toValue } from 'vue'
 
 export function useLogger(...args) {
 
-   console.log(' === useLogger ===> ')
+   console.log('    useLogger ===> ')
 
    args.map(a => {
       const argVal = toValue(a)
@@ -14,6 +14,8 @@ export function useLogger(...args) {
    })
 
    console.log(JSON.stringify(...args, null, 4))
+
+   console.log('    <=== useLogger ')
 
 }
 

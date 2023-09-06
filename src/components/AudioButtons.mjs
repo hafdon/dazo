@@ -1,4 +1,5 @@
-import { watchEffect, ref, inject, onMounted, onUnmounted, onBeforeUnmount } from 'vue'
+import { ref, inject } from 'vue'
+import { useLogger } from '../composables/useLogger.mjs';
 
 const fuaimsIds = {
   ulster: 1,
@@ -6,23 +7,12 @@ const fuaimsIds = {
   munster: 2,
 };
 
-// const keycodeMap = {
-//   z: "ulster",
-//   x: "connacht",
-//   c: "munster",
-// };
-
-const locationsIndexMap = {
-  z: 0,
-  x: 1,
-  c: 2,
-};
-
-
 export default {
   props: {
     'lexeme': { type: String, required: true },
     'showLexeme': { type: Boolean, default: () => false },
+    'showDef': { type: Boolean, default: () => false },
+    'def': { type: String, default: () => '' },
     'keycodes': { type: Boolean, default: () => true }
   },
   name: 'AudioButtons',
@@ -31,31 +21,6 @@ export default {
     const BASE_URL = inject('BASE_URL')
     const tags = inject("tags");
     const url = inject("audioUrl")
-    console.log("injected audioUrl: " + url)
-
-    const keycodeHandlers = function (event) {
-      // console.log('keycodeHandler ' + event.key)
-
-      if (!props.keycodes) {
-        return
-      }
-
-      switch (event.key) {
-        case "z": {
-          locationsInfo.value[locationsIndexMap['z']].el.play();
-          break;
-        }
-        case "x": {
-          locationsInfo.value[locationsIndexMap['x']].el.play();
-          break;
-        }
-        case "c": {
-          locationsInfo.value[locationsIndexMap['c']].el.play();
-          break;
-        }
-      }
-    }
-
 
     function getSrc(location) {
 
@@ -64,7 +29,7 @@ export default {
           "1", fuaimsIds[location])}`
         : `${BASE_URL.TEANGLANN_IE}/Can${location.charAt(0).toUpperCase()}/${props.lexeme}.mp3`
 
-      console.log(src)
+      useLogger(src)
       return src
     }
 
@@ -78,14 +43,21 @@ export default {
       el: null
     })))
 
-    return { locationsInfo }
+    const dialogRef = ref(null)
+
+    function onLexemeClick() {
+      dialogRef.value?.showModal()
+    }
+
+    return { locationsInfo, dialogRef, onLexemeClick }
   },
   template: /*html*/ `
     <div class="audio-wrapper">
 
-      <div v-if="showLexeme" class="gaelic lexeme">{{lexeme}}</div>
-
-      <div >
+      <div @click="onLexemeClick">
+        <span v-if="showLexeme && lexeme" class="gaelic lexeme">{{lexeme}}</span>
+        <span v-if="showDef && def" class="bearla parens space-left">{{def}}</span>
+      </div>
 
         <div v-for="(info, idx) in locationsInfo" class="audio-controls" >
           <button :id="info.buttonId"
@@ -99,7 +71,10 @@ export default {
                 :src="info.src"></audio>
         </div>
 
-      </div>
+        <dialog ref="dialogRef">
+        <p>Boo</p>
+        </dialog>
+      
     </div>
     `
 }

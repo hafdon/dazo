@@ -47,7 +47,7 @@ export default {
 
         const matchesUrl = ref(`${BASE_URL.LOCALHOST}/dicts/`);
 
-        const { data: Dictionary, error: _error } = useFetch(matchesUrl)
+        const { data: Dictionary } = useFetch(matchesUrl)
 
         const subforms = computed(() => {
             const { allMatches } = useGetSubforms(props.lexeme, Dictionary)
@@ -62,34 +62,59 @@ export default {
             return []
         })
 
+        const id = computed(() => (data.value?.[0])
+            ? data.value[0].id
+            : null
+        )
+
+        // this comes in as a prop from the Anki card
         const isBackSide = computed(() => props.side === 'back')
 
+        // refs (in both vue and html sense)
+        // for opening <dialog> elements
         const phonicsDialogRef = ref(null)
         const clusterDialogRef = ref(null)
+        const showClusterDialog = ref(false)
         const clusterComparisonDialogRef = ref(null)
+        const showClusterComparisonDialog = ref(false)
 
         function openPhonicsDialog() {
             phonicsDialogRef.value.showModal();
         }
 
         function openClusterDialog() {
+            showClusterDialog.value = true
             clusterDialogRef.value.showModal();
         }
 
         function closeClusterDialog() {
             clusterDialogRef.value.close();
+            showClusterDialog.value = false
         }
 
         function openClusterComparisonDialog() {
+            showClusterComparisonDialog.value = true
             clusterComparisonDialogRef.value.showModal()
         }
 
+        function closeClusterComparisonDialog() {
+            clusterComparisonDialogRef.value.close()
+            showClusterComparisonDialog.value = false
+        }
+
         return {
-            data, error, subforms, listings,
-            isBackSide, phonicsDialogRef,
-            openPhonicsDialog, closeClusterDialog,
+            id, data, error, subforms, listings,
+            isBackSide,
+
+            phonicsDialogRef, openPhonicsDialog,
+
+            closeClusterDialog, showClusterDialog,
             clusterDialogRef, openClusterDialog,
-            clusterComparisonDialogRef, openClusterComparisonDialog
+
+            clusterComparisonDialogRef,
+            openClusterComparisonDialog,
+            showClusterComparisonDialog,
+            closeClusterComparisonDialog
         };
 
     },
@@ -97,29 +122,35 @@ export default {
 
     <dialog ref="phonicsDialogRef"><PhonicsTable /></dialog>
 
-    <dialog ref="clusterDialogRef">
+    <dialog ref="clusterDialogRef"
+            @close="closeClusterDialog">
         <InterferenceClusterForm 
+            id="interference-cluster-form-id"
+            v-if="showClusterDialog"
             @submit="closeClusterDialog"
-            @cancel="closeClusterDialog"/>
+            @cancel="closeClusterDialog"
+        />
     </dialog>
 
 
-    <dialog ref="clusterComparisonDialogRef">
-        <h4>Interference Cluster Comparison</h4>
-        <InterferenceClusterComparison />
+    <dialog ref="clusterComparisonDialogRef" @close="closeClusterComparisonDialog">
+        <InterferenceClusterComparison v-if="showClusterComparisonDialog" />
     </dialog>
     
     <div class="card-front">
         <AudioButtons :lexeme="cardLexeme"/>
-        <button @click="openClusterDialog">Add Interference Cluster</button>
-        <button @click="openPhonicsDialog">Show Phonics Table</button>
-        <button @click="openClusterComparisonDialog">Show Cluster Comparison Audio</button>
+        <button @click="openClusterDialog"
+            id="cluster-crud-dialog-button-id">Add Interference Cluster</button>
+        <button @click="openPhonicsDialog" 
+            id="phonics-dialog-button-id">Show Phonics Table</button>
+        <button @click="openClusterComparisonDialog"
+            id="cluster-comparison-dialog-button-id">Show Cluster Comparison Audio</button>
     </div>
 
     <div class="card-back" v-if="isBackSide">
     
         <template v-for="listing in listings">
-            <ListingItem :item="listing" />
+            <ListingItem :item="listing" :id="id" />
         </template>
         
         <SubformList :lexeme="cardLexeme" :items="subforms" />

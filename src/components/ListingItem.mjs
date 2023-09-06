@@ -3,12 +3,16 @@ import SenseListItem from './SenseListItem.mjs'
 import ExampleList from './ExampleList.mjs'
 
 export default {
-    // props: ['item', 'index'],
     props: {
         item: Object,
         index: {
-            Number,
+            type: Number,
             default: () => 0
+        },
+        id: {
+            required: false,
+            default: () => null,
+            type: Number
         }
     },
     components: {
@@ -44,12 +48,22 @@ export default {
             <div class="listing-body">
     
                 <div v-if="l.senses" class="listing-senses-wrapper">
-    
-                <div v-if="l.senses.general" 
-                    class="listing-sense-general">
-                    {{l.senses.general}}
-                </div>
-    
+
+                    <div v-if="l.senses.general">
+                        <template v-if="id >= 18 && id <= 649">
+                            <p class="dev">Using v-html</p>
+                            <div v-html="l.senses.general" 
+                                class="listing-sense-general"
+                            ></div>
+                        </template>
+                        <template v-else>
+                            <p>Not using v-html</p>
+                            <div class="listing-sense-general">
+                                {{l.senses.general}}
+                            </div>
+                        </template>
+                    </div>
+
                 <!-- Examples associated with general meaning -->
                 <ExampleList :examples="l.senses.examples" :expanded="examplesExpanded" />
     

@@ -1,6 +1,6 @@
 import { onMounted, onUnmounted, toValue } from 'vue'
 
-export function useEventListener(_event, cb) {
+export function useEventListener(_event, cb, target) {
 
     const event = toValue(_event)
     // const cb = toValue(_cb)
@@ -12,18 +12,27 @@ export function useEventListener(_event, cb) {
     if (typeof cb !== 'function') {
         console.error('callback function passed to useEventListener'
             + "is typeof " + typeof cb)
-        // throw new Error(
-        //     'callback function passed to useEventListener' +
-        //     'must be a function'
-        // );
     }
+
 
     onMounted(() => {
         // Prevent text from bubbling up to the Anki program
-        document.addEventListener(event, cb);
+        if (!target) {
+            document.addEventListener(event, cb);
+        }
+        else {
+            const targetVal = toValue(target)
+            targetVal.addEventListener(event, cb);
+        }
     });
 
     onUnmounted(() => {
-        document.removeEventListener(event, cb);
+        if (!target) {
+            document.removeEventListener(event, cb);
+        } else {
+            const targetVal = toValue(target)
+            targetVal.removeEventListener(event, cb);
+        }
+
     });
 }

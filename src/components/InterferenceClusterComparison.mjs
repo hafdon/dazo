@@ -1,11 +1,10 @@
-// import { useInterferenceClusterApi } from '../composables/useApi.mjs'
 import { inject, toValue, computed } from 'vue'
 import { useInterferenceClusterApi } from '../composables/useApi.mjs'
 import { useErrorLogger } from '../composables/useLogger.mjs'
 import AudioButtons from './AudioButtons.mjs'
 
 export default {
-    props: [''],
+    props: [],
     components: {
         'AudioButtons': AudioButtons
     },
@@ -13,7 +12,6 @@ export default {
     setup(props) {
 
         const cardLexeme = inject('cardLexeme')
-        console.log('typeof cardLexeme', typeof cardLexeme)
         const { data, error } = useInterferenceClusterApi({ lexeme: toValue(cardLexeme) })
         useErrorLogger(error)
 
@@ -23,13 +21,29 @@ export default {
             })))
 
         return {
-            cardLexeme, words
+            words
         }
     },
     template: /*html*/ `
-        <template v-for="word in words">
-            <AudioButtons :lexeme="word.ortho" :show-lexeme="true" />
-            <p>{{word.def}}</p>
+        <div class="biggish-font">Interference Cluster Comparison</div>
+
+        <template v-if="words.length">
+
+            <template v-if="words.length === 1">
+                <div class="para">This is the only word in the group.</div>
+                <div class="para">Add more words for comparison.</div>
+                <hr />
+            </template>
+
+            <template v-for="word in words">
+            <!-- TODO do this with slots -->
+                <AudioButtons 
+                    :show-lexeme="true" :lexeme="word.ortho" 
+                    :show-def="true" :def="word.def" />
+            </template>
+        </template>
+        <template v-else>
+            <div>Sorry, no interference cluster(s) for this word.</div>
         </template>
     `
 }
