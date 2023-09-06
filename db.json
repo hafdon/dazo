@@ -1,4 +1,3040 @@
 {
+  "phones": [
+    {
+      "regexes": [
+        "fh"
+      ],
+      "ulster": [
+        "/-/"
+      ],
+      "connacht": [
+        "/-/"
+      ],
+      "munster": [
+        "/-/"
+      ],
+      "examples": [
+        "infheistíocht"
+      ],
+      "id": 1
+    },
+    {
+      "regexes": [
+        "ón"
+      ],
+      "ulster": [
+        "/on/"
+      ],
+      "connacht": [
+        "/un/"
+      ],
+      "munster": [
+        "/on/"
+      ],
+      "examples": [
+        "conaigh"
+      ],
+      "id": 2
+    },
+    {
+      "regexes": [
+        "cn"
+      ],
+      "examples": [
+        [
+          "cnoc",
+          "cnaígh"
+        ],
+        "tionscnamh"
+      ],
+      "ulster": [
+        "/kr/",
+        "/sk(ə)n"
+      ],
+      "connacht": [
+        "/kr/",
+        "/sk(ə)n"
+      ],
+      "munster": [
+        "/kn/",
+        "/sk(ə)n"
+      ],
+      "id": 3
+    },
+    {
+      "regexes": [
+        "a?ígh"
+      ],
+      "examples": [
+        "cnaígh",
+        "caígh"
+      ],
+      "ulster": [
+        "/i/",
+        "/(w)i/"
+      ],
+      "connacht": [
+        "/i/",
+        "/wi/"
+      ],
+      "munster": [
+        "/ig/",
+        "/wig/"
+      ],
+      "id": 4
+    },
+    {
+      "regexes": [
+        "éig"
+      ],
+      "examples": [
+        "tréig"
+      ],
+      "ulster": [
+        "/eg/"
+      ],
+      "connacht": [
+        "/eg/"
+      ],
+      "munster": [
+        "/eg/"
+      ],
+      "id": 5
+    },
+    {
+      "regexes": [
+        "un"
+      ],
+      "ulster": [
+        "/un/",
+        "ʌn"
+      ],
+      "connacht": [
+        "/ʌn/",
+        ""
+      ],
+      "munster": [
+        "/un/",
+        ""
+      ],
+      "examples": [
+        "suntasach",
+        "bunúsach"
+      ],
+      "id": 6
+    },
+    {
+      "regexes": [
+        "ío[nsl]?"
+      ],
+      "examples": [
+        [
+          "cíos",
+          "aníos"
+        ],
+        [
+          "díon",
+          "comhlíon",
+          "síol"
+        ],
+        "faitíos",
+        "díospóireacht"
+      ],
+      "ulster": [
+        "/i/",
+        "/i/",
+        "/i/",
+        "ɪ"
+      ],
+      "connacht": [
+        "/i(ə)/",
+        "/i(ə)/",
+        "/i/",
+        "/i/"
+      ],
+      "munster": [
+        "/i/",
+        "/i(ə)/",
+        "/i(ə)/",
+        "/i/"
+      ],
+      "id": 7
+    },
+    {
+      "regexes": [
+        "tl"
+      ],
+      "examples": [
+        "eitleán"
+      ],
+      "ulster": [
+        "/t(ə)l/ [epenthesis]"
+      ],
+      "connacht": [
+        "/tl/"
+      ],
+      "munster": [
+        "/t(ə)l/ [epenthesis]"
+      ],
+      "id": 8
+    },
+    {
+      "regexes": [
+        "in"
+      ],
+      "examples": [
+        "sinsear",
+        "inis"
+      ],
+      "ulster": [
+        "/ɪn/",
+        "/ɛn/ ('hen')"
+      ],
+      "connacht": [
+        "/in/ ('mean')",
+        "/ɪn/ ('in')"
+      ],
+      "munster": [
+        "/in/ ('mean')",
+        "/ɪn/ ('in')"
+      ],
+      "id": 9
+    },
+    {
+      "regexes": [
+        "e?ach\b"
+      ],
+      "examples": [
+        [
+          "bunúsach",
+          "ribeach",
+          "suntasach",
+          "bainteach"
+        ],
+        "criosach",
+        [
+          "gach",
+          "coirpeach"
+        ],
+        "clúiteach"
+      ],
+      "ulster": [
+        "/ä(x)/",
+        "/ʌ/",
+        "/ä(x)/ [stressed]",
+        "/ʌ/"
+      ],
+      "connacht": [
+        "/ʌx/",
+        "/ʌx/",
+        "/äx/ [stressed]",
+        "/jʌx/"
+      ],
+      "munster": [
+        "/ʌx/",
+        "/ʌx/",
+        "/äx/ [stressed]",
+        "/ʌx/"
+      ],
+      "id": 10
+    },
+    {
+      "regexes": [
+        "omhai"
+      ],
+      "examples": [
+        "comhairleoir"
+      ],
+      "ulster": [
+        "/o/"
+      ],
+      "connacht": [
+        "/o/"
+      ],
+      "munster": [
+        "/o/"
+      ],
+      "id": 11
+    },
+    {
+      "regexes": [
+        "iath"
+      ],
+      "examples": [
+        "briathar"
+      ],
+      "ulster": [
+        "/ih/"
+      ],
+      "connacht": [
+        "/i/"
+      ],
+      "munster": [
+        "/ih/"
+      ],
+      "id": 12
+    },
+    {
+      "regexes": [
+        "ne"
+      ],
+      "examples": [
+        "cine",
+        "cúinne"
+      ],
+      "ulster": [
+        "/njɛ/",
+        "/njɛ/"
+      ],
+      "connacht": [
+        "/nə/",
+        "/njɛ/"
+      ],
+      "munster": [
+        "/nə/",
+        "/nɛ/"
+      ],
+      "id": 13
+    },
+    {
+      "regexes": [
+        "odh"
+      ],
+      "examples": [
+        "todhchaí"
+      ],
+      "ulster": [
+        "/e/"
+      ],
+      "connacht": [
+        "/aʊ/"
+      ],
+      "munster": [
+        "/aʊə/"
+      ],
+      "id": 14
+    },
+    {
+      "regexes": [
+        "cheall"
+      ],
+      "examples": [
+        "dícheall"
+      ],
+      "ulster": [
+        "/həl/"
+      ],
+      "connacht": [
+        "/əl/"
+      ],
+      "munster": [
+        "/həl/"
+      ],
+      "id": 15
+    },
+    {
+      "regexes": [
+        "ath"
+      ],
+      "examples": [
+        "brath"
+      ],
+      "ulster": [
+        "/e/"
+      ],
+      "connacht": [
+        "/ä/"
+      ],
+      "munster": [
+        "/ä(h)/"
+      ],
+      "id": 16
+    },
+    {
+      "regexes": [
+        "ádh"
+      ],
+      "examples": [
+        "ádh"
+      ],
+      "ulster": [
+        "/aʊ/"
+      ],
+      "connacht": [
+        "/ɔ/"
+      ],
+      "munster": [
+        "/ɔ/"
+      ],
+      "id": 17
+    },
+    {
+      "regexes": [
+        "obhadh"
+      ],
+      "examples": [
+        "críonlobhadh"
+      ],
+      "ulster": [
+        "/o/"
+      ],
+      "connacht": [
+        "/aʊə/"
+      ],
+      "munster": [
+        "/aʊə/"
+      ],
+      "id": 18
+    },
+    {
+      "regexes": [
+        "oich"
+      ],
+      "examples": [
+        "sroich"
+      ],
+      "ulster": [
+        "/əɪ ('like')/"
+      ],
+      "connacht": [
+        "/ʌ/"
+      ],
+      "munster": [
+        "/ʌ/"
+      ],
+      "id": 19
+    },
+    {
+      "regexes": [
+        "omhal"
+      ],
+      "examples": [
+        "comhaltas"
+      ],
+      "ulster": [
+        "/ol/"
+      ],
+      "connacht": [
+        "/ol/"
+      ],
+      "munster": [
+        "/ol/"
+      ],
+      "id": 20
+    },
+    {
+      "regexes": [
+        "nb"
+      ],
+      "examples": [
+        "leanbaí"
+      ],
+      "ulster": [
+        "/n(ə)b [epenthesis]/"
+      ],
+      "connacht": [
+        "/n(ə)b [epenthesis]/"
+      ],
+      "munster": [
+        "/n(ə)b [epenthesis]/"
+      ],
+      "id": 21
+    },
+    {
+      "regexes": [
+        "an"
+      ],
+      "examples": [
+        [
+          "montach",
+          "planda"
+        ],
+        "splanc"
+      ],
+      "ulster": [
+        "/än/",
+        "/än/"
+      ],
+      "connacht": [
+        "/än/",
+        "/æn/"
+      ],
+      "munster": [
+        "/aʊn/",
+        "/aʊn/"
+      ],
+      "id": 22
+    },
+    {
+      "regexes": [
+        "úin"
+      ],
+      "examples": [
+        "múin"
+      ],
+      "ulster": [
+        "/un"
+      ],
+      "connacht": [
+        "/u(ə)n/"
+      ],
+      "munster": [
+        "/un/"
+      ],
+      "id": 23
+    },
+    {
+      "regexes": [
+        "aitheamh"
+      ],
+      "examples": [
+        "i gcaitheamh"
+      ],
+      "ulster": [
+        "/ähoʊ/"
+      ],
+      "connacht": [
+        "/ä/"
+      ],
+      "munster": [
+        "/ähəv/"
+      ],
+      "id": 24
+    },
+    {
+      "regexes": [
+        "urr"
+      ],
+      "examples": [
+        "urraim"
+      ],
+      "ulster": [
+        "/ɛr/ ('erin')"
+      ],
+      "connacht": [
+        "/ʊr/"
+      ],
+      "munster": [
+        "/or/"
+      ],
+      "id": 25
+    },
+    {
+      "regexes": [
+        "om"
+      ],
+      "examples": [
+        "tromlach"
+      ],
+      "ulster": [
+        "/ʌm/"
+      ],
+      "connacht": [
+        "/ʌm/"
+      ],
+      "munster": [
+        "/aʊm/"
+      ],
+      "id": 26
+    },
+    {
+      "regexes": [
+        "íomh"
+      ],
+      "examples": [
+        "gníomh"
+      ],
+      "ulster": [
+        "/iu/"
+      ],
+      "connacht": [
+        "/iu/"
+      ],
+      "munster": [
+        "/iəv/"
+      ],
+      "id": 27
+    },
+    {
+      "regexes": [
+        "áith"
+      ],
+      "examples": [
+        "cáith",
+        "láithreach"
+      ],
+      "ulster": [
+        "/aɪ/",
+        "/əɪ/ ('like')"
+      ],
+      "connacht": [
+        "/ɔ/",
+        "/ɔ(ɪ)/"
+      ],
+      "munster": [
+        "/ɔ/",
+        "/ɔɪ/ ('boy')"
+      ],
+      "id": 28
+    },
+    {
+      "regexes": [
+        "gn"
+      ],
+      "examples": [
+        [
+          "gnúsacht",
+          "gné",
+          "gnóthaigh"
+        ],
+        [
+          "gníomhach",
+          "gníomh"
+        ]
+      ],
+      "ulster": [
+        "/gr/",
+        "/gr/"
+      ],
+      "connacht": [
+        "/gn/",
+        "/gr/"
+      ],
+      "munster": [
+        "/gn/",
+        "/gn/"
+      ],
+      "id": 29
+    },
+    {
+      "regexes": [
+        "obha"
+      ],
+      "examples": [
+        "dobhareach"
+      ],
+      "ulster": [
+        "/o/"
+      ],
+      "connacht": [
+        "/aʊ(ə)/"
+      ],
+      "munster": [
+        "/aʊ(ə)/"
+      ],
+      "id": 30
+    },
+    {
+      "regexes": [
+        "eir"
+      ],
+      "examples": [
+        "ceird"
+      ],
+      "ulster": [
+        "/ɛr/ ('cared')"
+      ],
+      "connacht": [
+        "/æɛr/"
+      ],
+      "munster": [
+        "/ɛr/ ('cared')"
+      ],
+      "id": 31
+    },
+    {
+      "regexes": [
+        "o"
+      ],
+      "examples": [
+        "cothaigh",
+        [
+          "confadh",
+          "dochar",
+          "trom"
+        ],
+        "moltach",
+        [
+          "cosain",
+          "coscán"
+        ]
+      ],
+      "ulster": [
+        "/ɔ/",
+        "/ʌ/",
+        "/o/",
+        "/ä/"
+      ],
+      "connacht": [
+        "/ʌ/",
+        "/ʌ/",
+        "/o/",
+        "/ʌ/"
+      ],
+      "munster": [
+        "/ʌ/",
+        "/ʌ/ or /(aʊ)/ with trom",
+        "/o/",
+        "/ʌ/"
+      ],
+      "id": 32
+    },
+    {
+      "regexes": [
+        "a?íocht?"
+      ],
+      "examples": [
+        [
+          "uathoibríoch",
+          "cíoch",
+          "críochnaigh"
+        ],
+        [
+          "drámaíocht",
+          "aíocht"
+        ],
+        "infheistíocht"
+      ],
+      "ulster": [
+        "/iə(h)/",
+        "/iəkt/",
+        "/iät/"
+      ],
+      "connacht": [
+        "/iəx/",
+        "/iəxt/",
+        "/iəxt/"
+      ],
+      "munster": [
+        "/iəx/",
+        "/iəxt/",
+        "/iəxt/"
+      ],
+      "id": 33
+    },
+    {
+      "regexes": [
+        "i?(?<!í)om"
+      ],
+      "examples": [
+        "compánach",
+        "iompaigh"
+      ],
+      "ulster": [
+        "/ʌ/"
+      ],
+      "connacht": [
+        "/ʌ/"
+      ],
+      "munster": [
+        "/u/"
+      ],
+      "id": 34
+    },
+    {
+      "regexes": [
+        "uath"
+      ],
+      "examples": [
+        "uathoibríoch"
+      ],
+      "ulster": [
+        "/u/"
+      ],
+      "connacht": [
+        "/u/"
+      ],
+      "munster": [
+        "/u/"
+      ],
+      "id": 35
+    },
+    {
+      "regexes": [
+        "eamh"
+      ],
+      "examples": [
+        "gaineamh",
+        "neamhspleách",
+        "fuinneamh"
+      ],
+      "ulster": [
+        "/ɪv/",
+        "/æv/",
+        "/u/"
+      ],
+      "connacht": [
+        "/ə/",
+        "/æv/",
+        "/jəv/"
+      ],
+      "munster": [
+        "/ɪv/",
+        "/æv/",
+        "/əv/"
+      ],
+      "id": 36
+    },
+    {
+      "regexes": [
+        "nf[^h]"
+      ],
+      "examples": [
+        "confadh"
+      ],
+      "ulster": [
+        "/nəf/ [epenthesis]"
+      ],
+      "connacht": [
+        "/nf/"
+      ],
+      "munster": [
+        "/nf/"
+      ],
+      "id": 37
+    },
+    {
+      "regexes": [
+        "mn"
+      ],
+      "examples": [
+        "imní"
+      ],
+      "ulster": [
+        "/mn/"
+      ],
+      "connacht": [
+        "/mr/"
+      ],
+      "munster": [
+        "/mn/"
+      ],
+      "id": 38
+    },
+    {
+      "regexes": [
+        "abha"
+      ],
+      "examples": [
+        "fabhalscéal",
+        "abhainn"
+      ],
+      "ulster": [
+        "/aʊə/ ('now')",
+        "/o/"
+      ],
+      "connacht": [
+        "/aʊə/ ('now')"
+      ],
+      "munster": [
+        "/aʊə/ ('now')"
+      ],
+      "id": 39
+    },
+    {
+      "regexes": [
+        "eoir\b"
+      ],
+      "examples": [
+        "comhairleoir"
+      ],
+      "ulster": [
+        "/är/ ('are')"
+      ],
+      "connacht": [
+        "/or/"
+      ],
+      "munster": [
+        "/or/"
+      ],
+      "id": 40
+    },
+    {
+      "regexes": [
+        "eách"
+      ],
+      "examples": [
+        "neamhspleách"
+      ],
+      "ulster": [
+        "/ɛə/"
+      ],
+      "connacht": [
+        "/ɔx/"
+      ],
+      "munster": [
+        "/ɔx/"
+      ],
+      "id": 41
+    },
+    {
+      "regexes": [
+        "agha\b"
+      ],
+      "examples": [
+        "saghas"
+      ],
+      "ulster": [
+        "/aɪ/ ('nice')"
+      ],
+      "connacht": [
+        "/aɪ/ ('nice')"
+      ],
+      "munster": [
+        "/aɪ/ ('eye')"
+      ],
+      "id": 42
+    },
+    {
+      "regexes": [
+        "umh\b"
+      ],
+      "examples": [
+        "cumhachtaigh"
+      ],
+      "ulster": [
+        "/u/"
+      ],
+      "connacht": [
+        "/u/"
+      ],
+      "munster": [
+        "/u/ or /ɔ/"
+      ],
+      "id": 43
+    },
+    {
+      "regexes": [
+        "nch\b"
+      ],
+      "examples": [
+        "seanchas"
+      ],
+      "ulster": [
+        "/n(ə)h/"
+      ],
+      "connacht": [
+        "/n(ə)h/"
+      ],
+      "munster": [
+        "/n(ə)x/"
+      ],
+      "id": 44
+    },
+    {
+      "regexes": [
+        "éa"
+      ],
+      "examples": [
+        [
+          "méadaigh",
+          "séan"
+        ],
+        "téacs",
+        [
+          "déanach",
+          "péac"
+        ]
+      ],
+      "ulster": [
+        "/e/",
+        "/ɛ/",
+        "/e/"
+      ],
+      "connacht": [
+        "/eə/",
+        "/e/",
+        "/e(ə)/"
+      ],
+      "munster": [
+        "/eə/",
+        "/eɪə/",
+        "/i(ə)/"
+      ],
+      "id": 45
+    },
+    {
+      "regexes": [
+        "a?ithe$"
+      ],
+      "examples": [
+        "sínithe",
+        "ardaithe"
+      ],
+      "ulster": [
+        "/ihɛ"
+      ],
+      "connacht": [
+        "/i/"
+      ],
+      "munster": [
+        "/əhɛ/"
+      ],
+      "id": 46
+    },
+    {
+      "regexes": [
+        "^ai[bcdefhlmnprt]"
+      ],
+      "examples": [
+        "Aibreán"
+      ],
+      "notes": "Ulster",
+      "ulster": [
+        "/ɛ/"
+      ],
+      "connacht": [
+        "/aɪ/"
+      ],
+      "munster": [
+        "/ə/ (?)"
+      ],
+      "id": 47
+    },
+    {
+      "regexes": [
+        "[eu]?acht"
+      ],
+      "examples": [
+        "sneachta",
+        "gluaiseacht",
+        "ioidhreacht",
+        "éifeacht",
+        "reacht",
+        "eachtra"
+      ],
+      "ulster": [
+        "~/a:rt/ ('cart')",
+        "/ät/ ('shot')",
+        "/ʌxt/ (iii)",
+        "/ät/ ('shot')",
+        "/æxt/",
+        "/ät/"
+      ],
+      "connacht": [
+        "",
+        "/ʌxt/",
+        "/ʌxt/",
+        "/ʌxt/",
+        "/æxt/",
+        "/æxt/"
+      ],
+      "munster": [
+        "",
+        "/ʌxt/",
+        "/ʌxt/",
+        "/ʌxt/",
+        "/æxt/",
+        "/äxt/"
+      ],
+      "id": 48
+    },
+    {
+      "regexes": [
+        "thn"
+      ],
+      "examples": [
+        "breathnaigh"
+      ],
+      "ulster": [
+        ""
+      ],
+      "connacht": [
+        ""
+      ],
+      "munster": [
+        "/h(ə)n/ [epenthesis]"
+      ],
+      "id": 49
+    },
+    {
+      "regexes": [
+        "e?ann"
+      ],
+      "examples": [
+        "gleann",
+        "craiceann",
+        "gannchuid",
+        "srann"
+      ],
+      "ulster": [
+        "/æn/",
+        "/ən/ [unstressed]",
+        "/än/",
+        "/än/"
+      ],
+      "connacht": [
+        "/ɔn/",
+        "/ən/ [unstressed]",
+        "/ɔn/ ('gone')",
+        "/än/ ('naan')"
+      ],
+      "munster": [
+        "/aʊn/",
+        "/ən/ [unstressed]",
+        "/aʊn/ ('noun')",
+        "/aʊn/"
+      ],
+      "id": 50
+    },
+    {
+      "regexes": [
+        "aomh"
+      ],
+      "examples": [
+        "naomh"
+      ],
+      "ulster": [
+        "iu"
+      ],
+      "connacht": [
+        "/(e)iv/"
+      ],
+      "munster": [
+        "/aɪəv/"
+      ],
+      "id": 51
+    },
+    {
+      "regexes": [
+        "mú"
+      ],
+      "examples": [
+        "amú"
+      ],
+      "ulster": [
+        "/maʊ/"
+      ],
+      "connacht": [
+        "/mu/"
+      ],
+      "munster": [
+        "/mu/"
+      ],
+      "id": 52
+    },
+    {
+      "regexes": [
+        "éir"
+      ],
+      "examples": [
+        "pinsinéir"
+      ],
+      "ulster": [
+        "/ɛr/ ('air')"
+      ],
+      "connacht": [
+        "/ɛr/ ('air')"
+      ],
+      "munster": [
+        "/ɛr/ ('air')"
+      ],
+      "id": 53
+    },
+    {
+      "regexes": [
+        "mh"
+      ],
+      "examples": [
+        [
+          "formhór",
+          "ullmhaigh"
+        ],
+        "tréimhse",
+        "gníomhach"
+      ],
+      "ulster": [
+        "/w/",
+        "/v/",
+        "/w/"
+      ],
+      "connacht": [
+        "/w/",
+        "/v/",
+        "/v/"
+      ],
+      "munster": [
+        "/v/",
+        "/v/",
+        "/v/"
+      ],
+      "id": 54
+    },
+    {
+      "regexes": [
+        "aío?"
+      ],
+      "examples": [
+        [
+          "imeachtaí",
+          "iomaí"
+        ],
+        "ealaíontóir"
+      ],
+      "ulster": [
+        "/i/",
+        "/i(ə)/"
+      ],
+      "connacht": [
+        "/i/",
+        "/i(ə)/"
+      ],
+      "munster": [
+        "/i/",
+        "/i(ə)/"
+      ],
+      "id": 55
+    },
+    {
+      "regexes": [
+        "aoi"
+      ],
+      "examples": [
+        "smaointe",
+        "saoire",
+        "maoin"
+      ],
+      "ulster": [
+        "/wi/",
+        "/i/",
+        "/wi/"
+      ],
+      "connacht": [
+        "/wi/",
+        "/i/",
+        "/wi(ə)/"
+      ],
+      "munster": [
+        "/wi/",
+        "/i/",
+        "/wi/"
+      ],
+      "id": 56
+    },
+    {
+      "regexes": [
+        "thaoi"
+      ],
+      "examples": [
+        "cathaoirleach"
+      ],
+      "ulster": [
+        "/hi/"
+      ],
+      "connacht": [
+        "/hi/"
+      ],
+      "munster": [
+        "/hi/"
+      ],
+      "id": 57
+    },
+    {
+      "regexes": [
+        "ei"
+      ],
+      "examples": [
+        [
+          "meitheal",
+          "ceil"
+        ],
+        "seisear"
+      ],
+      "ulster": [
+        "/ɛ/",
+        "/ɪ/"
+      ],
+      "connacht": [
+        "/ɛ/",
+        "/ɛ/"
+      ],
+      "munster": [
+        "/ɛ/",
+        "/ɛ/"
+      ],
+      "id": 58
+    },
+    {
+      "regexes": [
+        "le"
+      ],
+      "examples": [
+        "le"
+      ],
+      "ulster": [
+        "/lɛ/"
+      ],
+      "connacht": [
+        "/lɛ/"
+      ],
+      "munster": [
+        "/lɛ/"
+      ],
+      "id": 59
+    },
+    {
+      "regexes": [
+        "iúr"
+      ],
+      "examples": [
+        "stiúrthóir"
+      ],
+      "ulster": [
+        "/u/"
+      ],
+      "connacht": [
+        "/u(ə)/"
+      ],
+      "munster": [
+        "/u(ə)/"
+      ],
+      "id": 60
+    },
+    {
+      "regexes": [
+        "dh"
+      ],
+      "examples": [
+        "mar dhea",
+        "comhdháil"
+      ],
+      "ulster": [
+        "/j/",
+        "/ɣ/"
+      ],
+      "connacht": [
+        "/j/",
+        "/ɣ/"
+      ],
+      "munster": [
+        "/j/",
+        "/-/"
+      ],
+      "id": 61
+    },
+    {
+      "regexes": [
+        "ao"
+      ],
+      "examples": [
+        [
+          "daor",
+          "craol"
+        ],
+        "aonad",
+        "caora",
+        "aonach"
+      ],
+      "ulster": [
+        "/i/",
+        "/e/",
+        "/i/",
+        "/i/"
+      ],
+      "connacht": [
+        "/i/",
+        "/e(ə)/",
+        "/wi/",
+        "/i(ə)/"
+      ],
+      "munster": [
+        "/eə/",
+        "/e(ə)/",
+        "/wi/",
+        "/e(ə)/"
+      ],
+      "id": 62
+    },
+    {
+      "regexes": [
+        "ionn?"
+      ],
+      "examples": [
+        [
+          "iontas",
+          "tionscnamh"
+        ],
+        "sionnach",
+        "ionadh",
+        "ionadaí"
+      ],
+      "ulster": [
+        "/ʌn/",
+        "/ən/ [unstressed]",
+        "/in/",
+        "/ɛn/"
+      ],
+      "connacht": [
+        "/in/",
+        "/ən/ [unstressed]",
+        "/i(ə)n/",
+        "/ʌn/"
+      ],
+      "munster": [
+        "/un/",
+        "/ən/ [unstressed]",
+        "/un /",
+        "/ʌn/"
+      ],
+      "id": 63
+    },
+    {
+      "regexes": [
+        "eoi?"
+      ],
+      "examples": [
+        "teorainn",
+        "ainneoin"
+      ],
+      "ulster": [
+        "/o/"
+      ],
+      "connacht": [
+        "/o/"
+      ],
+      "munster": [
+        "/o/",
+        "/o(ə)/"
+      ],
+      "id": 64
+    },
+    {
+      "regexes": [
+        "u"
+      ],
+      "examples": [
+        "ucht"
+      ],
+      "ulster": [
+        "/ʌ/"
+      ],
+      "connacht": [
+        "/ʊ/"
+      ],
+      "munster": [
+        "/ʊ/"
+      ],
+      "id": 65
+    },
+    {
+      "regexes": [
+        "gl"
+      ],
+      "examples": [
+        "glúin"
+      ],
+      "ulster": [
+        "/gl/"
+      ],
+      "connacht": [
+        "/gl/"
+      ],
+      "munster": [
+        "/gəl/ [epenthesis]"
+      ],
+      "id": 66
+    },
+    {
+      "regexes": [
+        "aigh(?!\b)"
+      ],
+      "examples": [
+        "taighde",
+        "saighdiúir"
+      ],
+      "ulster": [
+        "/aɪ/"
+      ],
+      "connacht": [
+        "/aɪ/"
+      ],
+      "munster": [
+        "/aɪ/"
+      ],
+      "id": 67
+    },
+    {
+      "regexes": [
+        "[aeio]?ú[aeio]?"
+      ],
+      "examples": [
+        "saighdiúir",
+        "comhaontú"
+      ],
+      "ulster": [
+        "/ə/ [unstressed]",
+        "/u/ [stressed]"
+      ],
+      "connacht": [
+        "/u/"
+      ],
+      "munster": [
+        "/u/"
+      ],
+      "id": 68
+    },
+    {
+      "regexes": [
+        "ia"
+      ],
+      "examples": [
+        [
+          "fianaise",
+          "coitianta"
+        ],
+        "scian",
+        [
+          "iasacht",
+          "iarraidh"
+        ]
+      ],
+      "ulster": [
+        "/i(ə)/",
+        "ɪ",
+        "/jɛ"
+      ],
+      "connacht": [
+        "/i(ə)/",
+        "",
+        "/i/"
+      ],
+      "munster": [
+        "/i(ə)/",
+        "",
+        "/i/"
+      ],
+      "id": 69
+    },
+    {
+      "regexes": [
+        "ghch"
+      ],
+      "examples": [
+        "toghchán"
+      ],
+      "ulster": [
+        "--"
+      ],
+      "connacht": [
+        "--"
+      ],
+      "munster": [
+        "gh/ə/ch [epenthesis]"
+      ],
+      "id": 70
+    },
+    {
+      "regexes": [
+        "ille"
+      ],
+      "examples": [
+        "bille"
+      ],
+      "ulster": [
+        "ɪljə"
+      ],
+      "connacht": [
+        "ɪlə"
+      ],
+      "munster": [
+        "ɪlə"
+      ],
+      "id": 71
+    },
+    {
+      "regexes": [
+        "rg"
+      ],
+      "examples": [
+        "fearg",
+        "léargas"
+      ],
+      "ulster": [
+        "/rəg/ [epenthesis]",
+        "/rg/ [no epenthesis]"
+      ],
+      "connacht": [
+        "/rəg/ [epenthesis]",
+        "/rg/ [no epenthesis]"
+      ],
+      "munster": [
+        "/rəg/ [epenthesis]",
+        "/rg/ [no epenthesis]"
+      ],
+      "id": 72
+    },
+    {
+      "regexes": [
+        "rm"
+      ],
+      "examples": [
+        "gairm",
+        "formhór"
+      ],
+      "ulster": [
+        "/rəm/ [epenthesis]",
+        "/rw/"
+      ],
+      "connacht": [
+        "/rəm/ [epenthesis]",
+        "/rw/"
+      ],
+      "munster": [
+        "/rəm/ [epenthesis]",
+        "/rəv/ [epenthesis]"
+      ],
+      "id": 73
+    },
+    {
+      "regexes": [
+        "uai?"
+      ],
+      "examples": [
+        [
+          "dualgas",
+          "gluaiseacht"
+        ],
+        "cuan"
+      ],
+      "ulster": [
+        "/uə/",
+        "/uæ/"
+      ],
+      "connacht": [
+        "/uə/",
+        "/u/"
+      ],
+      "munster": [
+        "/uə/",
+        "/uə/"
+      ],
+      "id": 74
+    },
+    {
+      "regexes": [
+        "nái"
+      ],
+      "examples": [
+        [
+          "náisiúnta",
+          "náire"
+        ]
+      ],
+      "ulster": [
+        "/æ/"
+      ],
+      "connacht": [
+        "/ɔ/"
+      ],
+      "munster": [
+        "/ɔ/"
+      ],
+      "id": 75
+    },
+    {
+      "regexes": [
+        "e?ái?"
+      ],
+      "examples": [
+        [
+          "áis",
+          "sáraigh",
+          "cláraigh"
+        ],
+        [
+          "cumarsáid",
+          "péinteáil",
+          "áthas",
+          "Aibreán"
+        ],
+        [
+          "náisiúnta",
+          "náire"
+        ],
+        [
+          "spás",
+          "fáil"
+        ],
+        "coimeádta"
+      ],
+      "ulster": [
+        "/ɛ/",
+        "/ä/",
+        "/æ/",
+        "/wɛ/",
+        "ə"
+      ],
+      "connacht": [
+        "/ɔ/",
+        "/ɔ/",
+        "/ɔ/",
+        "/ɔ/",
+        "æ"
+      ],
+      "munster": [
+        "/ɔ/",
+        "/ɔ/",
+        "/ɔ/",
+        "/ɔ/",
+        "æ"
+      ],
+      "id": 76
+    },
+    {
+      "regexes": [
+        "uío"
+      ],
+      "examples": [
+        "buíochas"
+      ],
+      "ulster": [
+        "wi"
+      ],
+      "connacht": [
+        "wi(ə)"
+      ],
+      "munster": [
+        "we(ə)"
+      ],
+      "id": 77
+    },
+    {
+      "regexes": [
+        "ogh"
+      ],
+      "examples": [
+        "toghchán"
+      ],
+      "ulster": [
+        "eɪ ('hay')"
+      ],
+      "connacht": [
+        "/aʊ/ ('now')"
+      ],
+      "munster": [
+        "/aʊ/ ('now')"
+      ],
+      "id": 78
+    },
+    {
+      "regexes": [
+        "(?<!á)il"
+      ],
+      "examples": [
+        "milseog"
+      ],
+      "ulster": [
+        "/ɪl/"
+      ],
+      "connacht": [
+        "/il/"
+      ],
+      "munster": [
+        "/il/"
+      ],
+      "id": 79
+    },
+    {
+      "regexes": [
+        "oi"
+      ],
+      "examples": [
+        "coitianta",
+        "uathoibríoch",
+        "oiliúint",
+        "oideachas",
+        "coinne",
+        "coill"
+      ],
+      "ulster": [
+        "/ä/",
+        "/ɛ/",
+        "/ɪ/",
+        "/ɛ/",
+        "/ʌ/",
+        "/ə/"
+      ],
+      "connacht": [
+        "/ʌ/",
+        "/aɪ/",
+        "/ɛ/",
+        "/ɛ/",
+        "/ʊ/",
+        "/aɪ/ ('eye')"
+      ],
+      "munster": [
+        "/ʊ/",
+        "/ɪ/",
+        "/ɪ/",
+        "/ɪ/",
+        "/(w)ɪ/",
+        "/wi/"
+      ],
+      "id": 80
+    },
+    {
+      "regexes": [
+        "[au]?inn"
+      ],
+      "examples": [
+        "crinnte",
+        "teorainn",
+        [
+          "binn",
+          "cinn"
+        ],
+        "cruinn"
+      ],
+      "ulster": [
+        "/ɪn/ ('in')",
+        "/äən/ or /ä(ɪ)n/",
+        "/ɪn/ ('in')",
+        "/ɪn/"
+      ],
+      "connacht": [
+        "/in/ ('mean')",
+        "/ɪn/",
+        "/in/ ('mean')",
+        "/in/"
+      ],
+      "munster": [
+        "/ɪn/ ('in')",
+        "n/a: teora",
+        "/in/ ('mean')",
+        "/in/"
+      ],
+      "id": 81
+    },
+    {
+      "regexes": [
+        "ar"
+      ],
+      "examples": [
+        "ardaithe",
+        "araon",
+        "scaradh"
+      ],
+      "ulster": [
+        "/ɛr/ ('fair')",
+        "/ər/ [unstressed]",
+        "/är/"
+      ],
+      "connacht": [
+        "/ɔr/ ('far')",
+        "/ər/",
+        "/är/"
+      ],
+      "munster": [
+        "/ɔr/ ('far')",
+        "/ɛr/ ('meredith')",
+        "/är/"
+      ],
+      "id": 82
+    },
+    {
+      "regexes": [
+        "áin$"
+      ],
+      "examples": [
+        "síocháin"
+      ],
+      "ulster": [
+        "/ʌn/"
+      ],
+      "connacht": [
+        "/ɔn/"
+      ],
+      "munster": [
+        "/ɔin/"
+      ],
+      "id": 83
+    },
+    {
+      "regexes": [
+        "uinnigh\b"
+      ],
+      "examples": [
+        "cruinnigh"
+      ],
+      "ulster": [
+        "/ɪni/"
+      ],
+      "connacht": [
+        "/ɪnjə/"
+      ],
+      "munster": [
+        "/ɪnɪg/"
+      ],
+      "id": 84
+    },
+    {
+      "regexes": [
+        "eidh"
+      ],
+      "examples": [
+        "feidhmigh",
+        "feidhmeannach"
+      ],
+      "ulster": [
+        "/e/",
+        "/aɪ/"
+      ],
+      "connacht": [
+        "/aɪ/ ('eye')",
+        "/aɪ/"
+      ],
+      "munster": [
+        "/aɪ/ ('eye')",
+        "/aɪ/"
+      ],
+      "id": 85
+    },
+    {
+      "regexes": [
+        "a?igh\b"
+      ],
+      "examples": [
+        [
+          "ceadaigh",
+          "eagraigh"
+        ],
+        [
+          "figh",
+          "laistigh"
+        ],
+        "cruaigh"
+      ],
+      "ulster": [
+        "/i/",
+        "/i/",
+        "/eɪ/ ('hay')"
+      ],
+      "connacht": [
+        "/ə/",
+        "ɪ",
+        "/ʌ/"
+      ],
+      "munster": [
+        "/ɪg/",
+        "/ɪg/",
+        "/ɛg/"
+      ],
+      "id": 86
+    },
+    {
+      "regexes": [
+        "earr?"
+      ],
+      "examples": [
+        [
+          "beartas",
+          "dearc"
+        ],
+        "earra",
+        "deisceart",
+        "seisear",
+        "earrach"
+      ],
+      "ulster": [
+        "/ɔr/ ('are')",
+        "/är/",
+        "/ɔr/ ('are')",
+        "/ər/ [unstressed]",
+        "/r/"
+      ],
+      "connacht": [
+        "/ær/",
+        "/ær/",
+        "/ər/ ('dirt')",
+        "/ər/ [unstressed]",
+        "/r/"
+      ],
+      "munster": [
+        "/ær/",
+        "/ær/",
+        "/ər/ ('dirt')",
+        "/ər/ [unstressed]",
+        "/ər/ [unstressed]"
+      ],
+      "id": 87
+    },
+    {
+      "regexes": [
+        "ea"
+      ],
+      "examples": [
+        "ceadaigh",
+        [
+          "seachas",
+          "corpoideachas"
+        ],
+        "taifead",
+        "eaglach",
+        "feasta"
+      ],
+      "ulster": [
+        "/æ/",
+        "/ä/",
+        "/ə/ [unstressed]",
+        "/ʌ/",
+        "/æ/"
+      ],
+      "connacht": [
+        "/æ/",
+        "/ä/",
+        "/ə/ [unstressed]",
+        "/ɔ/",
+        "/æ/"
+      ],
+      "munster": [
+        "/æ/",
+        "/ä/",
+        "/ə/ [unstressed]",
+        "/ä/",
+        "/ɛ/"
+      ],
+      "id": 88
+    },
+    {
+      "regexes": [
+        "or"
+      ],
+      "examples": [
+        "ord"
+      ],
+      "ulster": [
+        "/ɔr/ ('or')"
+      ],
+      "connacht": [
+        "/aʊər/ ('tower')"
+      ],
+      "munster": [
+        "/ɔr/ ('or')"
+      ],
+      "id": 89
+    },
+    {
+      "regexes": [
+        "igh"
+      ],
+      "examples": [
+        "righneas"
+      ],
+      "ulster": [
+        "/i/"
+      ],
+      "connacht": [
+        "/i/"
+      ],
+      "munster": [
+        "/i/"
+      ],
+      "id": 90
+    },
+    {
+      "regexes": [
+        "im"
+      ],
+      "examples": [
+        "timpeallacht",
+        "limistéar"
+      ],
+      "ulster": [
+        "/ɪm/",
+        "/ɪm/"
+      ],
+      "connacht": [
+        "/im/",
+        "/ɪm/"
+      ],
+      "munster": [
+        "/im/",
+        "/ɪm/"
+      ],
+      "id": 91
+    },
+    {
+      "regexes": [
+        "uimh"
+      ],
+      "examples": [
+        "cuimhneamh"
+      ],
+      "ulster": [
+        "/ʌv/"
+      ],
+      "connacht": [
+        "/wim/"
+      ],
+      "munster": [
+        "/wi/"
+      ],
+      "id": 92
+    },
+    {
+      "regexes": [
+        "eith"
+      ],
+      "examples": [
+        "breith"
+      ],
+      "ulster": [
+        "/e/"
+      ],
+      "connacht": [
+        "/ɛ/"
+      ],
+      "munster": [
+        "/ɛ/"
+      ],
+      "id": 93
+    },
+    {
+      "regexes": [
+        "uí"
+      ],
+      "examples": [
+        "buí"
+      ],
+      "ulster": [
+        "/wi/"
+      ],
+      "connacht": [
+        "/wi/"
+      ],
+      "munster": [
+        "/wi/"
+      ],
+      "id": 94
+    },
+    {
+      "regexes": [
+        "aith"
+      ],
+      "examples": [
+        "sraith",
+        "taithí",
+        "anraith"
+      ],
+      "ulster": [
+        "/əɪ/ ('like')",
+        "/ä(h)/",
+        "/ɪ/"
+      ],
+      "connacht": [
+        "/ä(h)/",
+        "/ä(h)/",
+        "/ä(h)/"
+      ],
+      "munster": [
+        "/ä(h)/",
+        "/ä(h)/",
+        "/ä(h)/"
+      ],
+      "id": 95
+    },
+    {
+      "regexes": [
+        "nr"
+      ],
+      "examples": [
+        "anraith"
+      ],
+      "ulster": [
+        "/nr/"
+      ],
+      "connacht": [
+        "/ntr/"
+      ],
+      "munster": [
+        "/nr/"
+      ],
+      "id": 96
+    },
+    {
+      "regexes": [
+        "onn\b"
+      ],
+      "examples": [
+        "anonn"
+      ],
+      "ulster": [
+        "/ʌn/"
+      ],
+      "connacht": [
+        "/un/"
+      ],
+      "munster": [
+        "/un/"
+      ],
+      "id": 97
+    },
+    {
+      "regexes": [
+        "rch"
+      ],
+      "examples": [
+        "dorcha"
+      ],
+      "ulster": [
+        "/r(ə)h/"
+      ],
+      "connacht": [
+        "/rəx/"
+      ],
+      "munster": [
+        "/rəx/"
+      ],
+      "id": 98
+    },
+    {
+      "regexes": [
+        "ai[s]?"
+      ],
+      "examples": [
+        "taifead",
+        "malairt",
+        "craiceann",
+        [
+          "paiste",
+          "bailithe",
+          "caitheachas",
+          "faitíos"
+        ],
+        "aigne",
+        [
+          "haiste",
+          "aistriúchán"
+        ],
+        "caisleán",
+        "saibhir"
+      ],
+      "ulster": [
+        "/ä/",
+        "/ə/ [unstressed]",
+        "/æ/",
+        "/ä/",
+        "/ä/",
+        "/æ/",
+        "/ä/",
+        "/ɛ/"
+      ],
+      "connacht": [
+        "/æ/",
+        "/ə/ [unstressed]",
+        "/æ/",
+        "/ä/",
+        "/æ/",
+        "/æ/",
+        "/ʊ/",
+        "/ɛ/"
+      ],
+      "munster": [
+        "/ä/",
+        "/ə/ [unstressed]",
+        "/ɪ/",
+        "/ä/",
+        "/æ/",
+        "/æ/",
+        "/ä/",
+        "/ɛ/"
+      ],
+      "id": 99
+    },
+    {
+      "regexes": [
+        "bh"
+      ],
+      "examples": [
+        "saibhir"
+      ],
+      "ulster": [
+        "/v/"
+      ],
+      "connacht": [
+        "/v/"
+      ],
+      "munster": [
+        "/v/"
+      ],
+      "id": 100
+    },
+    {
+      "regexes": [
+        "[aiou]?é[iou]?"
+      ],
+      "examples": [
+        "béim",
+        "déileáil"
+      ],
+      "ulster": [
+        "/e/",
+        "/e/"
+      ],
+      "connacht": [
+        "/e/",
+        "/e/"
+      ],
+      "munster": [
+        "/e/",
+        "/aɪ/ ('eye')"
+      ],
+      "id": 101
+    },
+    {
+      "regexes": [
+        "oidh"
+      ],
+      "examples": [
+        "oidhreacht"
+      ],
+      "ulster": [
+        "/aɪ/ ('eye')"
+      ],
+      "connacht": [
+        "/aɪ/ ('eye')"
+      ],
+      "munster": [
+        "/aɪ/ ('eye')"
+      ],
+      "id": 102
+    },
+    {
+      "regexes": [
+        "omh(?!ach)a?"
+      ],
+      "examples": [
+        "comhrá",
+        [
+          "comhlacht",
+          "comhlíonadh"
+        ],
+        "domhanda"
+      ],
+      "ulster": [
+        "/o/",
+        "/o/",
+        "/o/"
+      ],
+      "connacht": [
+        "/o/",
+        "/o/",
+        "/aʊ/"
+      ],
+      "munster": [
+        "/ə/ [unstressed]",
+        "/o/",
+        "/aʊ/"
+      ],
+      "id": 103
+    },
+    {
+      "regexes": [
+        "omhao"
+      ],
+      "examples": [
+        "comhaontú"
+      ],
+      "ulster": [
+        "/ɔɪə/ ('boy'n')"
+      ],
+      "connacht": [
+        "/oiə/"
+      ],
+      "munster": [
+        "/ɔɪə/ ('boy'n')"
+      ],
+      "id": 104
+    },
+    {
+      "regexes": [
+        "uaigh"
+      ],
+      "examples": [
+        "luaigh",
+        "buaigh"
+      ],
+      "ulster": [
+        "/ueɪ/ (like 'y|ou a|te')",
+        "ui"
+      ],
+      "connacht": [
+        "/uʌ/",
+        "/uʌ/"
+      ],
+      "munster": [
+        "/uɪg/",
+        "/uɪg/"
+      ],
+      "id": 105
+    },
+    {
+      "regexes": [
+        "uigh"
+      ],
+      "examples": [
+        "lasmuigh"
+      ],
+      "ulster": [
+        "/wi/"
+      ],
+      "connacht": [
+        "/ʊ/"
+      ],
+      "munster": [
+        "/ʊ/"
+      ],
+      "id": 106
+    },
+    {
+      "regexes": [
+        "ch"
+      ],
+      "examples": [
+        [
+          "dúchas",
+          "loch"
+        ],
+        "dúiche"
+      ],
+      "ulster": [
+        "/h/",
+        "/x/"
+      ],
+      "connacht": [
+        "/x/",
+        "/x/"
+      ],
+      "munster": [
+        "/x/",
+        "/h/"
+      ],
+      "id": 107
+    },
+    {
+      "regexes": [
+        "che"
+      ],
+      "examples": [
+        "dúiche"
+      ],
+      "ulster": [
+        "/xjɛ/"
+      ],
+      "connacht": [
+        "/xjɛ/"
+      ],
+      "munster": [
+        "/hɛ/"
+      ],
+      "id": 108
+    },
+    {
+      "regexes": [
+        "uil"
+      ],
+      "examples": [
+        "fuil"
+      ],
+      "ulster": [
+        "/ʌ/"
+      ],
+      "connacht": [
+        "/wɪ/"
+      ],
+      "munster": [
+        "/wɪ/"
+      ],
+      "id": 109
+    },
+    {
+      "regexes": [
+        "cht"
+      ],
+      "examples": [
+        "brúcht"
+      ],
+      "ulster": [
+        "/xt/"
+      ],
+      "connacht": [
+        "/xt/"
+      ],
+      "munster": [
+        "/xt/"
+      ],
+      "id": 110
+    },
+    {
+      "regexes": [
+        "uaith"
+      ],
+      "examples": [
+        "suaith"
+      ],
+      "ulster": [
+        "/ui/"
+      ],
+      "connacht": [
+        "/uʌ/"
+      ],
+      "munster": [
+        "/uʌ/"
+      ],
+      "id": 111
+    },
+    {
+      "regexes": [
+        "e?adh\b"
+      ],
+      "examples": [
+        "cáineadh",
+        [
+          "comhlíonadh",
+          "conradh"
+        ]
+      ],
+      "ulster": [
+        "/u/"
+      ],
+      "connacht": [
+        "/ə/"
+      ],
+      "munster": [
+        "/ɛ/",
+        "/ə/"
+      ],
+      "id": 112
+    },
+    {
+      "regexes": [
+        "a"
+      ],
+      "examples": [
+        "lasmuigh",
+        "masc",
+        [
+          "dualgas",
+          "iarthar"
+        ],
+        "blas"
+      ],
+      "ulster": [
+        "/æ/ [stressed]",
+        "/æ/",
+        "/ə/ [unstressed]",
+        "/ä/"
+      ],
+      "connacht": [
+        "/æ/ [stressed]",
+        "/ä/",
+        "/ə/ [unstressed]",
+        "/ä/"
+      ],
+      "munster": [
+        "/æ/ [stressed]",
+        "/ä/",
+        "/ə/ [unstressed]",
+        "/ä/"
+      ],
+      "id": 113
+    },
+    {
+      "regexes": [
+        "agh"
+      ],
+      "examples": [
+        "iniúch"
+      ],
+      "ulster": [
+        "/(j)u(h)/"
+      ],
+      "connacht": [
+        "/(j)ux/"
+      ],
+      "munster": [
+        "/ux/"
+      ],
+      "id": 114
+    },
+    {
+      "regexes": [
+        "sh"
+      ],
+      "examples": [
+        "dúshlán"
+      ],
+      "ulster": [
+        "/h/"
+      ],
+      "connacht": [
+        "/-/"
+      ],
+      "munster": [
+        "/h/"
+      ],
+      "id": 115
+    },
+    {
+      "regexes": [
+        "éith"
+      ],
+      "examples": [
+        "tréith"
+      ],
+      "ulster": [
+        "/e/"
+      ],
+      "connacht": [
+        "/e/"
+      ],
+      "munster": [
+        "/e/"
+      ],
+      "id": 116
+    },
+    {
+      "regexes": [
+        "ca$"
+      ],
+      "examples": [
+        "éasca"
+      ],
+      "ulster": [
+        "/(w)i/"
+      ],
+      "connacht": [
+        "/ə/"
+      ],
+      "munster": [
+        "/ə/"
+      ],
+      "id": 117
+    },
+    {
+      "regexes": [
+        "uth"
+      ],
+      "examples": [
+        "sruth",
+        "cruth"
+      ],
+      "ulster": [
+        "/u/",
+        "/u/"
+      ],
+      "connacht": [
+        "/ʌ/",
+        "/ʌ/"
+      ],
+      "munster": [
+        "/ʌ/ or /ʊ/",
+        "/ʌt/"
+      ],
+      "id": 118
+    },
+    {
+      "regexes": [
+        "iúch"
+      ],
+      "examples": [
+        "laghdaigh"
+      ],
+      "ulster": [
+        "/eɪ/ ('hay')"
+      ],
+      "connacht": [
+        "/aɪ/ ('eye')"
+      ],
+      "munster": [
+        "/aɪ/ ('eye')"
+      ],
+      "id": 119
+    },
+    {
+      "regexes": [
+        "eag"
+      ],
+      "examples": [
+        "teagmháil",
+        "spreag"
+      ],
+      "ulster": [
+        "/æŋg/",
+        "/æg/"
+      ],
+      "connacht": [
+        "/æg/",
+        "/æg/"
+      ],
+      "munster": [
+        "/æŋg/",
+        "/æg/"
+      ],
+      "id": 120
+    },
+    {
+      "regexes": [
+        "th"
+      ],
+      "examples": [
+        "iarthar"
+      ],
+      "ulster": [
+        "/h/"
+      ],
+      "connacht": [
+        "/h/"
+      ],
+      "munster": [
+        "/h/"
+      ],
+      "id": 121
+    },
+    {
+      "regexes": [
+        "iabha"
+      ],
+      "examples": [
+        "diabhal"
+      ],
+      "ulster": [
+        "/æwə/"
+      ],
+      "connacht": [
+        "/aʊə/"
+      ],
+      "munster": [
+        "/iə/"
+      ],
+      "id": 122
+    },
+    {
+      "regexes": [
+        "éigh"
+      ],
+      "examples": [
+        "pléigh"
+      ],
+      "ulster": [
+        "/eɪ/"
+      ],
+      "connacht": [
+        "/eɪ/"
+      ],
+      "munster": [
+        "/eg/"
+      ],
+      "id": 123
+    },
+    {
+      "regexes": [
+        "aín"
+      ],
+      "examples": [
+        "ealaín"
+      ],
+      "ulster": [
+        "/i/"
+      ],
+      "connacht": [
+        "/i/"
+      ],
+      "munster": [
+        "/i(ə)/"
+      ],
+      "id": 124
+    },
+    {
+      "regexes": [
+        "io"
+      ],
+      "examples": [
+        "cion",
+        [
+          "criosach",
+          "sliotar"
+        ],
+        "iomaí",
+        [
+          "pioc",
+          "fiontar"
+        ]
+      ],
+      "ulster": [
+        "/(j)ʌ/",
+        "/ɪ/",
+        "/ʌ/",
+        "/ʌ/"
+      ],
+      "connacht": [
+        "/jʌ/",
+        "/ɪ/",
+        "/ʌ/",
+        "/ɪ(ə)/"
+      ],
+      "munster": [
+        "/jʌ/",
+        "/ɪ/",
+        "/ʌ/",
+        "/jʌ/"
+      ],
+      "id": 125
+    },
+    {
+      "regexes": [
+        "ói"
+      ],
+      "examples": [
+        "cóip",
+        "tionóisc",
+        [
+          "tóin",
+          "móin"
+        ]
+      ],
+      "ulster": [
+        "/o/",
+        "/ʌ/",
+        "/o/"
+      ],
+      "connacht": [
+        "/oə/",
+        "/o/",
+        "/u/"
+      ],
+      "munster": [
+        "/oɪ/",
+        "/o/",
+        "/oə/"
+      ],
+      "id": 126
+    },
+    {
+      "regexes": [
+        "[aeiu]?ó[aeu]?"
+      ],
+      "examples": [
+        [
+          "cóip",
+          "dóchas"
+        ],
+        [
+          "cló",
+          "easóg"
+        ],
+        [
+          "lóchrann",
+          "pósta"
+        ]
+      ],
+      "ulster": [
+        "/o/",
+        "/ʌ/",
+        "/ɔ/"
+      ],
+      "connacht": [
+        "/o/"
+      ],
+      "munster": [
+        "/o/"
+      ],
+      "id": 127
+    },
+    {
+      "regexes": [
+        "all"
+      ],
+      "examples": [
+        [
+          "ball",
+          "thall",
+          "mall"
+        ],
+        "alltacht",
+        "geall",
+        "anall"
+      ],
+      "ulster": [
+        "/äl/",
+        "/äl/",
+        "/æl/",
+        "/ɔl/"
+      ],
+      "connacht": [
+        "/ɔl/",
+        "/äl/",
+        "jɔl",
+        "/ɔl/"
+      ],
+      "munster": [
+        "/aʊ(ə)l/",
+        "/äl/",
+        "/jaʊ(ə)l/",
+        "/aʊl/"
+      ],
+      "id": 128
+    },
+    {
+      "regexes": [
+        "ui"
+      ],
+      "examples": [
+        "muiníneach",
+        "cuideachta"
+      ],
+      "ulster": [
+        "/u/",
+        "/ʊ/"
+      ],
+      "connacht": [
+        "/ə [unstressed]/",
+        "ʊ"
+      ],
+      "munster": [
+        "/ə [unstressed]"
+      ],
+      "id": 129
+    },
+    {
+      "regexes": [
+        "amh"
+      ],
+      "examples": [
+        [
+          "samhradh",
+          "samhail"
+        ],
+        "annamh"
+      ],
+      "ulster": [
+        "/aʊ/ ('how')",
+        "/u/"
+      ],
+      "connacht": [
+        "/aʊ/ ('how')",
+        "/u/"
+      ],
+      "munster": [
+        "/aʊ/ ('how')",
+        "/əv/ [unstressed]"
+      ],
+      "id": 130
+    },
+    {
+      "regexes": [
+        "aidh"
+      ],
+      "examples": [
+        "aidhm",
+        "iarraidh"
+      ],
+      "ulster": [
+        "/e/",
+        "/i/"
+      ],
+      "connacht": [
+        "/aɪ/",
+        "/ə/"
+      ],
+      "munster": [
+        "/aɪ/",
+        "/ɪg/"
+      ],
+      "notes": "* iarraidh seems like its ending sounds are for a 'aigh' word.",
+      "id": 131
+    },
+    {
+      "regexes": [
+        "aonn"
+      ],
+      "examples": [
+        "daonna"
+      ],
+      "ulster": [
+        "/en/"
+      ],
+      "connacht": [
+        "/ujən/"
+      ],
+      "munster": [
+        "/e(ə)n/"
+      ],
+      "id": 132
+    },
+    {
+      "regexes": [
+        "eabh"
+      ],
+      "examples": [
+        "feabhsaigh"
+      ],
+      "ulster": [
+        "/io/"
+      ],
+      "connacht": [
+        "/(i)aʊ/"
+      ],
+      "munster": [
+        "/(i)aʊ/"
+      ],
+      "id": 133
+    },
+    {
+      "regexes": [
+        "uill"
+      ],
+      "examples": [
+        "tuillte"
+      ],
+      "ulster": [
+        "/ɪl/"
+      ],
+      "connacht": [
+        "/ɪl/"
+      ],
+      "munster": [
+        "/ɪl/"
+      ],
+      "id": 134
+    },
+    {
+      "regexes": [
+        "ithi"
+      ],
+      "examples": [
+        "ithir"
+      ],
+      "ulster": [
+        "/ɪhə/"
+      ],
+      "connacht": [
+        "/i/"
+      ],
+      "munster": [
+        "/ɪhə/"
+      ],
+      "id": 135
+    },
+    {
+      "regexes": [
+        "í"
+      ],
+      "examples": [
+        "dílis"
+      ],
+      "ulster": [
+        "/i/"
+      ],
+      "connacht": [
+        "/i/"
+      ],
+      "munster": [
+        "/i/"
+      ],
+      "id": 136
+    }
+  ],
   "fuaims": [
     {
       "id": 1,
@@ -12756,7 +15792,8 @@
         "cill": "churchyard",
         "ciallaigh": "signify",
         "caill": "lose",
-        "coill": "forest"
+        "coill": "forest",
+        "caol": "slender"
       }
     },
     {
@@ -13355,7 +16392,8 @@
     },
     {
       "cluster": {
-        "tréimhse": "quarter"
+        "tréimhse": "quarter",
+        "treise": "emphasis"
       },
       "id": 102
     },
@@ -13367,7 +16405,8 @@
     },
     {
       "cluster": {
-        "croith": "shake"
+        "croith": "shake",
+        "críoch": "limit"
       },
       "id": 104
     },
@@ -13382,6 +16421,18 @@
         "ar fud": "dddddddddddd"
       },
       "id": 106
+    },
+    {
+      "cluster": {
+        "filleadh": "fold"
+      },
+      "id": 107
+    },
+    {
+      "cluster": {
+        "ceathair": "four"
+      },
+      "id": 108
     }
   ],
   "potafocal": [

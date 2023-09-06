@@ -9,6 +9,8 @@ import SubformList from './SubformList.mjs'
 import ListingItem from './ListingItem.mjs'
 import AudioButtons from './AudioButtons.mjs'
 import InterferenceClusterForm from './InterferenceClusterForm.mjs'
+import InterferenceClusterComparison from './InterferenceClusterComparison.mjs'
+import PhonicsTable from './PhonicsTable.mjs'
 
 const BASE_URL = {
     FUAIMEANNA_IE: "http://www.fuaimeanna.ie",
@@ -24,7 +26,9 @@ export default {
         'SubformList': SubformList,
         'ListingItem': ListingItem,
         'AudioButtons': AudioButtons,
-        'InterferenceClusterForm': InterferenceClusterForm
+        'InterferenceClusterForm': InterferenceClusterForm,
+        'InterferenceClusterComparison': InterferenceClusterComparison,
+        'PhonicsTable': PhonicsTable
     },
     setup(props) {
 
@@ -60,20 +64,56 @@ export default {
 
         const isBackSide = computed(() => props.side === 'back')
 
-        function openDialog() {
-            const favDialog = document.getElementById("fav-dialog");
-            favDialog.showModal();
+        const phonicsDialogRef = ref(null)
+        const clusterDialogRef = ref(null)
+        const clusterComparisonDialogRef = ref(null)
+
+        function openPhonicsDialog() {
+            phonicsDialogRef.value.showModal();
         }
 
-        return { data, error, subforms, listings, isBackSide, openDialog };
+        function openClusterDialog() {
+            clusterDialogRef.value.showModal();
+        }
+
+        function closeClusterDialog() {
+            clusterDialogRef.value.close();
+        }
+
+        function openClusterComparisonDialog() {
+            clusterComparisonDialogRef.value.showModal()
+        }
+
+        return {
+            data, error, subforms, listings,
+            isBackSide, phonicsDialogRef,
+            openPhonicsDialog, closeClusterDialog,
+            clusterDialogRef, openClusterDialog,
+            clusterComparisonDialogRef, openClusterComparisonDialog
+        };
 
     },
     template: /*html*/ `
 
+    <dialog ref="phonicsDialogRef"><PhonicsTable /></dialog>
+
+    <dialog ref="clusterDialogRef">
+        <InterferenceClusterForm 
+            @submit="closeClusterDialog"
+            @cancel="closeClusterDialog"/>
+    </dialog>
+
+
+    <dialog ref="clusterComparisonDialogRef">
+        <h4>Interference Cluster Comparison</h4>
+        <InterferenceClusterComparison />
+    </dialog>
+    
     <div class="card-front">
         <AudioButtons :lexeme="cardLexeme"/>
-        <button @click="openDialog">Show modal</button>
-        <InterferenceClusterForm />
+        <button @click="openClusterDialog">Add Interference Cluster</button>
+        <button @click="openPhonicsDialog">Show Phonics Table</button>
+        <button @click="openClusterComparisonDialog">Show Cluster Comparison Audio</button>
     </div>
 
     <div class="card-back" v-if="isBackSide">
@@ -83,7 +123,7 @@ export default {
         </template>
         
         <SubformList :lexeme="cardLexeme" :items="subforms" />
-        
+
     </div>
   `,
 };

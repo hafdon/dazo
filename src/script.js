@@ -1245,7 +1245,7 @@ function initPatterns() {
         /*html*/ `<tr class="${curr.styles.join(" ")}">` +
         /*html*/ `<td class="regex ${curr.colorStyles.join(" ")}">${curr.regex
         }</td>` +
-        /*html*/ `<td class="ipa">${htmlLocality(curr.ulster)}</td>` +
+        /*html*/ `<td class="ipa"><ul>${htmlLocality(curr.ulster)}</ul></td>` +
         /*html*/ `<td class="ipa">${htmlLocality(curr.connacht)}</td>` +
         /*html*/ `<td class="ipa">${htmlLocality(curr.munster)}</td>` +
         /*html*/ `<td class="gaelic"><ul class="compressed">` +
@@ -1927,11 +1927,6 @@ function initAll() {
 
   initAudio(true);
   initPotaFocalLink();
-
-
-  const qaEl = document.getElementById('qa')
-
-  qaEl.setAttribute('name', "" + Math.random())
 
 }
 

@@ -1,31 +1,29 @@
-import { computed, inject, ref, toValue, onMounted, onUnmounted } from 'vue'
+import { computed, inject, ref, toValue } from 'vue'
 import { useFetch, usePost } from "../composables/useFetch.mjs"
+import { useEventListener } from "../composables/useEventListener.mjs"
+import { useLogger, useErrorLogger } from '../composables/useLogger.mjs'
+import { useInterferenceClusterApi } from '../composables/useApi.mjs'
 
 export default {
     props: [],
     name: 'InterferenceClusterForm',
-    setup(props) {
+    setup(props, { emit }) {
 
-        const stopProp = (e) => { e.stopPropagation() }
+        // Let user type into input box without 
+        // triggering keyboard shortcuts.
+        useEventListener('keydown', (e) => { e.stopPropagation() })
 
-        onMounted(() => {
-            // Prevent keys from bubbling up to the Anki program
-            document.addEventListener("keydown", stopProp);
-        })
-
-        onUnmounted(() => {
-            document.removeEventListener("keydown", stopProp);
-        })
-
-        const BASE_URL = inject('BASE_URL')
         const cardLexeme = inject('cardLexeme')
-        const url = ref(`${BASE_URL.LOCALHOST}/interferesIds`)
+        // const BASE_URL = inject('BASE_URL')
+        // const url = ref(`${BASE_URL.LOCALHOST}/interferesIds`)
+        // const { data, error } = useFetch(url);
 
-        const { data, error } = useFetch(url);
+        const { data, error } = useInterferenceClusterApi()
 
-        const selectValue = ref([])
-        const dialogRef = ref(null)
-        const formRef = ref(null)
+        if (error.value) {
+            useErrorLogger(error, 'useFetch error')
+        }
+
         const selectRef = ref(null)
         const inputRef = ref(null)
 
@@ -50,7 +48,7 @@ export default {
             const existingOpts = urlId === null
                 ? [{ cluster: {} }] : data.value.filter(c => c.id == urlId)
 
-            console.log(JSON.stringify({ urlId, existingOpts }, null, 4))
+            useLogger(urlId, existingOpts)
 
             const submitUrl = `${BASE_URL.LOCALHOST}/interferesIds`
             // Add to the cluster so we don't replace it
@@ -67,34 +65,28 @@ export default {
                 console.log(error)
                 window.alert("Error trying to save.")
             }
-            closeDialog()
+            emit('submit')
         }
 
-        function closeDialog() {
-            dialogRef.value.close()
-        }
 
         function onCancel(event) {
             event.preventDefault();
-            closeDialog()
+            emit('cancel')
         }
 
         return {
-            clusterOptions, onSubmit, selectValue,
-            onCancel, dialogRef, formRef, selectRef, inputRef
+            clusterOptions, onSubmit, onCancel, selectRef, inputRef
         }
 
     },
     template:  /*html*/ `
-        <dialog id="fav-dialog" ref="dialogRef">
-            <form ref="formRef">
+        <form>
             <p>
             <label>
                 Add to interference cluster:
                 <select 
                     name="interference-clusters" id="interference-clusters-select" 
-                    ref="selectRef"
-                    :value="selectValue">
+                    ref="selectRef">
                 <option value="new" selected>Create New Cluster</option>
                 <option v-for="opt in clusterOptions" :value="opt.value">{{opt.text}}</option>
                 </select>
@@ -109,7 +101,6 @@ export default {
                 <button type="cancel" @click.prevent="onCancel">Cancel</button>
                 <button type="submit" @click.prevent="onSubmit">Submit</button>
             </div>
-            </form>
-        </dialog>
+        </form>
     `
 }

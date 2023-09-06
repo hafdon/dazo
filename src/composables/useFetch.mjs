@@ -35,7 +35,9 @@ export function usePost(url, body, id) {
       // unref() will return the ref value if it's a ref
       // otherwise the value will be returned as-is
       const res = await fetch(fullUrl, options);
+      console.log(res)
       data.value = await res.json();
+
     } catch (e) {
       error.value = e;
     }
@@ -44,7 +46,7 @@ export function usePost(url, body, id) {
   return { data, error };
 }
 
-export function useFetch(url, opts) {
+export function useFetch(url) {
   const data = ref(null);
   const error = ref(null);
 
@@ -57,7 +59,7 @@ export function useFetch(url, opts) {
     // dependency by watchEffect()
     const urlValue = toValue(url);
 
-    console.log('useFetch', { 'urlValue': urlValue })
+    console.log('useFetch urlValue', urlValue)
 
     try {
       // artificial delay / random error
