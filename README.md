@@ -1,6 +1,8 @@
 # README
 
-Javascript/HTML/CSS integration with Anki spaced repetition program for Irish language (Gaelic) learning
+Javascript/HTML/CSS integration with Anki spaced repetition program for Irish language (Gaelic) learning.
+
+The repository name `dazo` does not have any meaning specific to this project. It is a pseudo-randomly generated nonsense word.
 
 ## running the project
 
@@ -78,3 +80,13 @@ From the root of the `dazo` repository, run:
 ```
 
 This starts the Rollup bundler using the npm script `rollup --config --watch`.
+
+The configuration file for the Rollup bundler is `dazo/rollup.config.mjs`.
+
+Bundled files are output to the directory `../collection.media/`, which is where Anki stores media files and other files.
+
+Files which are not directly referenced as media files will be deleted by Anki unless they are preceded by an underscore (`_`). This is why the bundled scripts and style files begin with an underscore. For example, `_script.js` and `_style.css`.
+
+Since Rollup is set to regenerate these files whenever it is running, and the source files are not kept in `collections.media`, you could probably ignore this precaution.
+
+However, keep in mind that the files are referenced by filename from within the Anki Note templates, so if you change the filenames of the output files, you will likewise need to change the references to them in the Anki Note templates.
