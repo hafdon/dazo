@@ -15919,6 +15919,7 @@
     {
       "id": 34,
       "cluster": {
+        "iarann": "iron",
         "ionad": "place",
         "aonad": "unit; one(s)",
         "iomad": "too many",
@@ -16104,6 +16105,7 @@
     },
     {
       "cluster": {
+        "láithreán": "site",
         "láthair": "location",
         "láithreach": "immediate",
         "leithéid": "like"
@@ -61191,6 +61193,39 @@
         ""
       ],
       "id": 649
+    },
+    {
+      "id": 650,
+      "headword": "scairt",
+      "listings": [
+        {
+          "title": "scairt",
+          "partOfSpeech": [
+            "noun"
+          ],
+          "declensionCategory": {
+            "fgb": "2",
+            "gender": "f"
+          },
+          "senses": {
+            "general": "",
+            "enumerated": [
+              {
+                "gloss": "diaphragm, midriff"
+              },
+              {
+                "gloss": "shout, call, summons",
+                "examples": [
+                  {
+                    "gaelic": "scairt ghutháin",
+                    "béarla": "phone call"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }
