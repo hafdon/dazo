@@ -1,6 +1,5 @@
 import { computed, inject, ref, toValue } from 'vue'
 import { usePost } from "../composables/useFetch.mjs"
-import { useEventListener } from "../composables/useEventListener.mjs"
 import { useLogger, useErrorLogger } from '../composables/useLogger.mjs'
 import { useInterferenceClusterApi } from '../composables/useApi.mjs'
 
@@ -68,20 +67,13 @@ export default {
             emit('cancel')
         }
 
-        const formRef = ref(null)
-
-        // Let user type into input box without 
-        // triggering keyboard shortcuts.
-        useEventListener('keydown', (e) => { e.stopPropagation() }, formRef)
-
-
         return {
-            clusterOptions, onSubmit, onCancel, selectRef, inputRef, formRef
+            clusterOptions, onSubmit, onCancel, selectRef, inputRef
         }
 
     },
     template:  /*html*/ `
-        <form ref="formRef">
+        <form>
             <p>
             <label>
                 Add to interference cluster:
