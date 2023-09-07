@@ -32,9 +32,11 @@ export default {
     },
     setup(props) {
 
-        // These aren't injected anywhere yet ... 
+        /**
+         * Provide / Inject
+         **/
         provide('lexeme', props.lexeme)
-        provide('cardLexeme', props.cardLexeme)
+        provide('cardLexeme', props.cardLexeme) // only applicable for verbs cards?
         provide('tags', props.tags)
         provide('audioUrl', props.audioUrl)
         provide('flag', props.flag)
@@ -75,11 +77,18 @@ export default {
         const phonicsDialogRef = ref(null)
         const clusterDialogRef = ref(null)
         const showClusterDialog = ref(false)
+        const showPhonicsDialog = ref(false)
         const clusterComparisonDialogRef = ref(null)
         const showClusterComparisonDialog = ref(false)
 
         function openPhonicsDialog() {
+            showPhonicsDialog.value = true
             phonicsDialogRef.value.showModal();
+        }
+
+        function closePhonicsDialog() {
+            phonicsDialogRef.value.close();
+            showPhonicsDialog.value = false
         }
 
         function openClusterDialog() {
@@ -107,6 +116,7 @@ export default {
             isBackSide,
 
             phonicsDialogRef, openPhonicsDialog,
+            closePhonicsDialog, showPhonicsDialog,
 
             closeClusterDialog, showClusterDialog,
             clusterDialogRef, openClusterDialog,
@@ -120,7 +130,9 @@ export default {
     },
     template: /*html*/ `
 
-    <dialog ref="phonicsDialogRef"><PhonicsTable /></dialog>
+    <dialog ref="phonicsDialogRef" 
+       @close="closePhonicsDialog"
+    ><PhonicsTable v-if="showPhonicsDialog" /></dialog>
 
     <dialog ref="clusterDialogRef"
             @close="closeClusterDialog">
@@ -132,19 +144,21 @@ export default {
         />
     </dialog>
 
-
     <dialog ref="clusterComparisonDialogRef" @close="closeClusterComparisonDialog">
         <InterferenceClusterComparison v-if="showClusterComparisonDialog" />
     </dialog>
     
     <div class="card-front">
-        <AudioButtons :lexeme="cardLexeme"/>
-        <button @click="openClusterDialog"
-            id="cluster-crud-dialog-button-id">Add Interference Cluster</button>
-        <button @click="openPhonicsDialog" 
-            id="phonics-dialog-button-id">Show Phonics Table</button>
-        <button @click="openClusterComparisonDialog"
-            id="cluster-comparison-dialog-button-id">Show Cluster Comparison Audio</button>
+
+        <div class="controls">
+            <AudioButtons :lexeme="cardLexeme"/>
+            <button @click="openClusterDialog"
+                id="cluster-crud-dialog-button-id">Add Interference Cluster</button>
+            <button @click="openPhonicsDialog" 
+                id="phonics-dialog-button-id">Show Phonics Table</button>
+            <button @click="openClusterComparisonDialog"
+                id="cluster-comparison-dialog-button-id">Show Cluster Comparison Audio</button>
+        </div>
     </div>
 
     <div class="card-back" v-if="isBackSide">
@@ -154,6 +168,14 @@ export default {
         </template>
         
         <SubformList :lexeme="cardLexeme" :items="subforms" />
+
+    </div>
+
+    <div class="card-back" v-if="isBackSide">
+    
+    <template v-for="listing in listings">
+        <ListingItem :item="listing" :id="id" />
+    </template>
 
     </div>
   `,
