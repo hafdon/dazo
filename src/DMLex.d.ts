@@ -1,33 +1,20 @@
-// TypeScript is a Structural Type System. A structural type
-// system means that when comparing types, TypeScript only
-// takes into account the members on the type.
-
-// This is in contrast to nominal type systems, where you
-// could create two types but could not assign them to each
-// other. See example:nominal-typing
-
-// For example, these two interfaces are completely
-// transferrable in a structural type system:
-
 type UUID = string;
 
 interface BaseUri {
     uri: string;
 }
 
+interface BaseId {
+    id?: UUID;
+}
+
 interface LexicographicResource extends BaseUri {
     langCode: string;
     title?: string;
-    entry?: Entry[];
+    entry?: Entry[]; // entries
 }
 
-const lr: LexicographicResource = {
-    uri: 'blah',
-    langCode: 'blah2',
-};
-
-interface Entry {
-    id?: UUID;
+interface Entry extends BaseId {
     headword: string;
     homographNumber?: number[];
     partOfSpeech?: PartOfSpeech[];
@@ -57,8 +44,7 @@ interface PartOfSpeech {
  * masculine nouns, the recommended way to do that in DMLex is to create separate
  * entries for the two words, and link them using the Linking Module.
  */
-interface InflectedForm {
-    id?: UUID;
+interface InflectedForm extends BaseId {
     tag?: string[]; // see InflectedFormTag
     // An abbreviation, a code or some other string of text which identifies
     // the inflected form, for example pl for plural, gs for genitive singular,
@@ -84,8 +70,7 @@ interface InflectedForm {
  * Such phenomena need to be treated as two entries (homographs) and can be linked using
  * the Linking Module to make sure they are always shown together to human users.
  */
-interface Sense {
-    id?: UUID;
+interface Sense extends BaseId {
     listingOrder: number;
     indicator?: string[];
     // A short statement, in the same language as the headword, that gives an indication
@@ -100,8 +85,7 @@ interface Sense {
 /**
  * Represents one of possibly several definitions of a sense.
  */
-interface Definition {
-    id?: UUID;
+interface Definition extends BaseId {
     text: string;
     // A statement, in the same language as the headword, that describes and/or explains
     // the meaning of a sense. In DMLex, the term definition encompasses not only formal
@@ -137,9 +121,7 @@ interface Label {
     listingOrder: number;
 }
 
-interface Pronunciation {
-    id?: UUID;
-
+interface Pronunciation extends BaseId {
     // At least one of:
     soundFile?: string;
     transcription?: Transcription[];
@@ -148,8 +130,7 @@ interface Pronunciation {
     label?: Label[];
 }
 
-interface Transcription {
-    id?: UUID;
+interface Transcription extends BaseId {
     text: string;
     scheme?: string; // see TranscriptionSchemeTag
     // IETF language tag. Identifies the transcription scheme used here.
@@ -160,8 +141,7 @@ interface Transcription {
     listingOrder: number;
 }
 
-interface Example {
-    id?: UUID;
+interface Example extends BaseId {
     text: string;
     sourceIdentity?: string; // see SourceIdentityTag
     //  An abbreviation, a code or some other string of text which identifies the source.
@@ -227,8 +207,7 @@ interface HeadwordTranslation
  * per translation language in each sense. For this reason, headwordExplanation
  * does not have a listingOrder.
  */
-interface HeadwordExplanation {
-    id?: UUID;
+interface HeadwordExplanation extends BaseId {
     text: string;
     langCode?: string; // see TranslationLanguage
     // if only one translation language exists in the lexicographic resource,
@@ -242,8 +221,7 @@ interface CrosslingualExample extends Example {
     exampleTranslation?: ExampleTranslation[];
 }
 
-interface ExampleTranslation {
-    id?: UUID;
+interface ExampleTranslation extends BaseId {
     text: string;
     langCode?: string;
     //  if only one translation language exists in the lexicographic resource, required (exactly one) otherwise. IETF language tag. Indicates the language of this translation. The translationLanguage datatype can be used to explain the meaning of the language codes that appear here and/or to constrain which language codes are allowed.
@@ -329,4 +307,162 @@ interface TranscriptionSchemeTag
  * to an item available from an external authority. */
 interface SameAs extends BaseUri {
     // The URI of an item in an external inventory.
+}
+
+interface LinkingLexicographicResource extends LexicographicResource {
+    relation?: Relation[]; // relations
+    relationType?: RelationType[]; // relationTypes
+}
+
+interface BaseRelation {
+    type: string;
+    /** Specifies what type of relation it is, for example a relation between synonyms or a relation between a sense and a subsense. Optionally, relation- Type objects can be used to explain those types and to constrain which types of relations are al- lowed to exist in the lexicographic resource. */
+    description?: string;
+    // A human-readable explanation of this re- lation.
+}
+
+interface Relation extends BaseId, BaseRelation {
+    member: [Member, Member, ...Member[]]; // the minimum is 2 Members
+}
+
+interface Member {
+    memberId: UUID;
+    // the ID of an object
+    role?: string;
+    /** An indication of the role the member has in this relation: whether it is the hypernym or the hyponym (in a hyperonymy/hyponymy relation), or whether it is one of the synonyms (in a synonymy relation), and so on. You can use memberType objects to explain those roles and to constrain which relations are allowed to contain which roles, what their object types are allowed to be (eg. entries or senses) and how many members with this role each relation is allowed to have. */
+    listingOrder: number;
+    /** The position of this member among other members of the same relation. When showing members of the relation to human users (for example: when listing the synonyms in a synonymy relation), the members should be listed in this order. This can be implicit from the serialization. */
+    obverseListingOrder: number;
+    /** The position of this relation among other relations this member is involved in. When an object - such as an entry or a sense - is a member of several relations (for example: when a sense is a member of a synonymy relation and also of an antonymy relation) then, when showing the object (the entry or the sense) to human users, the relations should be listed in this order (for example: the synonyms first, the antonyms second). */
+}
+
+type ScopeRestrictionType = 'sameEntry' | 'sameResource' | 'any';
+
+/** Represents one of possible values for the type of relation. */
+interface RelationType extends BaseRelation {
+    scopeRestriction?: ScopeRestrictionType;
+    memberType?: MemberType[];
+    sameAs?: SameAs[];
+}
+
+/** Represents one of possible values for the role of member,
+ * as well as various restrictions on members having this role.
+ * */
+interface MemberType {
+    role: string;
+    //  If the value is empty, then members having this role do not need to have a role property.
+    // No two instances of memberTYpe in the same relationType can have the same role.
+    description?: string;
+    type: 'sense' | 'entry' | 'collocate';
+    min?: number;
+    max?: number;
+    hint?: 'embed' | 'navigate' | 'none';
+    sameAs?: SameAs[];
+}
+
+interface AnnotationLexicographicResource extends LexicographicResource {}
+
+interface BasePlaceholderMarker {
+    placeholderMarker?: PlaceholderMarker[];
+}
+
+interface AnnotationEntry extends Entry, BasePlaceholderMarker {}
+
+interface AnnotationHeadwordTranslation
+    extends HeadwordTranslation,
+        BasePlaceholderMarker {}
+
+/** Marks up a substring inside a headword or inside a headword translation which is not part of the ex- pression itself but stands for things that can take its place. An application can use the inline markup to format the placeholders differently from the rest of the text, to ignore the placeholder in full-text search, and so on. */
+interface PlaceholderMarker {}
+
+interface BaseAnnotationMarkers {
+    headwordMarker?: HeadwordMarker[];
+    collocateMarker?: CollocatedMarker[];
+}
+
+interface AnnotationDefinition extends Definition, BaseAnnotationMarkers {}
+
+interface AnnotationExample extends Example, BaseAnnotationMarkers {}
+
+interface AnnotationExampleTranslation
+    extends ExampleTranslation,
+        BaseAnnotationMarkers {}
+
+/** Marks up a substring inside an example, inside an example translation or inside a definition which corresponds to the headword (or to a translation of the headword). An application can use the inline markup to highlight the occurrence of the headword for human readers through formatting.  */
+interface HeadwordMarker {}
+
+/** Marks up a substring other than the headword inside an example, inside an example translation or inside a definition. An application can use the inline markup to highlight collocates or constituents. */
+interface CollocateMarker extends BaseId {
+    lemma?: string;
+    // The lemmatized form of the collocate.
+    label?: Label[];
+    // Can be used to communicate facts about the role or type of the item in the sentence, for example its syntactic role (subject, direct object etc.), its semantic role (agent, affected etc) or its semantic type (human, institution etc.) The labelTag object type can be used to explain and/or constrain the collocate labels that are allowed to appear in the lexicographic resource.
+}
+
+/***********************************
+ * Etymology Module
+ ***********************************/
+
+interface EtymologyEntry extends Entry {
+    etymology?: Etymology[];
+    /**
+     * If an entry can contains more than one etymology object, then the different etymology objects represent different hypotheses about the origin of the headword.
+     */
+}
+
+interface Etymology extends BaseId {
+    description?: string;
+    etymon?: Etymon[];
+    listingOrder: number;
+}
+
+/**
+ * Represents one stage (of possibly several) in the
+ * etymological history of the headword.
+ */
+interface Etymon extends BaseId {
+    when?: string;
+    type?: string;
+    // The values can be ex- plained and constrained using the EtymonType object type.
+    note?: string;
+    etymonUnit: EtymonUnit[];
+    translation?: string;
+    listingOrder: number;
+}
+
+/**
+ * Represents a form (typically a word) which is the etymological
+ * origin of the headword, or another etymologically related form.
+ */
+interface EtymonUnit extends BaseId {
+    langCode: string;
+    // An IETF tag. The tags can be explained and constrained using the etymonLanguage object type.
+    text: string;
+    reconstructed?: boolean;
+    partOfSpeech?: PartOfSpeech[];
+    translation?: string;
+    listingOrder: number;
+}
+
+interface EtymonModule {
+    etymonLanguage?: EtymonLanguage[];
+    etymonType?: EtymonType[];
+}
+
+interface EtymonLexicographicResources
+    extends LexicographicResources,
+        EtymonModule {}
+
+interface EtymonType {
+    type: string;
+    description?: string;
+}
+
+/**
+ * Represents one of several allowed values for the language property of etymonUnit objects.
+ */
+interface EtymonLanguage {
+    // Etymologies frequently refer to languages that are not covered by ISO standards. It may be necessary to avail of private-use subtags when composing IETF language tags for etymology, and to explain their meaning in the displayName.
+    langCode: string;
+    displayName?: string;
 }
