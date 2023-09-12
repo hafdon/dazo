@@ -1,0 +1,42 @@
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "type": {
+                "bsonType": "string",
+                "minLength": 1
+            },
+            "description": {
+                "bsonType": "string",
+                "minLength": 1
+            },
+            "members": {
+                "bsonType": "array",
+                "minItems": 2,
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "listingOrder": {
+                            "bsonType": "number"
+                        },
+                        "obverseListingOrder": {
+                            "bsonType": "number"
+                        },
+                        "role": {
+                            "bsonType": "string",
+                            "minLength": 1
+                        },
+                        "memberId": {
+                            "bsonType": "objectId"
+                        }
+                    },
+                    "required": ["memberId", "obverseListingOrder"]
+                }
+            }
+        },
+        "required": ["type", "members"]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "Module.Annotation.CollocateMarker": {
+        "bsonType": "array",
+        "items": {
+            "bsonType": "object",
+            "properties": {
+                "startIndex": { "type": "number" },
+                "endIndex": { "type": "number" },
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "lemma": {
+                    "bsonType": "string",
+                    "minLength": 1
+                },
+                "labels": {
+                    "bsonType": "array",
+                    "description": "Represents a restriction on its parent",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "listingOrder": {
+                                "bsonType": "int"
+                            },
+                            "tag": {
+                                "bsonType": "string",
+                                "minLength": 1
+                            }
+                        },
+                        "required": ["tag"]
+                    }
+                }
+            },
+            "dependentRequired": {
+                "endIndex": ["startIndex"]
+            }
+        }
+    }
+}

@@ -1,0 +1,833 @@
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "modules": {
+                "bsonType": "array",
+                "items": [
+                    {
+                        "bsonType": "string",
+                        "enum": [
+                            "Crosslingual",
+                            "Annotation",
+                            "ControlledValues",
+                            "Etymology",
+                            "Linking"
+                        ]
+                    }
+                ]
+            },
+            "langCode": {
+                "bsonType": "string"
+            },
+            "title": {
+                "bsonType": "string"
+            },
+            "entries": {
+                "bsonType": "array",
+                "items": [
+                    {
+                        "bsonType": "object",
+                        "properties": {
+                            "_id": {
+                                "bsonType": "objectId"
+                            },
+                            "headword": {
+                                "bsonType": "string"
+                            },
+                            "homographNumber": {
+                                "bsonType": "int"
+                            },
+                            "partsOfSpeech": {
+                                "bsonType": "array",
+                                "items": [
+                                    {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "listingOrder": {
+                                                "bsonType": "int",
+                                                "description": "The position of this part-of-speech label among other part-of-speech labels of the same entry. This can be implicit from the serialization."
+                                            },
+                                            "tag": {
+                                                "bsonType": "string",
+                                                "minLength": 1,
+                                                "description": "'tag' is a required non-empty string. An abbreviation, a code or some other string of text which identifies the part-of-speech label, for example n for noun, v for verb, adj for adjective.\nThe [ControlledValuesModule.PartOfSpeechTag] object type can be used to explain the meaning of the part-of-speech tags, to constrain which part-of-speech tags are allowed to occur in the lexicographic resource, and to map them onto external inventories and ontologies."
+                                            }
+                                        },
+                                        "required": ["tag"]
+                                    }
+                                ]
+                            },
+                            "labels": {
+                                "bsonType": "array",
+                                "description": "Represents a restriction on its parent",
+                                "items": [
+                                    {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "listingOrder": {
+                                                "bsonType": "int"
+                                            },
+                                            "tag": {
+                                                "bsonType": "string"
+                                            }
+                                        },
+                                        "required": ["tag"]
+                                    }
+                                ]
+                            },
+                            "pronunciations": {
+                                "bsonType": "array",
+                                "items": [
+                                    {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "bsonType": "objectId"
+                                            },
+                                            "listingOrder": {
+                                                "bsonType": "int"
+                                            },
+                                            "labels": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            },
+                                                            "tag": {
+                                                                "bsonType": "string"
+                                                            }
+                                                        },
+                                                        "required": ["tag"]
+                                                    }
+                                                ]
+                                            },
+                                            "soundFile": {
+                                                "bsonType": "string"
+                                            },
+                                            "transcriptions": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "_id": {
+                                                                "bsonType": "objectId"
+                                                            },
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            },
+                                                            "text": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "string": {
+                                                                "bsonType": "string"
+                                                            }
+                                                        },
+                                                        "required": ["text"]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "anyOf": [
+                                            {
+                                                "required": ["soundFile"]
+                                            },
+                                            {
+                                                "required": ["transcriptions"]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "inflectedForms": {
+                                "bsonType": "array",
+                                "items": [
+                                    {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "bsonType": "objectId"
+                                            },
+                                            "listingOrder": {
+                                                "bsonType": "int",
+                                                "description": "The position of this inflected form among other inflected forms of the same entry."
+                                            },
+                                            "tag": {
+                                                "bsonType": "string",
+                                                "description": "An abbreviation, a code or some other string of text which identifies the inflected form, for example pl for plural, gs for genitive singular, com for comparative."
+                                            },
+                                            "text": {
+                                                "bsonType": "string"
+                                            },
+                                            "labels": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            },
+                                                            "tag": {
+                                                                "bsonType": "string",
+                                                                "description": "An abbreviation, a code or some other string of text which identifies the label, for example neo for neologism, colloq for colloquial, polit for politics.\n[ControlledValuesModule.DefinitionTypeTag] can be used to explain the meaning of the labels, to constrain which labels are allowed to occur in the lexicographic resource, and to map them onto external inventories and ontologies."
+                                                            }
+                                                        },
+                                                        "required": ["tag"]
+                                                    }
+                                                ]
+                                            },
+                                            "pronunciations": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "_id": {
+                                                                "bsonType": "objectId"
+                                                            },
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            },
+                                                            "labels": {
+                                                                "bsonType": "array",
+                                                                "items": [
+                                                                    {
+                                                                        "bsonType": "object",
+                                                                        "properties": {
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int"
+                                                                            },
+                                                                            "tag": {
+                                                                                "bsonType": "string"
+                                                                            }
+                                                                        },
+                                                                        "required": [
+                                                                            "tag"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "soundFile": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "transcriptions": {
+                                                                "bsonType": "array",
+                                                                "items": [
+                                                                    {
+                                                                        "bsonType": "object",
+                                                                        "properties": {
+                                                                            "_id": {
+                                                                                "bsonType": "objectId"
+                                                                            },
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int"
+                                                                            },
+                                                                            "text": {
+                                                                                "bsonType": "string"
+                                                                            },
+                                                                            "string": {
+                                                                                "bsonType": "string"
+                                                                            }
+                                                                        },
+                                                                        "required": [
+                                                                            "text"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "anyOf": [
+                                                            {
+                                                                "required": [
+                                                                    "soundFile"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "required": [
+                                                                    "transcriptions"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": ["text"]
+                                    }
+                                ]
+                            },
+                            "senses": {
+                                "bsonType": "array",
+                                "items": [
+                                    {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "bsonType": "objectId"
+                                            },
+                                            "listingOrder": {
+                                                "bsonType": "int"
+                                            },
+                                            "indicator": {
+                                                "bsonType": "string",
+                                                "description": "A short statement, in the same language as the headword, that gives an indication of the meaning of a sense and permits its differentiation from other senses in the entry. Indicators are sometimes used in dictionaries instead of or in addition to definitions."
+                                            },
+                                            "labels": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            },
+                                                            "tag": {
+                                                                "bsonType": "string",
+                                                                "description": "An abbreviation, a code or some other string of text which identifies the label, for example neo for neologism, colloq for colloquial, polit for politics.\n[ControlledValuesModule.DefinitionTypeTag] can be used to explain the meaning of the labels, to constrain which labels are allowed to occur in the lexicographic resource, and to map them onto external inventories and ontologies."
+                                                            }
+                                                        },
+                                                        "required": ["tag"]
+                                                    }
+                                                ]
+                                            },
+                                            "definitions": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "_id": {
+                                                                "bsonType": "objectId"
+                                                            },
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            },
+                                                            "text": {
+                                                                "bsonType": "string",
+                                                                "description": "A statement, in the same language as the headword, that describes and/or explains the meaning of a sense. In DMLex, the term definition encompasses not only formal definitions, but also less formal explanations."
+                                                            },
+                                                            "definitionType": {
+                                                                "bsonType": "string",
+                                                                "description": "If a sense contains multiple definitions, indicates the difference between them, for example that they are intended for different audiences.\n[ControlledValuesModule.DefinitionTypeTag] can be used to constrain and/or explain the definition types that occur in the lexicographic resource."
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "examples": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "_id": {
+                                                                "bsonType": "objectId"
+                                                            },
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            },
+                                                            "text": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "sourceIdentity": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "sourceElaboration": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "labels": {
+                                                                "bsonType": "array",
+                                                                "items": [
+                                                                    {
+                                                                        "bsonType": "object",
+                                                                        "properties": {
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int"
+                                                                            },
+                                                                            "tag": {
+                                                                                "bsonType": "string",
+                                                                                "description": "An abbreviation, a code or some other string of text which identifies the label, for example neo for neologism, colloq for colloquial, polit for politics.\n[ControlledValuesModule.DefinitionTypeTag] can be used to explain the meaning of the labels, to constrain which labels are allowed to occur in the lexicographic resource, and to map them onto external inventories and ontologies."
+                                                                            }
+                                                                        },
+                                                                        "required": [
+                                                                            "tag"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "soundFile": {
+                                                                "bsonType": "string"
+                                                            },
+
+                                                            "exampleTranslations": {
+                                                                "bsonType": "array",
+                                                                "items": [
+                                                                    {
+                                                                        "properties": {
+                                                                            "text": {
+                                                                                "bsonType": "string"
+                                                                            },
+                                                                            "langCode": {
+                                                                                "bsonType": "string"
+                                                                            },
+                                                                            "labels": {
+                                                                                "bsonType": "array",
+                                                                                "items": [
+                                                                                    {
+                                                                                        "bsonType": "object",
+                                                                                        "properties": {
+                                                                                            "listingOrder": {
+                                                                                                "bsonType": "int"
+                                                                                            },
+                                                                                            "tag": {
+                                                                                                "bsonType": "string",
+                                                                                                "description": "An abbreviation, a code or some other string of text which identifies the label, for example neo for neologism, colloq for colloquial, polit for politics.\n[ControlledValuesModule.DefinitionTypeTag] can be used to explain the meaning of the labels, to constrain which labels are allowed to occur in the lexicographic resource, and to map them onto external inventories and ontologies."
+                                                                                            }
+                                                                                        },
+                                                                                        "required": [
+                                                                                            "tag"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "soundFile": {
+                                                                                "bsonType": "string"
+                                                                            },
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int"
+                                                                            }
+                                                                        },
+                                                                        "required": [
+                                                                            "text"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "required": ["text"]
+                                                    }
+                                                ]
+                                            },
+
+                                            "headwordTranslations": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "properties": {
+                                                            "partsOfSpeech": {
+                                                                "bsonType": "array",
+                                                                "items": [
+                                                                    {
+                                                                        "bsonType": "object",
+                                                                        "properties": {
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int",
+                                                                                "description": "The position of this part-of-speech label among other part-of-speech labels of the same entry. This can be implicit from the serialization."
+                                                                            },
+                                                                            "tag": {
+                                                                                "bsonType": "string",
+                                                                                "minLength": 1,
+                                                                                "description": "'tag' is a required non-empty string. An abbreviation, a code or some other string of text which identifies the part-of-speech label, for example n for noun, v for verb, adj for adjective.\nThe [ControlledValuesModule.PartOfSpeechTag] object type can be used to explain the meaning of the part-of-speech tags, to constrain which part-of-speech tags are allowed to occur in the lexicographic resource, and to map them onto external inventories and ontologies."
+                                                                            }
+                                                                        },
+                                                                        "required": [
+                                                                            "tag"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "labels": {
+                                                                "bsonType": "array",
+                                                                "description": "Represents a restriction on its parent",
+                                                                "items": [
+                                                                    {
+                                                                        "bsonType": "object",
+                                                                        "properties": {
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int"
+                                                                            },
+                                                                            "tag": {
+                                                                                "bsonType": "string"
+                                                                            }
+                                                                        },
+                                                                        "required": [
+                                                                            "tag"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "pronunciations": {
+                                                                "bsonType": "array",
+                                                                "items": [
+                                                                    {
+                                                                        "bsonType": "object",
+                                                                        "properties": {
+                                                                            "_id": {
+                                                                                "bsonType": "objectId"
+                                                                            },
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int"
+                                                                            },
+                                                                            "labels": {
+                                                                                "bsonType": "array",
+                                                                                "items": [
+                                                                                    {
+                                                                                        "bsonType": "object",
+                                                                                        "properties": {
+                                                                                            "listingOrder": {
+                                                                                                "bsonType": "int"
+                                                                                            },
+                                                                                            "tag": {
+                                                                                                "bsonType": "string"
+                                                                                            }
+                                                                                        },
+                                                                                        "required": [
+                                                                                            "tag"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "soundFile": {
+                                                                                "bsonType": "string"
+                                                                            },
+                                                                            "transcriptions": {
+                                                                                "bsonType": "array",
+                                                                                "items": [
+                                                                                    {
+                                                                                        "bsonType": "object",
+                                                                                        "properties": {
+                                                                                            "_id": {
+                                                                                                "bsonType": "objectId"
+                                                                                            },
+                                                                                            "listingOrder": {
+                                                                                                "bsonType": "int"
+                                                                                            },
+                                                                                            "text": {
+                                                                                                "bsonType": "string"
+                                                                                            },
+                                                                                            "string": {
+                                                                                                "bsonType": "string"
+                                                                                            }
+                                                                                        },
+                                                                                        "required": [
+                                                                                            "text"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "anyOf": [
+                                                                            {
+                                                                                "required": [
+                                                                                    "soundFile"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "required": [
+                                                                                    "transcriptions"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "inflectedForms": {
+                                                                "bsonType": "array",
+                                                                "items": [
+                                                                    {
+                                                                        "bsonType": "object",
+                                                                        "properties": {
+                                                                            "_id": {
+                                                                                "bsonType": "objectId"
+                                                                            },
+                                                                            "listingOrder": {
+                                                                                "bsonType": "int",
+                                                                                "description": "The position of this inflected form among other inflected forms of the same entry."
+                                                                            },
+                                                                            "tag": {
+                                                                                "bsonType": "string",
+                                                                                "description": "An abbreviation, a code or some other string of text which identifies the inflected form, for example pl for plural, gs for genitive singular, com for comparative."
+                                                                            },
+                                                                            "text": {
+                                                                                "bsonType": "string"
+                                                                            },
+                                                                            "labels": {
+                                                                                "bsonType": "array",
+                                                                                "items": [
+                                                                                    {
+                                                                                        "bsonType": "object",
+                                                                                        "properties": {
+                                                                                            "listingOrder": {
+                                                                                                "bsonType": "int"
+                                                                                            },
+                                                                                            "tag": {
+                                                                                                "bsonType": "string",
+                                                                                                "description": "An abbreviation, a code or some other string of text which identifies the label, for example neo for neologism, colloq for colloquial, polit for politics.\n[ControlledValuesModule.DefinitionTypeTag] can be used to explain the meaning of the labels, to constrain which labels are allowed to occur in the lexicographic resource, and to map them onto external inventories and ontologies."
+                                                                                            }
+                                                                                        },
+                                                                                        "required": [
+                                                                                            "tag"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "pronunciations": {
+                                                                                "bsonType": "array",
+                                                                                "items": [
+                                                                                    {
+                                                                                        "bsonType": "object",
+                                                                                        "properties": {
+                                                                                            "_id": {
+                                                                                                "bsonType": "objectId"
+                                                                                            },
+                                                                                            "listingOrder": {
+                                                                                                "bsonType": "int"
+                                                                                            },
+                                                                                            "labels": {
+                                                                                                "bsonType": "array",
+                                                                                                "items": [
+                                                                                                    {
+                                                                                                        "bsonType": "object",
+                                                                                                        "properties": {
+                                                                                                            "listingOrder": {
+                                                                                                                "bsonType": "int"
+                                                                                                            },
+                                                                                                            "tag": {
+                                                                                                                "bsonType": "string"
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "required": [
+                                                                                                            "tag"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                ]
+                                                                                            },
+                                                                                            "soundFile": {
+                                                                                                "bsonType": "string"
+                                                                                            },
+                                                                                            "transcriptions": {
+                                                                                                "bsonType": "array",
+                                                                                                "items": [
+                                                                                                    {
+                                                                                                        "bsonType": "object",
+                                                                                                        "properties": {
+                                                                                                            "_id": {
+                                                                                                                "bsonType": "objectId"
+                                                                                                            },
+                                                                                                            "listingOrder": {
+                                                                                                                "bsonType": "int"
+                                                                                                            },
+                                                                                                            "text": {
+                                                                                                                "bsonType": "string"
+                                                                                                            },
+                                                                                                            "string": {
+                                                                                                                "bsonType": "string"
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "required": [
+                                                                                                            "text"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "anyOf": [
+                                                                                            {
+                                                                                                "required": [
+                                                                                                    "soundFile"
+                                                                                                ]
+                                                                                            },
+                                                                                            {
+                                                                                                "required": [
+                                                                                                    "transcriptions"
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "required": [
+                                                                            "text"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "text": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "langCode": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "listingOrder": {
+                                                                "bsonType": "int"
+                                                            }
+                                                        },
+                                                        "required": ["text"]
+                                                    }
+                                                ]
+                                            },
+                                            "headwordExplanations": {
+                                                "bsonType": "array",
+                                                "items": [
+                                                    {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "_id": {
+                                                                "bsonType": "objectId"
+                                                            },
+                                                            "text": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "langCode": {
+                                                                "bsonType": "string"
+                                                            }
+                                                        },
+                                                        "required": ["text"]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "required": ["headword"]
+                    }
+                ]
+            },
+
+            "translationLanguages": {
+                "bsonType": "array",
+                "items": [
+                    {
+                        "properties": {
+                            "listingOrder": {
+                                "bsonType": "int"
+                            },
+                            "langCode": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": ["langCode"]
+                    }
+                ]
+            },
+
+            "relations": {
+                "bsonType": "array",
+                "items": [
+                    {
+                        "bsonType": "object",
+                        "properties": {
+                            "_id": {
+                                "bsonType": "objectId"
+                            },
+                            "type": {
+                                "bsonType": "string"
+                            },
+                            "description": {
+                                "bsonType": "string"
+                            },
+                            "members": {
+                                "bsonType": "array",
+                                "minItems": 2,
+                                "items": [
+                                    {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "listingOrder": {
+                                                "bsonType": "number"
+                                            },
+                                            "obverseListingOrder": {
+                                                "bsonType": "number"
+                                            },
+                                            "role": {
+                                                "bsonType": "string"
+                                            },
+                                            "memberId": {
+                                                "bsonType": "objectId"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "required": ["type", "members"]
+                    }
+                ]
+            },
+
+            "relationTypes": {
+                "bsonType": "array",
+                "items": [
+                    {
+                        "bsonType": "object",
+                        "properties": {
+                            "scopeRestriction": {},
+                            "memberTypes": {
+                                "bsonType": "array",
+                                "items": [
+                                    {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "role": {
+                                                "bsonType": "string"
+                                            },
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "type": {
+                                                "bsonType": "string",
+                                                "enum": [
+                                                    "sense",
+                                                    "entry",
+                                                    "collocate"
+                                                ]
+                                            },
+                                            "hint": {
+                                                "bsonType": "string",
+                                                "enum": [
+                                                    "embed",
+                                                    "navigate",
+                                                    "none"
+                                                ]
+                                            },
+                                            "sameAs": {
+                                                "bsonType": "object",
+                                                "properties": {
+                                                    "uri": {
+                                                        "bsonType": "string"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "required": ["role"]
+                                    }
+                                ]
+                            },
+                            "sameAs": {},
+                            "type": {
+                                "bsonType": "string"
+                            },
+                            "description": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": ["type"]
+                    }
+                ]
+            }
+        },
+        "required": ["langCode", "title", "entries"],
+        "additionalProperties": false
+    }
+}

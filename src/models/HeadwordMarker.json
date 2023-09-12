@@ -1,0 +1,18 @@
+{
+    "Module.Annotation.HeadwordMarker": {
+        "bsonType": "array",
+        "items": [
+            { "bsonType": "string", "minLength": 1 },
+            {
+                "bsonType": "object",
+                "properties": {
+                    "startIndex": { "type": "number" },
+                    "endIndex": { "type": "number" }
+                },
+                "dependencies": {
+                    "endIndex": ["startIndex"]
+                }
+            }
+        ]
+    }
+}

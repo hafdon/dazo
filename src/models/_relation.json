@@ -1,0 +1,10 @@
+{
+            "_id": ObjectId(),
+            "type": "subentrying",
+            "members": [{
+                "listingOrder":0,
+                "obverseListingOrder": 0,
+                "role": "",
+                "memberId": ""
+            }] 
+}
