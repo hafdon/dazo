@@ -1,0 +1,75 @@
+{
+    "headword": "luadar",
+    "partsOfSpeech": [
+        {
+            "tag": "noun-m"
+        }
+    ],
+    "senses": [
+        {
+            "headwordTranslations": [
+                {
+                    "partsOfSpeech": [
+                        {
+                            "tag": "noun"
+                        }
+                    ],
+                    "text": "Movement, activity; vigour.",
+                    "langCode": "en"
+                }
+            ],
+            "examples": [
+                {
+                    "text": "luadar cos, teanga",
+                    "sourceIdentity": "fgb",
+                    "exampleTranslations": [
+                        {
+                            "text": "nimbleness of foot, of tongue",
+                            "langCode": "en"
+                        }
+                    ]
+                },
+                {
+                    "text": "Duine a bhaint dá luadar",
+                    "sourceIdentity": "fgb",
+                    "exampleTranslations": [
+                        {
+                            "text": "to reduce s.o. to inactivity",
+                            "langCode": "en"
+                        }
+                    ],
+                    "collocateMarkers": [
+                        {
+                            "startIndex": 1,
+                            "endIndex": 1,
+                            "lemma": "bain",
+                            "labels": [
+                                {
+                                    "tag": "¬bain"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "headwordTranslations": [
+                {
+                    "partsOfSpeech": [
+                        {
+                            "tag": "noun"
+                        }
+                    ],
+                    "labels": [
+                        {
+                            "tag": "Biology"
+                        }
+                    ],
+                    "text": "Taxis.",
+                    "langCode": "en"
+                }
+            ]
+        }
+    ]
+}

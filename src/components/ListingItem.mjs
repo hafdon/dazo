@@ -57,7 +57,7 @@ export default {
                             ></div>
                         </template>
                         <template v-else>
-                            <p>Not using v-html</p>
+                            <p class="dev">Not using v-html</p>
                             <div class="listing-sense-general">
                                 {{l.senses.general}}
                             </div>
